@@ -2,19 +2,25 @@
 
 This repository hosts externally updateable Catverter conversion packs.
 
-The repository root contains `catalog.json` and every pack referenced by that
-catalog. All public JSON documents currently use `schemaVersion: 1`; content
-versions such as `1.0.0` are versioned independently.
+The repository root contains `catalog.json`. Contribution files live under
+`packs/<author>/<pack-id>.json`, keeping each contributor's packs together and
+the root uncluttered. All public JSON documents currently use
+`schemaVersion: 1`; content versions such as `1.0.0` are versioned
+independently.
 
 ## Add a pack
 
-1. Copy `templates/pack.v1.json` to `<pack-id>.json`.
-2. Give the pack a stable lowercase ID and globally unique reverse-DNS
+1. Choose a stable lowercase author slug, normally your GitHub username.
+2. Copy `templates/pack.v1.json` to
+   `packs/<author>/<pack-id>.json` and change its `$schema` reference to
+   `../../schemas/catverter-pack-v1.schema.json`.
+3. Give the pack a stable lowercase ID and globally unique reverse-DNS
    `packageId`.
-3. Add useful conversions across the small, ordinary, and large ranges of each
+4. Add useful conversions across the small, ordinary, and large ranges of each
    supported quantity.
-4. Add the pack to `catalog.json` with the same ID, package ID, and version.
-5. Compute SHA-256 from UTF-8 JSON after normalizing line endings to LF and put
+5. Add the pack to `catalog.json` with the same ID, package ID, version, and
+   `packs/<author>/<pack-id>.json` path.
+6. Compute SHA-256 from UTF-8 JSON after normalizing line endings to LF and put
    the lowercase hash in the catalog entry.
 
 Pack values must use invariant UnitsNet quantity and unit names. Sources,

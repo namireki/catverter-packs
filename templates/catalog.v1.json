@@ -10,7 +10,7 @@
       "packageId": "org.example.catverter.pack.example-pack",
       "id": "example-pack",
       "version": "1.0.0",
-      "file": "example-pack.json",
+      "file": "packs/example-author/example-pack.json",
       "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
     }
   ]

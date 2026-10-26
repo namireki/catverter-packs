@@ -1,5 +1,5 @@
 {
-  "$schema": "schemas/catverter-pack-v1.schema.json",
+  "$schema": "../../schemas/catverter-pack-v1.schema.json",
   "documentType": "catverter-pack",
   "schemaVersion": 1,
   "packageId": "io.github.namireki.catverter.pack.office-life",
