@@ -1,0 +1,469 @@
+{
+  "$schema": "schemas/catverter-pack-v1.schema.json",
+  "documentType": "catverter-pack",
+  "schemaVersion": 1,
+  "packageId": "io.github.namireki.catverter.pack.office-life",
+  "id": "office-life",
+  "name": "Office life",
+  "version": "1.0.0",
+  "minimumAppVersion": "1.0.0",
+  "description": "Desks, stationery, caffeine infrastructure, and suspiciously mobile office equipment.",
+  "metadata": {
+    "authors": ["Namireki Studio"],
+    "license": "Apache-2.0",
+    "homepage": "https://github.com/namireki/catverter-packs",
+    "repository": "https://github.com/namireki/catverter-packs",
+    "tags": ["office", "stationery", "workplace"],
+    "accentColor": "#4F78A8"
+  },
+  "modifiers": [
+    {
+      "id": "pocket-sized",
+      "name": "pocket-sized",
+      "multiplier": 0.5,
+      "quantities": ["Mass", "Length", "Volume"],
+      "combinationGroup": "scale",
+      "incompatibleWith": ["executive-sized"]
+    },
+    {
+      "id": "executive-sized",
+      "name": "executive-sized",
+      "multiplier": 2,
+      "quantities": ["Mass", "Length", "Volume"],
+      "combinationGroup": "scale",
+      "incompatibleWith": ["pocket-sized"]
+    },
+    {
+      "id": "deadline-powered",
+      "name": "deadline-powered",
+      "multiplier": 2,
+      "quantities": ["Speed"],
+      "combinationGroup": "pace",
+      "incompatibleWith": ["monday-morning"]
+    },
+    {
+      "id": "monday-morning",
+      "name": "Monday-morning",
+      "multiplier": 0.5,
+      "quantities": ["Speed"],
+      "combinationGroup": "pace",
+      "incompatibleWith": ["deadline-powered"]
+    }
+  ],
+  "conversions": [
+    {
+      "id": "paperclip-mass",
+      "singularName": "paperclip",
+      "pluralName": "paperclips",
+      "quantity": "Mass",
+      "unit": "Gram",
+      "value": 1,
+      "notes": "Representative small steel paperclip."
+    },
+    {
+      "id": "paper-sheet-mass",
+      "singularName": "sheet of office paper",
+      "pluralName": "sheets of office paper",
+      "quantity": "Mass",
+      "unit": "Gram",
+      "value": 5
+    },
+    {
+      "id": "stapler-mass",
+      "singularName": "desk stapler",
+      "pluralName": "desk staplers",
+      "quantity": "Mass",
+      "unit": "Gram",
+      "value": 300
+    },
+    {
+      "id": "laptop-mass",
+      "singularName": "office laptop",
+      "pluralName": "office laptops",
+      "quantity": "Mass",
+      "unit": "Kilogram",
+      "value": 1.5
+    },
+    {
+      "id": "office-chair-mass",
+      "singularName": "office chair",
+      "pluralName": "office chairs",
+      "quantity": "Mass",
+      "unit": "Kilogram",
+      "value": 20
+    },
+    {
+      "id": "binder-clip-mass",
+      "singularName": "binder clip",
+      "pluralName": "binder clips",
+      "quantity": "Mass",
+      "unit": "Gram",
+      "value": 15
+    },
+    {
+      "id": "whiteboard-marker-mass",
+      "singularName": "whiteboard marker",
+      "pluralName": "whiteboard markers",
+      "quantity": "Mass",
+      "unit": "Gram",
+      "value": 20
+    },
+    {
+      "id": "notebook-mass",
+      "singularName": "meeting notebook",
+      "pluralName": "meeting notebooks",
+      "quantity": "Mass",
+      "unit": "Gram",
+      "value": 250
+    },
+    {
+      "id": "paper-ream-mass",
+      "singularName": "ream of office paper",
+      "pluralName": "reams of office paper",
+      "quantity": "Mass",
+      "unit": "Kilogram",
+      "value": 2.5
+    },
+    {
+      "id": "monitor-mass",
+      "singularName": "office monitor",
+      "pluralName": "office monitors",
+      "quantity": "Mass",
+      "unit": "Kilogram",
+      "value": 5
+    },
+    {
+      "id": "printer-mass",
+      "singularName": "department printer",
+      "pluralName": "department printers",
+      "quantity": "Mass",
+      "unit": "Kilogram",
+      "value": 18
+    },
+    {
+      "id": "filing-cabinet-mass",
+      "singularName": "full filing cabinet",
+      "pluralName": "full filing cabinets",
+      "quantity": "Mass",
+      "unit": "Kilogram",
+      "value": 55
+    },
+    {
+      "id": "photocopier-mass",
+      "singularName": "floor-standing photocopier",
+      "pluralName": "floor-standing photocopiers",
+      "quantity": "Mass",
+      "unit": "Kilogram",
+      "value": 120
+    },
+    {
+      "id": "staple-length",
+      "singularName": "staple",
+      "pluralName": "staples",
+      "quantity": "Length",
+      "unit": "Millimeter",
+      "value": 10,
+      "aspect": "length"
+    },
+    {
+      "id": "sticky-note-length",
+      "singularName": "sticky note",
+      "pluralName": "sticky notes",
+      "quantity": "Length",
+      "unit": "Millimeter",
+      "value": 76,
+      "aspect": "length"
+    },
+    {
+      "id": "keyboard-length",
+      "singularName": "keyboard",
+      "pluralName": "keyboards",
+      "quantity": "Length",
+      "unit": "Centimeter",
+      "value": 44,
+      "aspect": "length"
+    },
+    {
+      "id": "desk-length",
+      "singularName": "office desk",
+      "pluralName": "office desks",
+      "quantity": "Length",
+      "unit": "Meter",
+      "value": 1.4,
+      "aspect": "length"
+    },
+    {
+      "id": "corridor-length",
+      "singularName": "office corridor",
+      "pluralName": "office corridors",
+      "quantity": "Length",
+      "unit": "Meter",
+      "value": 30,
+      "aspect": "length"
+    },
+    {
+      "id": "business-card-length",
+      "singularName": "business card",
+      "pluralName": "business cards",
+      "quantity": "Length",
+      "unit": "Millimeter",
+      "value": 85,
+      "aspect": "length"
+    },
+    {
+      "id": "pen-length",
+      "singularName": "office pen",
+      "pluralName": "office pens",
+      "quantity": "Length",
+      "unit": "Centimeter",
+      "value": 14,
+      "aspect": "length"
+    },
+    {
+      "id": "laptop-length",
+      "singularName": "office laptop",
+      "pluralName": "office laptops",
+      "quantity": "Length",
+      "unit": "Centimeter",
+      "value": 35,
+      "aspect": "length"
+    },
+    {
+      "id": "whiteboard-length",
+      "singularName": "meeting-room whiteboard",
+      "pluralName": "meeting-room whiteboards",
+      "quantity": "Length",
+      "unit": "Meter",
+      "value": 1.8,
+      "aspect": "length"
+    },
+    {
+      "id": "meeting-table-length",
+      "singularName": "meeting table",
+      "pluralName": "meeting tables",
+      "quantity": "Length",
+      "unit": "Meter",
+      "value": 3,
+      "aspect": "length"
+    },
+    {
+      "id": "cubicle-row-length",
+      "singularName": "row of cubicles",
+      "pluralName": "rows of cubicles",
+      "quantity": "Length",
+      "unit": "Meter",
+      "value": 12,
+      "aspect": "length"
+    },
+    {
+      "id": "office-floor-length",
+      "singularName": "open-plan office floor",
+      "pluralName": "open-plan office floors",
+      "quantity": "Length",
+      "unit": "Meter",
+      "value": 60,
+      "aspect": "length"
+    },
+    {
+      "id": "campus-walk-length",
+      "singularName": "corporate campus walk",
+      "pluralName": "corporate campus walks",
+      "quantity": "Length",
+      "unit": "Meter",
+      "value": 500,
+      "aspect": "length"
+    },
+    {
+      "id": "espresso-volume",
+      "singularName": "emergency espresso",
+      "pluralName": "emergency espressos",
+      "quantity": "Volume",
+      "unit": "Milliliter",
+      "value": 30
+    },
+    {
+      "id": "coffee-mug-volume",
+      "singularName": "meeting mug",
+      "pluralName": "meeting mugs",
+      "quantity": "Volume",
+      "unit": "Milliliter",
+      "value": 350
+    },
+    {
+      "id": "desk-bottle-volume",
+      "singularName": "desk water bottle",
+      "pluralName": "desk water bottles",
+      "quantity": "Volume",
+      "unit": "Milliliter",
+      "value": 750
+    },
+    {
+      "id": "water-cooler-jug-volume",
+      "singularName": "water-cooler jug",
+      "pluralName": "water-cooler jugs",
+      "quantity": "Volume",
+      "unit": "Liter",
+      "value": 19
+    },
+    {
+      "id": "kitchenette-sink-volume",
+      "singularName": "office kitchenette sink",
+      "pluralName": "office kitchenette sinks",
+      "quantity": "Volume",
+      "unit": "Liter",
+      "value": 50
+    },
+    {
+      "id": "ink-cartridge-volume",
+      "singularName": "printer ink cartridge",
+      "pluralName": "printer ink cartridges",
+      "quantity": "Volume",
+      "unit": "Milliliter",
+      "value": 12
+    },
+    {
+      "id": "creamer-pod-volume",
+      "singularName": "coffee creamer pod",
+      "pluralName": "coffee creamer pods",
+      "quantity": "Volume",
+      "unit": "Milliliter",
+      "value": 15
+    },
+    {
+      "id": "thermos-volume",
+      "singularName": "meeting thermos",
+      "pluralName": "meeting thermoses",
+      "quantity": "Volume",
+      "unit": "Liter",
+      "value": 1
+    },
+    {
+      "id": "kettle-volume",
+      "singularName": "office kettle",
+      "pluralName": "office kettles",
+      "quantity": "Volume",
+      "unit": "Liter",
+      "value": 1.7
+    },
+    {
+      "id": "shredder-bin-volume",
+      "singularName": "shredder bin",
+      "pluralName": "shredder bins",
+      "quantity": "Volume",
+      "unit": "Liter",
+      "value": 30
+    },
+    {
+      "id": "paper-box-volume",
+      "singularName": "printer-paper box",
+      "pluralName": "printer-paper boxes",
+      "quantity": "Volume",
+      "unit": "Liter",
+      "value": 45
+    },
+    {
+      "id": "server-cooling-tank-volume",
+      "singularName": "server-room cooling tank",
+      "pluralName": "server-room cooling tanks",
+      "quantity": "Volume",
+      "unit": "Liter",
+      "value": 1000
+    },
+    {
+      "id": "printer-paper-crawl-speed",
+      "singularName": "printer paper crawl",
+      "pluralName": "printer paper crawls",
+      "quantity": "Speed",
+      "unit": "KilometerPerHour",
+      "value": 0.5
+    },
+    {
+      "id": "robot-vacuum-speed",
+      "singularName": "office robot vacuum",
+      "pluralName": "office robot vacuums",
+      "quantity": "Speed",
+      "unit": "KilometerPerHour",
+      "value": 1.5
+    },
+    {
+      "id": "rolling-chair-speed",
+      "singularName": "rolling office chair",
+      "pluralName": "rolling office chairs",
+      "quantity": "Speed",
+      "unit": "KilometerPerHour",
+      "value": 4
+    },
+    {
+      "id": "late-for-meeting-speed",
+      "singularName": "late-for-a-meeting employee",
+      "pluralName": "late-for-a-meeting employees",
+      "quantity": "Speed",
+      "unit": "KilometerPerHour",
+      "value": 12
+    },
+    {
+      "id": "courier-bike-speed",
+      "singularName": "urgent office courier bike",
+      "pluralName": "urgent office courier bikes",
+      "quantity": "Speed",
+      "unit": "KilometerPerHour",
+      "value": 80
+    },
+    {
+      "id": "mail-trolley-speed",
+      "singularName": "internal-mail trolley",
+      "pluralName": "internal-mail trolleys",
+      "quantity": "Speed",
+      "unit": "KilometerPerHour",
+      "value": 0.3
+    },
+    {
+      "id": "standing-desk-speed",
+      "singularName": "rising standing desk",
+      "pluralName": "rising standing desks",
+      "quantity": "Speed",
+      "unit": "MeterPerSecond",
+      "value": 0.03
+    },
+    {
+      "id": "document-scanner-speed",
+      "singularName": "document through a scanner",
+      "pluralName": "documents through a scanner",
+      "quantity": "Speed",
+      "unit": "MeterPerSecond",
+      "value": 0.2
+    },
+    {
+      "id": "office-elevator-speed",
+      "singularName": "office elevator",
+      "pluralName": "office elevators",
+      "quantity": "Speed",
+      "unit": "MeterPerSecond",
+      "value": 2.5
+    },
+    {
+      "id": "pneumatic-tube-speed",
+      "singularName": "pneumatic document capsule",
+      "pluralName": "pneumatic document capsules",
+      "quantity": "Speed",
+      "unit": "KilometerPerHour",
+      "value": 36
+    },
+    {
+      "id": "commuter-train-speed",
+      "singularName": "commuter train to headquarters",
+      "pluralName": "commuter trains to headquarters",
+      "quantity": "Speed",
+      "unit": "KilometerPerHour",
+      "value": 120
+    },
+    {
+      "id": "business-jet-speed",
+      "singularName": "executive business jet",
+      "pluralName": "executive business jets",
+      "quantity": "Speed",
+      "unit": "KilometerPerHour",
+      "value": 850
+    }
+  ]
+}

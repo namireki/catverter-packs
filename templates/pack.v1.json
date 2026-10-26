@@ -1,0 +1,41 @@
+{
+  "$schema": "../schemas/catverter-pack-v1.schema.json",
+  "documentType": "catverter-pack",
+  "schemaVersion": 1,
+  "packageId": "org.example.catverter.pack.example-pack",
+  "id": "example-pack",
+  "name": "Example pack",
+  "version": "1.0.0",
+  "minimumAppVersion": "1.0.0",
+  "description": "Replace this description with the theme and intended measurement ranges.",
+  "metadata": {
+    "authors": ["Your name"],
+    "license": "Apache-2.0",
+    "tags": ["example"],
+    "accentColor": "#C47B39"
+  },
+  "modifiers": [
+    {
+      "id": "tiny",
+      "name": "tiny",
+      "multiplier": 0.5,
+      "quantities": ["Mass", "Length"],
+      "combinationGroup": "scale",
+      "incompatibleWith": []
+    }
+  ],
+  "conversions": [
+    {
+      "id": "example-mass",
+      "singularName": "example object",
+      "pluralName": "example objects",
+      "quantity": "Mass",
+      "unit": "Kilogram",
+      "value": 2.5,
+      "aspect": "mass",
+      "modifierIds": ["tiny"],
+      "sourceUrl": "https://example.com/source",
+      "notes": "Explain how the reference value was selected."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+name: Validate packs
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out pack repository
+        uses: actions/checkout@v4
+
+      - name: Check out Catverter validator
+        uses: actions/checkout@v4
+        with:
+          repository: namireki/CatverterV2
+          path: .catverter-validator
+
+      - name: Set up .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          global-json-file: .catverter-validator/global.json
+
+      - name: Validate pack repository
+        run: >-
+          dotnet run
+          --project .catverter-validator/tools/Catverter.ContentTool/Catverter.ContentTool.csproj
+          -- validate-pack-repository "$GITHUB_WORKSPACE"

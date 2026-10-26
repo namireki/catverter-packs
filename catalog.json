@@ -1,0 +1,17 @@
+{
+  "$schema": "schemas/catverter-catalog-v1.schema.json",
+  "documentType": "catverter-catalog",
+  "schemaVersion": 1,
+  "repositoryId": "io.github.namireki.catverter.packs",
+  "version": "1.0.0",
+  "minimumAppVersion": "1.0.0",
+  "packs": [
+    {
+      "packageId": "io.github.namireki.catverter.pack.office-life",
+      "id": "office-life",
+      "version": "1.0.0",
+      "file": "office-life.json",
+      "sha256": "63a1a3c2e4059acd425f02e7a60c92c6215e1785c419b64d818d89931a050aed"
+    }
+  ]
+}

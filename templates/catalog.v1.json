@@ -1,0 +1,17 @@
+{
+  "$schema": "../schemas/catverter-catalog-v1.schema.json",
+  "documentType": "catverter-catalog",
+  "schemaVersion": 1,
+  "repositoryId": "org.example.catverter.packs",
+  "version": "1.0.0",
+  "minimumAppVersion": "1.0.0",
+  "packs": [
+    {
+      "packageId": "org.example.catverter.pack.example-pack",
+      "id": "example-pack",
+      "version": "1.0.0",
+      "file": "example-pack.json",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+    }
+  ]
+}
