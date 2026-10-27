@@ -21,5 +21,12 @@ When a pack changes:
    endings and no byte-order mark.
 4. Increment the catalog content version.
 
+Refresh catalog hashes and validate the complete repository with:
+
+```pwsh
+dotnet run --project tools/Catverter.PackValidator -- update-catalog .
+dotnet run --project tools/Catverter.PackValidator -- validate-pack-repository .
+```
+
 Unless explicitly stated otherwise, contributions submitted for inclusion are
 provided under Apache License 2.0 as described by Section 5 of the license.
