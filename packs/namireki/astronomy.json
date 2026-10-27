@@ -1,0 +1,211 @@
+{
+  "$schema": "../../schemas/catverter-pack-v1.schema.json",
+  "documentType": "catverter-pack",
+  "schemaVersion": 1,
+  "packageId": "com.namirekistudio.catverter.pack.astronomy",
+  "id": "astronomy",
+  "name": "Astronomy",
+  "version": "1.4.0",
+  "minimumAppVersion": "1.0.0",
+  "description": "Approximate cosmic masses, sizes, distances, volumes, and speeds from the Moon to the Sun.",
+  "metadata": { "authors": ["Namireki Studio"], "license": "Apache-2.0", "tags": ["astronomy", "mass", "length", "volume", "speed"] },
+  "modifiers": [
+    { "id": "miniature", "name": "miniature", "multiplier": 0.1, "quantities": ["Mass", "Length", "Volume"], "combinationGroup": "scale" },
+    { "id": "colossal", "name": "colossal", "multiplier": 10, "quantities": ["Mass", "Length", "Volume"], "combinationGroup": "scale" },
+    { "id": "impossibly-large", "name": "impossibly large", "multiplier": 100, "quantities": ["Mass", "Length", "Volume"], "combinationGroup": "scale" },
+    { "id": "leisurely", "name": "leisurely", "multiplier": 0.5, "quantities": ["Speed"], "combinationGroup": "pace" },
+    { "id": "relativistic", "name": "relativistic", "multiplier": 2, "quantities": ["Speed"], "combinationGroup": "pace" }
+  ],
+  "conversions": [
+    {
+      "id": "moon-mass",
+      "singularName": "Moon mass",
+      "pluralName": "Moon masses",
+      "quantity": "Mass",
+      "unit": "Kilogram",
+      "value": 7.34767309245735e22
+    },
+    {
+      "id": "earth-mass",
+      "singularName": "Earth mass",
+      "pluralName": "Earth masses",
+      "quantity": "Mass",
+      "unit": "Kilogram",
+      "value": 5.97219e24
+    },
+    {
+      "id": "mars-mass",
+      "singularName": "Mars mass",
+      "pluralName": "Mars masses",
+      "quantity": "Mass",
+      "unit": "Kilogram",
+      "value": 6.42e23
+    },
+    {
+      "id": "jupiter-mass",
+      "singularName": "Jupiter mass",
+      "pluralName": "Jupiter masses",
+      "quantity": "Mass",
+      "unit": "Kilogram",
+      "value": 1.89813e27
+    },
+    {
+      "id": "saturn-mass",
+      "singularName": "Saturn mass",
+      "pluralName": "Saturn masses",
+      "quantity": "Mass",
+      "unit": "Kilogram",
+      "value": 5.68e26
+    },
+    {
+      "id": "sun-mass",
+      "singularName": "Sun mass",
+      "pluralName": "Sun masses",
+      "quantity": "Mass",
+      "unit": "Kilogram",
+      "value": 1.989e30
+    },
+    {
+      "id": "moon-diameter",
+      "singularName": "Moon diameter",
+      "pluralName": "Moon diameters",
+      "quantity": "Length",
+      "unit": "Kilometer",
+      "value": 3475
+    },
+    {
+      "id": "earth-diameter",
+      "singularName": "Earth diameter",
+      "pluralName": "Earth diameters",
+      "quantity": "Length",
+      "unit": "Kilometer",
+      "value": 12756
+    },
+    {
+      "id": "jupiter-diameter",
+      "singularName": "Jupiter diameter",
+      "pluralName": "Jupiter diameters",
+      "quantity": "Length",
+      "unit": "Kilometer",
+      "value": 142984
+    },
+    {
+      "id": "sun-diameter",
+      "singularName": "Sun diameter",
+      "pluralName": "Sun diameters",
+      "quantity": "Length",
+      "unit": "Kilometer",
+      "value": 1392000
+    },
+    {
+      "id": "earth-moon-distance",
+      "singularName": "Earth–Moon average distance",
+      "pluralName": "Earth–Moon average distances",
+      "quantity": "Length",
+      "unit": "Kilometer",
+      "value": 384400
+    },
+    {
+      "id": "astronomical-unit",
+      "singularName": "astronomical unit",
+      "pluralName": "astronomical units",
+      "quantity": "Length",
+      "unit": "Kilometer",
+      "value": 149597870.7
+    },
+    {
+      "id": "light-second",
+      "singularName": "light-second",
+      "pluralName": "light-seconds",
+      "quantity": "Length",
+      "unit": "Kilometer",
+      "value": 299792.458
+    },
+    {
+      "id": "light-minute",
+      "singularName": "light-minute",
+      "pluralName": "light-minutes",
+      "quantity": "Length",
+      "unit": "Kilometer",
+      "value": 17987547.48
+    },
+    {
+      "id": "moon-volume",
+      "singularName": "Moon volume",
+      "pluralName": "Moon volumes",
+      "quantity": "Volume",
+      "unit": "CubicKilometer",
+      "value": 21971669064
+    },
+    {
+      "id": "earth-volume",
+      "singularName": "Earth volume",
+      "pluralName": "Earth volumes",
+      "quantity": "Volume",
+      "unit": "CubicKilometer",
+      "value": 1083206916846
+    },
+    {
+      "id": "moon-orbital-speed",
+      "singularName": "Moon orbital speed",
+      "pluralName": "Moon orbital speeds",
+      "quantity": "Speed",
+      "unit": "KilometerPerHour",
+      "value": 3680.5
+    },
+    {
+      "id": "earth-orbital-speed",
+      "singularName": "Earth orbital speed",
+      "pluralName": "Earth orbital speeds",
+      "quantity": "Speed",
+      "unit": "KilometerPerHour",
+      "value": 107218
+    },
+    {
+      "id": "earth-escape-speed",
+      "singularName": "Earth escape speed",
+      "pluralName": "Earth escape speeds",
+      "quantity": "Speed",
+      "unit": "KilometerPerHour",
+      "value": 40284
+    },
+    {
+      "id": "speed-of-light",
+      "singularName": "speed of light",
+      "pluralName": "speeds of light",
+      "quantity": "Speed",
+      "unit": "KilometerPerHour",
+      "value": 1079252848.8
+    },
+    {"id":"bennu-mass","singularName":"asteroid Bennu mass","pluralName":"asteroid Bennu masses","quantity":"Mass","unit":"Kilogram","value":73000000000},
+    {"id":"ceres-mass","singularName":"Ceres mass","pluralName":"Ceres masses","quantity":"Mass","unit":"Kilogram","value":938350000000000000000},
+    {"id":"mercury-mass","singularName":"Mercury mass","pluralName":"Mercury masses","quantity":"Mass","unit":"Kilogram","value":3.3011e+23},
+    {"id":"venus-mass","singularName":"Venus mass","pluralName":"Venus masses","quantity":"Mass","unit":"Kilogram","value":4.8675e+24},
+    {"id":"neptune-mass","singularName":"Neptune mass","pluralName":"Neptune masses","quantity":"Mass","unit":"Kilogram","value":1.02413e+26},
+    {"id":"brown-dwarf-mass","singularName":"brown dwarf mass","pluralName":"brown dwarf masses","quantity":"Mass","unit":"Kilogram","value":3.8e+28},
+    {"id":"milky-way-mass","singularName":"Milky Way mass","pluralName":"Milky Way masses","quantity":"Mass","unit":"Kilogram","value":2.98e+42},
+    {"id":"karman-line-height","singularName":"Kármán line high","pluralName":"Kármán lines high","quantity":"Length","unit":"Kilometer","value":100,"aspect":"height"},
+    {"id":"iss-orbit-height","singularName":"ISS orbit high","pluralName":"ISS orbits high","quantity":"Length","unit":"Kilometer","value":400,"aspect":"height"},
+    {"id":"earth-mars-minimum-distance","singularName":"minimum Earth–Mars distance","pluralName":"minimum Earth–Mars distances","quantity":"Length","unit":"Kilometer","value":54600000},
+    {"id":"light-hour","singularName":"light-hour","pluralName":"light-hours","quantity":"Length","unit":"Kilometer","value":1079252848.8},
+    {"id":"neptune-sun-distance","singularName":"average Neptune–Sun distance","pluralName":"average Neptune–Sun distances","quantity":"Length","unit":"Kilometer","value":4495000000},
+    {"id":"pluto-sun-distance","singularName":"average Pluto–Sun distance","pluralName":"average Pluto–Sun distances","quantity":"Length","unit":"Kilometer","value":5906000000},
+    {"id":"light-day","singularName":"light-day","pluralName":"light-days","quantity":"Length","unit":"Kilometer","value":25902068371.2},
+    {"id":"light-year","singularName":"light-year","pluralName":"light-years","quantity":"Length","unit":"Kilometer","value":9460730472580.8},
+    {"id":"parsec","singularName":"parsec","pluralName":"parsecs","quantity":"Length","unit":"Kilometer","value":30856775814913.7},
+    {"id":"milky-way-diameter","singularName":"Milky Way diameter","pluralName":"Milky Way diameters","quantity":"Length","unit":"Kilometer","value":946073047258080000},
+    {"id":"halley-nucleus-volume","singularName":"Halley's Comet nucleus volume","pluralName":"Halley's Comet nucleus volumes","quantity":"Volume","unit":"CubicKilometer","value":500},
+    {"id":"ceres-volume","singularName":"Ceres volume","pluralName":"Ceres volumes","quantity":"Volume","unit":"CubicKilometer","value":4340000000},
+    {"id":"mercury-volume","singularName":"Mercury volume","pluralName":"Mercury volumes","quantity":"Volume","unit":"CubicKilometer","value":60830000000},
+    {"id":"mars-volume","singularName":"Mars volume","pluralName":"Mars volumes","quantity":"Volume","unit":"CubicKilometer","value":163180000000},
+    {"id":"venus-volume","singularName":"Venus volume","pluralName":"Venus volumes","quantity":"Volume","unit":"CubicKilometer","value":928430000000},
+    {"id":"jupiter-volume","singularName":"Jupiter volume","pluralName":"Jupiter volumes","quantity":"Volume","unit":"CubicKilometer","value":1431280000000000},
+    {"id":"sun-volume","singularName":"Sun volume","pluralName":"Sun volumes","quantity":"Volume","unit":"CubicKilometer","value":1412000000000000000},
+    {"id":"moon-escape-speed","singularName":"Moon escape speed","pluralName":"Moon escape speeds","quantity":"Speed","unit":"KilometerPerHour","value":8552},
+    {"id":"iss-orbital-speed","singularName":"ISS orbital speed","pluralName":"ISS orbital speeds","quantity":"Speed","unit":"KilometerPerHour","value":27600},
+    {"id":"voyager-one-speed","singularName":"Voyager 1 speed","pluralName":"Voyager 1 speeds","quantity":"Speed","unit":"KilometerPerHour","value":61200},
+    {"id":"mercury-orbital-speed","singularName":"Mercury orbital speed","pluralName":"Mercury orbital speeds","quantity":"Speed","unit":"KilometerPerHour","value":170500},
+    {"id":"parker-solar-probe-speed","singularName":"Parker Solar Probe speed","pluralName":"Parker Solar Probe speeds","quantity":"Speed","unit":"KilometerPerHour","value":635266},
+    {"id":"solar-system-galactic-speed","singularName":"Solar System galactic speed","pluralName":"Solar System galactic speeds","quantity":"Speed","unit":"KilometerPerHour","value":828000}
+  ]
+}

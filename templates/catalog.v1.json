@@ -5,13 +5,37 @@
   "repositoryId": "org.example.catverter.packs",
   "version": "1.0.0",
   "minimumAppVersion": "1.0.0",
+  "contentBaseUrl": "https://raw.githubusercontent.com/example/catverter-packs/{revision}/",
+  "sourceCatalog": {
+    "repository": "https://github.com/example/catverter",
+    "revision": "0000000000000000000000000000000000000000",
+    "file": "packs/catalog.json",
+    "repositoryId": "org.example.catverter.embedded-packs",
+    "version": "1.0.0"
+  },
   "packs": [
     {
       "packageId": "org.example.catverter.pack.example-pack",
       "id": "example-pack",
       "version": "1.0.0",
+      "classification": "contributed",
+      "maintainer": "example-author",
       "file": "packs/example-author/example-pack.json",
       "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+    }
+  ],
+  "locales": [
+    {
+      "locale": "fr",
+      "name": "Français",
+      "file": "locales/fr.json",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "source": {
+        "repository": "https://github.com/example/catverter",
+        "revision": "0000000000000000000000000000000000000000",
+        "file": "packs/locales/fr.json",
+        "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+      }
     }
   ]
 }

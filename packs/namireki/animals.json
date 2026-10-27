@@ -1,0 +1,212 @@
+{
+  "$schema": "../../schemas/catverter-pack-v1.schema.json",
+  "documentType": "catverter-pack",
+  "schemaVersion": 1,
+  "packageId": "com.namirekistudio.catverter.pack.animals",
+  "id": "animals",
+  "name": "Animals",
+  "version": "1.4.0",
+  "minimumAppVersion": "1.0.0",
+  "description": "Approximate animal masses, lengths, and speeds for wildly relatable comparisons.",
+  "metadata": { "authors": ["Namireki Studio"], "license": "Apache-2.0", "tags": ["animals", "mass", "length", "speed"] },
+  "modifiers": [
+    { "id": "tiny", "name": "tiny", "multiplier": 0.5, "quantities": ["Mass", "Length"], "combinationGroup": "scale" },
+    { "id": "hefty", "name": "hefty", "multiplier": 1.5, "quantities": ["Mass"], "combinationGroup": "scale" },
+    { "id": "towering", "name": "towering", "multiplier": 2, "quantities": ["Length"], "aspects": ["height"], "combinationGroup": "stature", "incompatibleWith": ["tiny"] },
+    { "id": "turbo", "name": "turbo", "multiplier": 2, "quantities": ["Speed"], "combinationGroup": "pace" }
+  ],
+  "conversions": [
+    {
+      "id": "mouse-mass",
+      "singularName": "mouse",
+      "pluralName": "mice",
+      "quantity": "Mass",
+      "unit": "Gram",
+      "value": 25
+    },
+    {
+      "id": "hamster-mass",
+      "singularName": "hamster",
+      "pluralName": "hamsters",
+      "quantity": "Mass",
+      "unit": "Gram",
+      "value": 120
+    },
+    {
+      "id": "rabbit-mass",
+      "singularName": "rabbit",
+      "pluralName": "rabbits",
+      "quantity": "Mass",
+      "unit": "Kilogram",
+      "value": 2
+    },
+    {
+      "id": "cat-mass",
+      "singularName": "cat",
+      "pluralName": "cats",
+      "quantity": "Mass",
+      "unit": "Kilogram",
+      "value": 4.5
+    },
+    {
+      "id": "corgi-mass",
+      "singularName": "corgi",
+      "pluralName": "corgis",
+      "quantity": "Mass",
+      "unit": "Kilogram",
+      "value": 12
+    },
+    {
+      "id": "capybara-mass",
+      "singularName": "capybara",
+      "pluralName": "capybaras",
+      "quantity": "Mass",
+      "unit": "Kilogram",
+      "value": 50
+    },
+    {
+      "id": "giant-panda-mass",
+      "singularName": "giant panda",
+      "pluralName": "giant pandas",
+      "quantity": "Mass",
+      "unit": "Kilogram",
+      "value": 100
+    },
+    {
+      "id": "lion-mass",
+      "singularName": "lion",
+      "pluralName": "lions",
+      "quantity": "Mass",
+      "unit": "Kilogram",
+      "value": 190
+    },
+    {
+      "id": "polar-bear-mass",
+      "singularName": "polar bear",
+      "pluralName": "polar bears",
+      "quantity": "Mass",
+      "unit": "Kilogram",
+      "value": 450
+    },
+    {
+      "id": "african-elephant-mass",
+      "singularName": "African elephant",
+      "pluralName": "African elephants",
+      "quantity": "Mass",
+      "unit": "Kilogram",
+      "value": 6000
+    },
+    {
+      "id": "blue-whale-mass",
+      "singularName": "blue whale",
+      "pluralName": "blue whales",
+      "quantity": "Mass",
+      "unit": "Kilogram",
+      "value": 120000
+    },
+    {
+      "id": "dachshund-length",
+      "singularName": "dachshund",
+      "pluralName": "dachshunds",
+      "quantity": "Length",
+      "unit": "Centimeter",
+      "value": 45
+    },
+    {
+      "id": "emperor-penguin-height",
+      "singularName": "emperor penguin",
+      "pluralName": "emperor penguins",
+      "quantity": "Length",
+      "unit": "Meter",
+      "value": 1.15,
+      "aspect": "height"
+    },
+    {
+      "id": "giraffe-height",
+      "singularName": "giraffe",
+      "pluralName": "giraffes",
+      "quantity": "Length",
+      "unit": "Meter",
+      "value": 5.5,
+      "aspect": "height"
+    },
+    {
+      "id": "blue-whale-length",
+      "singularName": "blue whale",
+      "pluralName": "blue whales",
+      "quantity": "Length",
+      "unit": "Meter",
+      "value": 25
+    },
+    {
+      "id": "sloth-speed",
+      "singularName": "sloth at full speed",
+      "pluralName": "sloths at full speed",
+      "quantity": "Speed",
+      "unit": "KilometerPerHour",
+      "value": 0.24
+    },
+    {
+      "id": "house-cat-speed",
+      "singularName": "sprinting house cat",
+      "pluralName": "sprinting house cats",
+      "quantity": "Speed",
+      "unit": "KilometerPerHour",
+      "value": 48
+    },
+    {
+      "id": "greyhound-speed",
+      "singularName": "racing greyhound",
+      "pluralName": "racing greyhounds",
+      "quantity": "Speed",
+      "unit": "KilometerPerHour",
+      "value": 72
+    },
+    {
+      "id": "cheetah-speed",
+      "singularName": "sprinting cheetah",
+      "pluralName": "sprinting cheetahs",
+      "quantity": "Speed",
+      "unit": "KilometerPerHour",
+      "value": 100
+    },
+    {
+      "id": "peregrine-falcon-dive-speed",
+      "singularName": "diving peregrine falcon",
+      "pluralName": "diving peregrine falcons",
+      "quantity": "Speed",
+      "unit": "KilometerPerHour",
+      "value": 320
+    },
+    {"id":"ladybug-mass","singularName":"ladybug","pluralName":"ladybugs","quantity":"Mass","unit":"Gram","value":0.021},
+    {"id":"bumblebee-mass","singularName":"bumblebee","pluralName":"bumblebees","quantity":"Mass","unit":"Gram","value":0.175},
+    {"id":"goldfish-mass","singularName":"goldfish","pluralName":"goldfish","quantity":"Mass","unit":"Gram","value":200},
+    {"id":"chicken-mass","singularName":"chicken","pluralName":"chickens","quantity":"Mass","unit":"Kilogram","value":2.5},
+    {"id":"red-fox-mass","singularName":"red fox","pluralName":"red foxes","quantity":"Mass","unit":"Kilogram","value":6},
+    {"id":"sheep-mass","singularName":"sheep","pluralName":"sheep","quantity":"Mass","unit":"Kilogram","value":70},
+    {"id":"horse-mass","singularName":"horse","pluralName":"horses","quantity":"Mass","unit":"Kilogram","value":500},
+    {"id":"hippopotamus-mass","singularName":"hippopotamus","pluralName":"hippopotamuses","quantity":"Mass","unit":"Kilogram","value":1500},
+    {"id":"sperm-whale-mass","singularName":"sperm whale","pluralName":"sperm whales","quantity":"Mass","unit":"Kilogram","value":40000},
+    {"id":"ant-length","singularName":"ant long","pluralName":"ants long","quantity":"Length","unit":"Millimeter","value":5},
+    {"id":"garden-snail-length","singularName":"garden snail long","pluralName":"garden snails long","quantity":"Length","unit":"Centimeter","value":3},
+    {"id":"mouse-body-length","singularName":"mouse body long","pluralName":"mouse bodies long","quantity":"Length","unit":"Centimeter","value":9},
+    {"id":"rabbit-body-length","singularName":"rabbit body long","pluralName":"rabbit bodies long","quantity":"Length","unit":"Centimeter","value":40},
+    {"id":"wolf-body-length","singularName":"wolf body long","pluralName":"wolf bodies long","quantity":"Length","unit":"Meter","value":1.6},
+    {"id":"ostrich-height","singularName":"ostrich tall","pluralName":"ostriches tall","quantity":"Length","unit":"Meter","value":2.7,"aspect":"height"},
+    {"id":"elephant-height","singularName":"African elephant tall","pluralName":"African elephants tall","quantity":"Length","unit":"Meter","value":3.3,"aspect":"height"},
+    {"id":"saltwater-crocodile-length","singularName":"saltwater crocodile long","pluralName":"saltwater crocodiles long","quantity":"Length","unit":"Meter","value":5.2},
+    {"id":"orca-length","singularName":"orca long","pluralName":"orcas long","quantity":"Length","unit":"Meter","value":7},
+    {"id":"whale-shark-length","singularName":"whale shark long","pluralName":"whale sharks long","quantity":"Length","unit":"Meter","value":12},
+    {"id":"giant-squid-length","singularName":"giant squid long","pluralName":"giant squid long","quantity":"Length","unit":"Meter","value":13},
+    {"id":"garden-snail-speed","singularName":"racing garden snail","pluralName":"racing garden snails","quantity":"Speed","unit":"KilometerPerHour","value":0.05},
+    {"id":"giant-tortoise-speed","singularName":"determined giant tortoise","pluralName":"determined giant tortoises","quantity":"Speed","unit":"KilometerPerHour","value":0.3},
+    {"id":"walking-elephant-speed","singularName":"walking elephant","pluralName":"walking elephants","quantity":"Speed","unit":"KilometerPerHour","value":6},
+    {"id":"rabbit-sprint-speed","singularName":"sprinting rabbit","pluralName":"sprinting rabbits","quantity":"Speed","unit":"KilometerPerHour","value":40},
+    {"id":"dolphin-swim-speed","singularName":"swimming dolphin","pluralName":"swimming dolphins","quantity":"Speed","unit":"KilometerPerHour","value":55},
+    {"id":"racehorse-speed","singularName":"galloping racehorse","pluralName":"galloping racehorses","quantity":"Speed","unit":"KilometerPerHour","value":70},
+    {"id":"ostrich-run-speed","singularName":"running ostrich","pluralName":"running ostriches","quantity":"Speed","unit":"KilometerPerHour","value":72},
+    {"id":"sailfish-speed","singularName":"sprinting sailfish","pluralName":"sprinting sailfish","quantity":"Speed","unit":"KilometerPerHour","value":110},
+    {"id":"common-swift-speed","singularName":"flying common swift","pluralName":"flying common swifts","quantity":"Speed","unit":"KilometerPerHour","value":170},
+    {"id":"golden-eagle-dive-speed","singularName":"diving golden eagle","pluralName":"diving golden eagles","quantity":"Speed","unit":"KilometerPerHour","value":240}
+  ]
+}

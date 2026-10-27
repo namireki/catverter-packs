@@ -1,5 +1,6 @@
 using System.Text;
 using System.Text.Json;
+using System.Text.Json.Nodes;
 using Xunit;
 
 namespace Catverter.PackValidator.Tests;
@@ -19,6 +20,122 @@ public sealed class PackRepositoryValidatorTests : IDisposable
 
         Assert.True(result.IsValid, string.Join(Environment.NewLine, result.Errors));
         Assert.Equal(1, result.PackCount);
+        Assert.Equal(0, result.OfficialPackCount);
+        Assert.Equal(1, result.ContributedPackCount);
+    }
+
+    [Fact]
+    public void Validate_AcceptsOfficialPackWithReservedOwnership()
+    {
+        CreateValidRepository(
+            catalogPath: "packs/namireki/sample.json",
+            packAuthor: "namireki",
+            packageId: "com.namirekistudio.catverter.pack.sample",
+            classification: "official",
+            maintainer: "namireki",
+            authorName: "Namireki Studio",
+            repository: "https://github.com/namireki/catverter-packs");
+
+        var result = new PackRepositoryValidator().Validate(_root);
+
+        Assert.True(result.IsValid, string.Join(Environment.NewLine, result.Errors));
+        Assert.Equal(1, result.OfficialPackCount);
+        Assert.Equal(0, result.ContributedPackCount);
+    }
+
+    [Fact]
+    public void Validate_RejectsContributedPackUsingOfficialNamespace()
+    {
+        CreateValidRepository(
+            catalogPath: "packs/namireki/sample.json",
+            packAuthor: "namireki",
+            packageId: "com.namirekistudio.catverter.pack.sample",
+            maintainer: "namireki");
+
+        var result = new PackRepositoryValidator().Validate(_root);
+
+        Assert.False(result.IsValid);
+        Assert.Contains(
+            result.Errors,
+            error => error.Contains("reserved official namespace", StringComparison.Ordinal));
+    }
+
+    [Fact]
+    public void Validate_RejectsLocaleMissingOfficialConversion()
+    {
+        CreateValidRepository(
+            catalogPath: "packs/namireki/sample.json",
+            packAuthor: "namireki",
+            packageId: "com.namirekistudio.catverter.pack.sample",
+            classification: "official",
+            maintainer: "namireki",
+            authorName: "Namireki Studio");
+        var localePath = Path.Combine(_root, "locales", "it.json");
+        var locale = JsonNode.Parse(File.ReadAllText(localePath, Encoding.UTF8))!.AsObject();
+        locale["packs"]!["sample"]!["conversions"]!.AsObject().Remove("sample-mass");
+        File.WriteAllText(localePath, locale.ToJsonString(), new UTF8Encoding(false));
+
+        var result = new PackRepositoryValidator().Validate(_root);
+
+        Assert.False(result.IsValid);
+        Assert.Contains(
+            result.Errors,
+            error => error.Contains(
+                "conversions is missing 'sample-mass'",
+                StringComparison.Ordinal));
+    }
+
+    [Fact]
+    public void Validate_RejectsMaintainerThatDoesNotMatchFolder()
+    {
+        CreateValidRepository(maintainer: "different-author");
+
+        var result = new PackRepositoryValidator().Validate(_root);
+
+        Assert.False(result.IsValid);
+        Assert.Contains(
+            result.Errors,
+            error => error.Contains("must match the pack folder", StringComparison.Ordinal));
+    }
+
+    [Fact]
+    public void Validate_RejectsUnknownClassification()
+    {
+        CreateValidRepository(classification: "trusted");
+
+        var result = new PackRepositoryValidator().Validate(_root);
+
+        Assert.False(result.IsValid);
+        Assert.Contains(
+            result.Errors,
+            error => error.Contains(
+                "classification must be 'official' or 'contributed'",
+                StringComparison.Ordinal));
+    }
+
+    [Fact]
+    public void Validate_RejectsOfficialPackWithoutSourceProvenance()
+    {
+        CreateValidRepository(
+            catalogPath: "packs/namireki/sample.json",
+            packAuthor: "namireki",
+            packageId: "com.namirekistudio.catverter.pack.sample",
+            classification: "official",
+            maintainer: "namireki",
+            authorName: "Namireki Studio");
+        var catalogPath = Path.Combine(_root, "catalog.json");
+        var catalog = JsonNode.Parse(File.ReadAllText(catalogPath, Encoding.UTF8))!.AsObject();
+        catalog["packs"]![0]!.AsObject().Remove("source");
+        File.WriteAllText(catalogPath, catalog.ToJsonString(), new UTF8Encoding(false));
+
+        var result = new PackRepositoryValidator().Validate(_root);
+
+        Assert.False(result.IsValid);
+        Assert.Contains(
+            result.Errors,
+            error => error.Contains(
+                "source is required for an official pack",
+                StringComparison.Ordinal));
     }
 
     [Theory]
@@ -80,6 +197,28 @@ public sealed class PackRepositoryValidatorTests : IDisposable
         Assert.Equal(expectedHash, actualHash);
     }
 
+    [Fact]
+    public void UpdateCatalog_RefreshesLocaleHash()
+    {
+        CreateValidRepository();
+        var catalogPath = Path.Combine(_root, "catalog.json");
+        var catalog = JsonNode.Parse(File.ReadAllText(catalogPath, Encoding.UTF8))!.AsObject();
+        catalog["locales"]![0]!["sha256"] = new string('0', 64);
+        File.WriteAllText(catalogPath, catalog.ToJsonString(), new UTF8Encoding(false));
+
+        var result = new PackRepositoryValidator().UpdateCatalog(_root);
+
+        Assert.True(result.IsValid, string.Join(Environment.NewLine, result.Errors));
+        var updated = JsonDocument.Parse(File.ReadAllText(catalogPath, Encoding.UTF8));
+        var actualHash = updated.RootElement
+            .GetProperty("locales")[0]
+            .GetProperty("sha256")
+            .GetString();
+        var expectedHash = PackRepositoryValidator.ComputeCanonicalSha256(
+            Path.Combine(_root, "locales", "it.json"));
+        Assert.Equal(expectedHash, actualHash);
+    }
+
     public void Dispose()
     {
         if (Directory.Exists(_root))
@@ -90,24 +229,35 @@ public sealed class PackRepositoryValidatorTests : IDisposable
 
     private void CreateValidRepository(
         string catalogPath = "packs/author/sample.json",
-        string? hashOverride = null)
+        string? hashOverride = null,
+        string packAuthor = "author",
+        string packageId = "io.github.author.catverter.sample",
+        string classification = "contributed",
+        string maintainer = "author",
+        string authorName = "Example Author",
+        string repository = "https://github.com/author/catverter-packs")
     {
-        var packDirectory = Path.Combine(_root, "packs", "author");
+        var packDirectory = Path.Combine(_root, "packs", packAuthor);
         Directory.CreateDirectory(packDirectory);
         var packPath = Path.Combine(packDirectory, "sample.json");
         File.WriteAllText(
             packPath,
-            """
+            $$"""
             {
               "$schema": "../../schemas/catverter-pack-v1.schema.json",
               "documentType": "catverter-pack",
               "schemaVersion": 1,
-              "packageId": "io.github.author.catverter.sample",
+              "packageId": "{{packageId}}",
               "id": "sample",
               "name": "Sample",
               "version": "1.0.0",
               "minimumAppVersion": "1.0.0",
               "description": "Sample pack.",
+              "metadata": {
+                "authors": ["{{authorName}}"],
+                "license": "Apache-2.0",
+                "repository": "{{repository}}"
+              },
               "conversions": [
                 {
                   "id": "sample-mass",
@@ -123,6 +273,35 @@ public sealed class PackRepositoryValidatorTests : IDisposable
             new UTF8Encoding(false));
 
         var hash = hashOverride ?? PackRepositoryValidator.ComputeCanonicalSha256(packPath);
+        var localeDirectory = Path.Combine(_root, "locales");
+        Directory.CreateDirectory(localeDirectory);
+        var localePath = Path.Combine(localeDirectory, "it.json");
+        File.WriteAllText(
+            localePath,
+            """
+            {
+              "$schema": "../schemas/catverter-locale-v1.schema.json",
+              "documentType": "catverter-locale",
+              "schemaVersion": 1,
+              "locale": "it",
+              "name": "Italiano",
+              "strings": {},
+              "packs": {
+                "sample": {
+                  "name": "Esempio",
+                  "description": "Pacchetto di esempio.",
+                  "conversions": {
+                    "sample-mass": {
+                      "one": "esempio",
+                      "other": "esempi"
+                    }
+                  }
+                }
+              }
+            }
+            """,
+            new UTF8Encoding(false));
+        var localeHash = PackRepositoryValidator.ComputeCanonicalSha256(localePath);
         var catalog = $$"""
             {
               "$schema": "schemas/catverter-catalog-v1.schema.json",
@@ -131,13 +310,43 @@ public sealed class PackRepositoryValidatorTests : IDisposable
               "repositoryId": "io.github.author.catverter.packs",
               "version": "1.0.0",
               "minimumAppVersion": "1.0.0",
+              "contentBaseUrl": "https://raw.githubusercontent.com/namireki/catverter-packs/{revision}/",
+              "sourceCatalog": {
+                "repository": "https://github.com/namireki/CatverterV2",
+                "revision": "0000000000000000000000000000000000000000",
+                "file": "packs/catalog.json",
+                "repositoryId": "com.namirekistudio.catverter.packs",
+                "version": "1.7.0"
+              },
               "packs": [
                 {
-                  "packageId": "io.github.author.catverter.sample",
+                  "packageId": "{{packageId}}",
                   "id": "sample",
                   "version": "1.0.0",
+                  "classification": "{{classification}}",
+                  "maintainer": "{{maintainer}}",
                   "file": "{{catalogPath.Replace("\\", "\\\\", StringComparison.Ordinal)}}",
-                  "sha256": "{{hash}}"
+                  "sha256": "{{hash}}",
+                  "source": {
+                    "repository": "https://github.com/namireki/CatverterV2",
+                    "revision": "0000000000000000000000000000000000000000",
+                    "file": "packs/sample.json",
+                    "sha256": "{{hash}}"
+                  }
+                }
+              ],
+              "locales": [
+                {
+                  "locale": "it",
+                  "name": "Italiano",
+                  "file": "locales/it.json",
+                  "sha256": "{{localeHash}}",
+                  "source": {
+                    "repository": "https://github.com/namireki/CatverterV2",
+                    "revision": "0000000000000000000000000000000000000000",
+                    "file": "packs/locales/it.json",
+                    "sha256": "{{localeHash}}"
+                  }
                 }
               ]
             }

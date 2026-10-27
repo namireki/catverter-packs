@@ -1,0 +1,214 @@
+{
+  "$schema": "../../schemas/catverter-pack-v1.schema.json",
+  "documentType": "catverter-pack",
+  "schemaVersion": 1,
+  "packageId": "com.namirekistudio.catverter.pack.cats",
+  "id": "cats",
+  "name": "Cats",
+  "version": "1.4.0",
+  "minimumAppVersion": "1.0.0",
+  "description": "Approximate kitten, breed, body-part, cat-supply, and zoomie-sized comparisons.",
+  "metadata": { "authors": ["Namireki Studio"], "license": "Apache-2.0", "tags": ["cats", "mass", "length", "volume", "speed"] },
+  "modifiers": [
+    { "id": "tiny", "name": "tiny", "multiplier": 0.5, "quantities": ["Mass", "Length", "Volume"], "combinationGroup": "scale" },
+    { "id": "slim", "name": "slim", "multiplier": 0.75, "quantities": ["Mass"], "combinationGroup": "build" },
+    { "id": "chonky", "name": "chonky", "multiplier": 1.5, "quantities": ["Mass"], "combinationGroup": "build" },
+    { "id": "long", "name": "long", "multiplier": 2, "quantities": ["Length"], "combinationGroup": "proportion" },
+    { "id": "huge", "name": "huge", "multiplier": 3, "quantities": ["Mass", "Length", "Volume"], "combinationGroup": "scale" },
+    { "id": "zoomy", "name": "zoomy", "multiplier": 2, "quantities": ["Speed"], "combinationGroup": "pace" }
+  ],
+  "conversions": [
+    {
+      "id": "kibble-piece-mass",
+      "singularName": "piece of cat kibble",
+      "pluralName": "pieces of cat kibble",
+      "quantity": "Mass",
+      "unit": "Gram",
+      "value": 0.35,
+      "modifierIds": ["tiny", "huge"]
+    },
+    {
+      "id": "cat-treat-mass",
+      "singularName": "cat treat",
+      "pluralName": "cat treats",
+      "quantity": "Mass",
+      "unit": "Gram",
+      "value": 2,
+      "modifierIds": ["tiny", "huge"]
+    },
+    {
+      "id": "newborn-kitten-mass",
+      "singularName": "newborn kitten",
+      "pluralName": "newborn kittens",
+      "quantity": "Mass",
+      "unit": "Gram",
+      "value": 100
+    },
+    {
+      "id": "eight-week-kitten-mass",
+      "singularName": "eight-week-old kitten",
+      "pluralName": "eight-week-old kittens",
+      "quantity": "Mass",
+      "unit": "Kilogram",
+      "value": 0.9
+    },
+    {
+      "id": "siamese-cat-mass",
+      "singularName": "Siamese cat",
+      "pluralName": "Siamese cats",
+      "quantity": "Mass",
+      "unit": "Kilogram",
+      "value": 4
+    },
+    {
+      "id": "domestic-cat-mass",
+      "singularName": "average domestic cat",
+      "pluralName": "average domestic cats",
+      "quantity": "Mass",
+      "unit": "Kilogram",
+      "value": 4.5
+    },
+    {
+      "id": "british-shorthair-mass",
+      "singularName": "British Shorthair",
+      "pluralName": "British Shorthairs",
+      "quantity": "Mass",
+      "unit": "Kilogram",
+      "value": 5.5
+    },
+    {
+      "id": "norwegian-forest-cat-mass",
+      "singularName": "Norwegian Forest Cat",
+      "pluralName": "Norwegian Forest Cats",
+      "quantity": "Mass",
+      "unit": "Kilogram",
+      "value": 6
+    },
+    {
+      "id": "ragdoll-cat-mass",
+      "singularName": "Ragdoll cat",
+      "pluralName": "Ragdoll cats",
+      "quantity": "Mass",
+      "unit": "Kilogram",
+      "value": 7
+    },
+    {
+      "id": "maine-coon-mass",
+      "singularName": "Maine Coon",
+      "pluralName": "Maine Coons",
+      "quantity": "Mass",
+      "unit": "Kilogram",
+      "value": 9
+    },
+    {
+      "id": "cat-claw-length",
+      "singularName": "cat claw",
+      "pluralName": "cat claws",
+      "quantity": "Length",
+      "unit": "Centimeter",
+      "value": 1
+    },
+    {
+      "id": "cat-paw-width",
+      "singularName": "cat paw width",
+      "pluralName": "cat paw widths",
+      "quantity": "Length",
+      "unit": "Centimeter",
+      "value": 4
+    },
+    {
+      "id": "cat-whisker-length",
+      "singularName": "cat whisker",
+      "pluralName": "cat whiskers",
+      "quantity": "Length",
+      "unit": "Centimeter",
+      "value": 7.5
+    },
+    {
+      "id": "cat-tail-length",
+      "singularName": "cat tail",
+      "pluralName": "cat tails",
+      "quantity": "Length",
+      "unit": "Centimeter",
+      "value": 30
+    },
+    {
+      "id": "domestic-cat-body-length",
+      "singularName": "domestic-cat body length",
+      "pluralName": "domestic-cat body lengths",
+      "quantity": "Length",
+      "unit": "Centimeter",
+      "value": 46
+    },
+    {
+      "id": "maine-coon-nose-to-tail",
+      "singularName": "Maine Coon from nose to tail",
+      "pluralName": "Maine Coons from nose to tail",
+      "quantity": "Length",
+      "unit": "Meter",
+      "value": 1
+    },
+    {
+      "id": "cat-water-bowl-volume",
+      "singularName": "cat water bowlful",
+      "pluralName": "cat water bowlfuls",
+      "quantity": "Volume",
+      "unit": "Milliliter",
+      "value": 250
+    },
+    {
+      "id": "litter-tray-fill-volume",
+      "singularName": "litter-tray fill",
+      "pluralName": "litter-tray fills",
+      "quantity": "Volume",
+      "unit": "Liter",
+      "value": 10
+    },
+    {
+      "id": "kitten-zoomie-speed",
+      "singularName": "kitten zoomie",
+      "pluralName": "kitten zoomies",
+      "quantity": "Speed",
+      "unit": "KilometerPerHour",
+      "value": 32
+    },
+    {
+      "id": "adult-cat-sprint-speed",
+      "singularName": "sprinting adult cat",
+      "pluralName": "sprinting adult cats",
+      "quantity": "Speed",
+      "unit": "KilometerPerHour",
+      "value": 48
+    },
+    {"id":"cat-hair-mass","singularName":"cat hair","pluralName":"cat hairs","quantity":"Mass","unit":"Gram","value":0.0001},
+    {"id":"shed-claw-sheath-mass","singularName":"shed claw sheath","pluralName":"shed claw sheaths","quantity":"Mass","unit":"Gram","value":0.02},
+    {"id":"toy-mouse-mass","singularName":"toy mouse","pluralName":"toy mice","quantity":"Mass","unit":"Gram","value":15},
+    {"id":"wet-food-pouch-mass","singularName":"wet-food pouch","pluralName":"wet-food pouches","quantity":"Mass","unit":"Gram","value":85},
+    {"id":"four-month-kitten-mass","singularName":"four-month-old kitten","pluralName":"four-month-old kittens","quantity":"Mass","unit":"Kilogram","value":2},
+    {"id":"sphynx-cat-mass","singularName":"Sphynx cat","pluralName":"Sphynx cats","quantity":"Mass","unit":"Kilogram","value":3.5},
+    {"id":"bengal-cat-mass","singularName":"Bengal cat","pluralName":"Bengal cats","quantity":"Mass","unit":"Kilogram","value":5},
+    {"id":"chonky-cat-mass","singularName":"certified chonky cat","pluralName":"certified chonky cats","quantity":"Mass","unit":"Kilogram","value":15},
+    {"id":"cat-hair-width","singularName":"cat hair wide","pluralName":"cat hairs wide","quantity":"Length","unit":"Millimeter","value":0.06,"aspect":"width"},
+    {"id":"kitten-claw-length","singularName":"kitten claw long","pluralName":"kitten claws long","quantity":"Length","unit":"Centimeter","value":0.5},
+    {"id":"cat-ear-length","singularName":"cat ear tall","pluralName":"cat ears tall","quantity":"Length","unit":"Centimeter","value":6,"aspect":"height"},
+    {"id":"cat-tongue-length","singularName":"cat tongue long","pluralName":"cat tongues long","quantity":"Length","unit":"Centimeter","value":8},
+    {"id":"cat-pawstep-length","singularName":"cat pawstep","pluralName":"cat pawsteps","quantity":"Length","unit":"Centimeter","value":25},
+    {"id":"kitten-body-length","singularName":"kitten body long","pluralName":"kitten bodies long","quantity":"Length","unit":"Centimeter","value":30},
+    {"id":"cat-full-stretch-length","singularName":"fully stretched cat long","pluralName":"fully stretched cats long","quantity":"Length","unit":"Centimeter","value":75},
+    {"id":"cat-tree-height","singularName":"cat tree tall","pluralName":"cat trees tall","quantity":"Length","unit":"Meter","value":1.5,"aspect":"height"},
+    {"id":"cat-vertical-jump-height","singularName":"cat vertical jump high","pluralName":"cat vertical jumps high","quantity":"Length","unit":"Meter","value":1.8,"aspect":"height"},
+    {"id":"cat-standing-reach-height","singularName":"cat standing reach high","pluralName":"cat standing reaches high","quantity":"Length","unit":"Meter","value":2.3,"aspect":"height"},
+    {"id":"single-lap-volume","singularName":"single cat lap","pluralName":"single cat laps","quantity":"Volume","unit":"Milliliter","value":0.1},
+    {"id":"cat-treat-volume","singularName":"cat-treat-sized volume","pluralName":"cat-treat-sized volumes","quantity":"Volume","unit":"Milliliter","value":5},
+    {"id":"wet-food-pouch-volume","singularName":"wet-food pouch","pluralName":"wet-food pouches","quantity":"Volume","unit":"Milliliter","value":85},
+    {"id":"dry-food-cup-volume","singularName":"cup of dry cat food","pluralName":"cups of dry cat food","quantity":"Volume","unit":"Milliliter","value":250},
+    {"id":"cat-carrier-volume","singularName":"cat carrier","pluralName":"cat carriers","quantity":"Volume","unit":"Liter","value":50},
+    {"id":"cardboard-box-volume","singularName":"cat-approved cardboard box","pluralName":"cat-approved cardboard boxes","quantity":"Volume","unit":"Liter","value":60},
+    {"id":"cat-stalk-speed","singularName":"stalking cat","pluralName":"stalking cats","quantity":"Speed","unit":"KilometerPerHour","value":0.25},
+    {"id":"cat-saunter-speed","singularName":"sauntering cat","pluralName":"sauntering cats","quantity":"Speed","unit":"KilometerPerHour","value":3},
+    {"id":"cat-hallway-trot-speed","singularName":"hallway-trotting cat","pluralName":"hallway-trotting cats","quantity":"Speed","unit":"KilometerPerHour","value":12},
+    {"id":"cat-pounce-speed","singularName":"pouncing cat","pluralName":"pouncing cats","quantity":"Speed","unit":"KilometerPerHour","value":25},
+    {"id":"laser-chase-speed","singularName":"laser-chasing cat","pluralName":"laser-chasing cats","quantity":"Speed","unit":"KilometerPerHour","value":35},
+    {"id":"bathtub-escape-speed","singularName":"cat escaping a bathtub","pluralName":"cats escaping a bathtub","quantity":"Speed","unit":"KilometerPerHour","value":40}
+  ]
+}

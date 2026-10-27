@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:com.namirekistudio.catverter:schema:locale:v1",
+  "title": "Catverter localization v1",
+  "description": "The Catverter localization v1 contract.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["$schema", "documentType", "schemaVersion", "locale", "name"],
+  "properties": {
+    "$schema": { "type": "string", "minLength": 1 },
+    "documentType": { "const": "catverter-locale" },
+    "schemaVersion": { "const": 1 },
+    "locale": { "type": "string", "minLength": 2 },
+    "name": { "type": "string", "minLength": 1 },
+    "strings": {
+      "type": "object",
+      "propertyNames": { "minLength": 1 },
+      "additionalProperties": { "type": "string" }
+    },
+    "modifiers": { "$ref": "#/$defs/modifiers" },
+    "packs": {
+      "type": "object",
+      "propertyNames": { "$ref": "#/$defs/id" },
+      "additionalProperties": { "$ref": "#/$defs/pack" }
+    }
+  },
+  "$defs": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$"
+    },
+    "pluralText": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "one": { "type": "string", "minLength": 1 },
+        "other": { "type": "string", "minLength": 1 }
+      },
+      "anyOf": [
+        { "required": ["one"] },
+        { "required": ["other"] }
+      ]
+    },
+    "modifierText": {
+      "allOf": [
+        { "$ref": "#/$defs/pluralText" },
+        {
+          "type": "object",
+          "properties": {
+            "one": { "type": "string", "pattern": "\\{unit\\}" },
+            "other": { "type": "string", "pattern": "\\{unit\\}" }
+          }
+        }
+      ]
+    },
+    "modifiers": {
+      "type": "object",
+      "propertyNames": { "$ref": "#/$defs/id" },
+      "additionalProperties": { "$ref": "#/$defs/modifierText" }
+    },
+    "pack": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "name": { "type": "string" },
+        "description": { "type": "string" },
+        "conversions": {
+          "type": "object",
+          "propertyNames": { "$ref": "#/$defs/id" },
+          "additionalProperties": { "$ref": "#/$defs/pluralText" }
+        },
+        "modifiers": { "$ref": "#/$defs/modifiers" }
+      }
+    }
+  }
+}
