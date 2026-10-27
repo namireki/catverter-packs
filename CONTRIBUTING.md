@@ -9,9 +9,22 @@ a stable lowercase slug such as your GitHub username. A contributor may own
 multiple pack files in the same author folder. Pack files directly in the
 repository root are not accepted.
 
+Catalog entries for submissions must use `classification: "contributed"` and
+set `maintainer` to the same author slug used by the pack folder. The
+`com.namirekistudio.catverter.pack.*` package namespace is reserved for
+official packs. Classification is a trust decision made during repository
+review and must never be inferred from display names or maintainer names.
+
 Use invariant UnitsNet quantity and unit names. Include a useful range of
 values, document approximations, cite published reference values with HTTPS
 `sourceUrl` entries, and use only text or media you have permission to submit.
+
+Locale files live at `locales/<locale>.json` and must be listed in
+`catalog.json`. A locale may omit contributed packs, but every official pack
+must have a localized name, description, and `one`/`other` forms for every
+conversion. Each official modifier must be provided either in the locale's
+global modifier map or in that pack's modifier map, and every modifier form
+must contain `{unit}`.
 
 When a pack changes:
 

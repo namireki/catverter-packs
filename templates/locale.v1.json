@@ -1,0 +1,26 @@
+{
+  "$schema": "../schemas/catverter-locale-v1.schema.json",
+  "documentType": "catverter-locale",
+  "schemaVersion": 1,
+  "locale": "fr",
+  "name": "Français",
+  "strings": {},
+  "modifiers": {
+    "tiny": {
+      "one": "{unit} miniature",
+      "other": "{unit} miniatures"
+    }
+  },
+  "packs": {
+    "example-pack": {
+      "name": "Pack exemple",
+      "description": "Description localisée du pack exemple.",
+      "conversions": {
+        "example-mass": {
+          "one": "objet exemple",
+          "other": "objets exemples"
+        }
+      }
+    }
+  }
+}

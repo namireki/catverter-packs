@@ -1,0 +1,210 @@
+{
+  "$schema": "../../schemas/catverter-pack-v1.schema.json",
+  "documentType": "catverter-pack",
+  "schemaVersion": 1,
+  "packageId": "com.namirekistudio.catverter.pack.household-items",
+  "id": "household-items",
+  "name": "Household items",
+  "version": "1.4.0",
+  "minimumAppVersion": "1.0.0",
+  "description": "Approximate everyday masses, lengths, and volumes from around the home.",
+  "metadata": { "authors": ["Namireki Studio"], "license": "Apache-2.0", "tags": ["household", "mass", "length", "volume"] },
+  "modifiers": [
+    { "id": "tiny", "name": "tiny", "multiplier": 0.5, "quantities": ["Mass", "Length", "Volume"], "combinationGroup": "scale" },
+    { "id": "slim", "name": "slim", "multiplier": 0.75, "quantities": ["Mass"], "combinationGroup": "profile" },
+    { "id": "oversized", "name": "oversized", "multiplier": 2, "quantities": ["Length"], "combinationGroup": "scale" },
+    { "id": "industrial", "name": "industrial-sized", "multiplier": 3, "quantities": ["Mass", "Volume"], "combinationGroup": "grade" }
+  ],
+  "conversions": [
+    {
+      "id": "paper-clip-mass",
+      "singularName": "paper clip",
+      "pluralName": "paper clips",
+      "quantity": "Mass",
+      "unit": "Gram",
+      "value": 1
+    },
+    {
+      "id": "house-key-mass",
+      "singularName": "house key",
+      "pluralName": "house keys",
+      "quantity": "Mass",
+      "unit": "Gram",
+      "value": 7
+    },
+    {
+      "id": "aa-battery-mass",
+      "singularName": "AA battery",
+      "pluralName": "AA batteries",
+      "quantity": "Mass",
+      "unit": "Gram",
+      "value": 23
+    },
+    {
+      "id": "smartphone-mass",
+      "singularName": "smartphone",
+      "pluralName": "smartphones",
+      "quantity": "Mass",
+      "unit": "Gram",
+      "value": 180
+    },
+    {
+      "id": "ceramic-mug-mass",
+      "singularName": "ceramic mug",
+      "pluralName": "ceramic mugs",
+      "quantity": "Mass",
+      "unit": "Gram",
+      "value": 350
+    },
+    {
+      "id": "laptop-mass",
+      "singularName": "laptop",
+      "pluralName": "laptops",
+      "quantity": "Mass",
+      "unit": "Kilogram",
+      "value": 1.5
+    },
+    {
+      "id": "toaster-mass",
+      "singularName": "toaster",
+      "pluralName": "toasters",
+      "quantity": "Mass",
+      "unit": "Kilogram",
+      "value": 1.8
+    },
+    {
+      "id": "dining-chair-mass",
+      "singularName": "dining chair",
+      "pluralName": "dining chairs",
+      "quantity": "Mass",
+      "unit": "Kilogram",
+      "value": 6
+    },
+    {
+      "id": "microwave-mass",
+      "singularName": "microwave oven",
+      "pluralName": "microwave ovens",
+      "quantity": "Mass",
+      "unit": "Kilogram",
+      "value": 12
+    },
+    {
+      "id": "washing-machine-mass",
+      "singularName": "washing machine",
+      "pluralName": "washing machines",
+      "quantity": "Mass",
+      "unit": "Kilogram",
+      "value": 70
+    },
+    {
+      "id": "credit-card-length",
+      "singularName": "credit card",
+      "pluralName": "credit cards",
+      "quantity": "Length",
+      "unit": "Millimeter",
+      "value": 85.6
+    },
+    {
+      "id": "teaspoon-length",
+      "singularName": "teaspoon",
+      "pluralName": "teaspoons",
+      "quantity": "Length",
+      "unit": "Centimeter",
+      "value": 14
+    },
+    {
+      "id": "pencil-length",
+      "singularName": "pencil",
+      "pluralName": "pencils",
+      "quantity": "Length",
+      "unit": "Centimeter",
+      "value": 19
+    },
+    {
+      "id": "dinner-plate-diameter",
+      "singularName": "dinner plate",
+      "pluralName": "dinner plates",
+      "quantity": "Length",
+      "unit": "Centimeter",
+      "value": 27
+    },
+    {
+      "id": "broom-length",
+      "singularName": "broom",
+      "pluralName": "brooms",
+      "quantity": "Length",
+      "unit": "Meter",
+      "value": 1.4
+    },
+    {
+      "id": "sofa-length",
+      "singularName": "sofa",
+      "pluralName": "sofas",
+      "quantity": "Length",
+      "unit": "Meter",
+      "value": 2.1
+    },
+    {
+      "id": "teaspoon-volume",
+      "singularName": "teaspoonful",
+      "pluralName": "teaspoonfuls",
+      "quantity": "Volume",
+      "unit": "Milliliter",
+      "value": 5
+    },
+    {
+      "id": "coffee-mug-volume",
+      "singularName": "mugful",
+      "pluralName": "mugfuls",
+      "quantity": "Volume",
+      "unit": "Milliliter",
+      "value": 350
+    },
+    {
+      "id": "bucket-volume",
+      "singularName": "bucketful",
+      "pluralName": "bucketfuls",
+      "quantity": "Volume",
+      "unit": "Liter",
+      "value": 10
+    },
+    {
+      "id": "bathtub-volume",
+      "singularName": "bathtub",
+      "pluralName": "bathtubs",
+      "quantity": "Volume",
+      "unit": "Liter",
+      "value": 150
+    },
+    {"id":"postage-stamp-mass","singularName":"postage stamp","pluralName":"postage stamps","quantity":"Mass","unit":"Gram","value":0.05},
+    {"id":"sheet-paper-mass","singularName":"sheet of paper","pluralName":"sheets of paper","quantity":"Mass","unit":"Gram","value":5},
+    {"id":"teaspoon-mass","singularName":"teaspoon","pluralName":"teaspoons","quantity":"Mass","unit":"Gram","value":25},
+    {"id":"remote-control-mass","singularName":"remote control","pluralName":"remote controls","quantity":"Mass","unit":"Gram","value":150},
+    {"id":"hardcover-book-mass","singularName":"hardcover book","pluralName":"hardcover books","quantity":"Mass","unit":"Gram","value":800},
+    {"id":"electric-kettle-mass","singularName":"electric kettle","pluralName":"electric kettles","quantity":"Mass","unit":"Kilogram","value":1.2},
+    {"id":"vacuum-cleaner-mass","singularName":"vacuum cleaner","pluralName":"vacuum cleaners","quantity":"Mass","unit":"Kilogram","value":6},
+    {"id":"floor-lamp-mass","singularName":"floor lamp","pluralName":"floor lamps","quantity":"Mass","unit":"Kilogram","value":8},
+    {"id":"refrigerator-mass","singularName":"refrigerator","pluralName":"refrigerators","quantity":"Mass","unit":"Kilogram","value":100},
+    {"id":"upright-piano-mass","singularName":"upright piano","pluralName":"upright pianos","quantity":"Mass","unit":"Kilogram","value":230},
+    {"id":"salt-grain-length","singularName":"grain of salt wide","pluralName":"grains of salt wide","quantity":"Length","unit":"Millimeter","value":0.3},
+    {"id":"sewing-needle-length","singularName":"sewing needle long","pluralName":"sewing needles long","quantity":"Length","unit":"Centimeter","value":4},
+    {"id":"house-key-length","singularName":"house key long","pluralName":"house keys long","quantity":"Length","unit":"Centimeter","value":6},
+    {"id":"remote-control-length","singularName":"remote control long","pluralName":"remote controls long","quantity":"Length","unit":"Centimeter","value":18},
+    {"id":"rolling-pin-length","singularName":"rolling pin long","pluralName":"rolling pins long","quantity":"Length","unit":"Centimeter","value":45},
+    {"id":"pillow-length","singularName":"pillow long","pluralName":"pillows long","quantity":"Length","unit":"Centimeter","value":65},
+    {"id":"umbrella-length","singularName":"umbrella long","pluralName":"umbrellas long","quantity":"Length","unit":"Centimeter","value":90},
+    {"id":"floor-lamp-height","singularName":"floor lamp tall","pluralName":"floor lamps tall","quantity":"Length","unit":"Meter","value":1.6,"aspect":"height"},
+    {"id":"dining-table-length","singularName":"dining table long","pluralName":"dining tables long","quantity":"Length","unit":"Meter","value":2},
+    {"id":"extension-cord-length","singularName":"extension cord long","pluralName":"extension cords long","quantity":"Length","unit":"Meter","value":10},
+    {"id":"medicine-drop-volume","singularName":"medicine drop","pluralName":"medicine drops","quantity":"Volume","unit":"Milliliter","value":0.05},
+    {"id":"thimble-volume","singularName":"thimbleful","pluralName":"thimblefuls","quantity":"Volume","unit":"Milliliter","value":2},
+    {"id":"tablespoon-volume","singularName":"tablespoonful","pluralName":"tablespoonfuls","quantity":"Volume","unit":"Milliliter","value":15},
+    {"id":"drinking-glass-volume","singularName":"drinking glass","pluralName":"drinking glasses","quantity":"Volume","unit":"Milliliter","value":250},
+    {"id":"kettle-volume","singularName":"kettleful","pluralName":"kettlefuls","quantity":"Volume","unit":"Liter","value":1.7},
+    {"id":"saucepan-volume","singularName":"saucepanful","pluralName":"saucepanfuls","quantity":"Volume","unit":"Liter","value":3},
+    {"id":"kitchen-sink-volume","singularName":"kitchen sink","pluralName":"kitchen sinks","quantity":"Volume","unit":"Liter","value":20},
+    {"id":"wheelie-bin-volume","singularName":"wheelie bin","pluralName":"wheelie bins","quantity":"Volume","unit":"Liter","value":120},
+    {"id":"refrigerator-volume","singularName":"refrigerator interior","pluralName":"refrigerator interiors","quantity":"Volume","unit":"Liter","value":350},
+    {"id":"room-volume","singularName":"roomful","pluralName":"roomfuls","quantity":"Volume","unit":"Liter","value":30000}
+  ]
+}

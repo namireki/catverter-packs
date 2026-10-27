@@ -1,0 +1,212 @@
+{
+  "$schema": "../../schemas/catverter-pack-v1.schema.json",
+  "documentType": "catverter-pack",
+  "schemaVersion": 1,
+  "packageId": "com.namirekistudio.catverter.pack.big-stuff",
+  "id": "big-stuff",
+  "name": "Big stuff",
+  "version": "1.4.0",
+  "minimumAppVersion": "1.0.0",
+  "description": "Approximate fields, pools, vehicles, landmarks, and other satisfyingly oversized comparisons.",
+  "metadata": { "authors": ["Namireki Studio"], "license": "Apache-2.0", "tags": ["big-stuff", "mass", "length", "volume"] },
+  "modifiers": [
+    { "id": "compact", "name": "compact", "multiplier": 0.5, "quantities": ["Mass", "Length", "Volume"], "combinationGroup": "scale" },
+    { "id": "supersized", "name": "supersized", "multiplier": 2, "quantities": ["Mass", "Length", "Volume"], "combinationGroup": "scale" },
+    { "id": "monumental", "name": "monumental", "multiplier": 3, "quantities": ["Mass", "Length", "Volume"], "combinationGroup": "style" },
+    { "id": "towering", "name": "towering", "multiplier": 1.5, "quantities": ["Length"], "aspects": ["height"], "combinationGroup": "stature", "incompatibleWith": ["compact"] }
+  ],
+  "conversions": [
+    {
+      "id": "bowling-lane-length",
+      "singularName": "bowling lane",
+      "pluralName": "bowling lanes",
+      "quantity": "Length",
+      "unit": "Meter",
+      "value": 18.288
+    },
+    {
+      "id": "tennis-court-length",
+      "singularName": "tennis court",
+      "pluralName": "tennis courts",
+      "quantity": "Length",
+      "unit": "Meter",
+      "value": 23.77
+    },
+    {
+      "id": "basketball-court-length",
+      "singularName": "basketball court",
+      "pluralName": "basketball courts",
+      "quantity": "Length",
+      "unit": "Meter",
+      "value": 28
+    },
+    {
+      "id": "baseball-base-path",
+      "singularName": "baseball base path",
+      "pluralName": "baseball base paths",
+      "quantity": "Length",
+      "unit": "Meter",
+      "value": 27.432
+    },
+    {
+      "id": "olympic-pool-length",
+      "singularName": "Olympic pool length",
+      "pluralName": "Olympic pool lengths",
+      "quantity": "Length",
+      "unit": "Meter",
+      "value": 50
+    },
+    {
+      "id": "football-pitch-length",
+      "singularName": "international football pitch",
+      "pluralName": "international football pitches",
+      "quantity": "Length",
+      "unit": "Meter",
+      "value": 105
+    },
+    {
+      "id": "american-football-field-length",
+      "singularName": "American football field",
+      "pluralName": "American football fields",
+      "quantity": "Length",
+      "unit": "Meter",
+      "value": 109.728
+    },
+    {
+      "id": "colosseum-long-axis",
+      "singularName": "Colosseum long axis",
+      "pluralName": "Colosseum long axes",
+      "quantity": "Length",
+      "unit": "Meter",
+      "value": 189
+    },
+    {
+      "id": "running-track-lap",
+      "singularName": "standard running-track lap",
+      "pluralName": "standard running-track laps",
+      "quantity": "Length",
+      "unit": "Meter",
+      "value": 400
+    },
+    {
+      "id": "eiffel-tower-height",
+      "singularName": "Eiffel Tower",
+      "pluralName": "Eiffel Towers",
+      "quantity": "Length",
+      "unit": "Meter",
+      "value": 330,
+      "aspect": "height"
+    },
+    {
+      "id": "burj-khalifa-height",
+      "singularName": "Burj Khalifa",
+      "pluralName": "Burj Khalifas",
+      "quantity": "Length",
+      "unit": "Meter",
+      "value": 828,
+      "aspect": "height"
+    },
+    {
+      "id": "golden-gate-main-span",
+      "singularName": "Golden Gate Bridge main span",
+      "pluralName": "Golden Gate Bridge main spans",
+      "quantity": "Length",
+      "unit": "Meter",
+      "value": 1280
+    },
+    {
+      "id": "shipping-container-volume",
+      "singularName": "20-foot shipping container",
+      "pluralName": "20-foot shipping containers",
+      "quantity": "Volume",
+      "unit": "Liter",
+      "value": 33200
+    },
+    {
+      "id": "concrete-mixer-volume",
+      "singularName": "concrete mixer load",
+      "pluralName": "concrete mixer loads",
+      "quantity": "Volume",
+      "unit": "Liter",
+      "value": 9000
+    },
+    {
+      "id": "road-tanker-volume",
+      "singularName": "road tanker",
+      "pluralName": "road tankers",
+      "quantity": "Volume",
+      "unit": "Liter",
+      "value": 30000
+    },
+    {
+      "id": "olympic-pool-volume",
+      "singularName": "Olympic-sized pool",
+      "pluralName": "Olympic-sized pools",
+      "quantity": "Volume",
+      "unit": "Liter",
+      "value": 2500000
+    },
+    {
+      "id": "double-decker-bus-mass",
+      "singularName": "double-decker bus",
+      "pluralName": "double-decker buses",
+      "quantity": "Mass",
+      "unit": "Kilogram",
+      "value": 12000
+    },
+    {
+      "id": "loaded-semi-truck-mass",
+      "singularName": "fully loaded semi-truck",
+      "pluralName": "fully loaded semi-trucks",
+      "quantity": "Mass",
+      "unit": "Kilogram",
+      "value": 36000
+    },
+    {
+      "id": "boeing-747-mass",
+      "singularName": "fully loaded Boeing 747",
+      "pluralName": "fully loaded Boeing 747s",
+      "quantity": "Mass",
+      "unit": "Kilogram",
+      "value": 447700
+    },
+    {
+      "id": "eiffel-tower-iron-mass",
+      "singularName": "Eiffel Tower iron structure",
+      "pluralName": "Eiffel Tower iron structures",
+      "quantity": "Mass",
+      "unit": "Kilogram",
+      "value": 7300000
+    },
+    {"id":"grand-piano-mass","singularName":"concert grand piano","pluralName":"concert grand pianos","quantity":"Mass","unit":"Kilogram","value":500},
+    {"id":"loaded-container-mass","singularName":"fully loaded shipping container","pluralName":"fully loaded shipping containers","quantity":"Mass","unit":"Kilogram","value":24000},
+    {"id":"blue-whale-mass","singularName":"blue whale","pluralName":"blue whales","quantity":"Mass","unit":"Kilogram","value":120000},
+    {"id":"freight-locomotive-mass","singularName":"freight locomotive","pluralName":"freight locomotives","quantity":"Mass","unit":"Kilogram","value":200000},
+    {"id":"statue-of-liberty-mass","singularName":"Statue of Liberty","pluralName":"Statues of Liberty","quantity":"Mass","unit":"Kilogram","value":225000},
+    {"id":"space-shuttle-mass","singularName":"launch-ready Space Shuttle","pluralName":"launch-ready Space Shuttles","quantity":"Mass","unit":"Kilogram","value":2030000},
+    {"id":"titanic-mass","singularName":"RMS Titanic","pluralName":"RMS Titanics","quantity":"Mass","unit":"Kilogram","value":52310000},
+    {"id":"empire-state-building-mass","singularName":"Empire State Building","pluralName":"Empire State Buildings","quantity":"Mass","unit":"Kilogram","value":365000000},
+    {"id":"great-pyramid-mass","singularName":"Great Pyramid of Giza","pluralName":"Great Pyramids of Giza","quantity":"Mass","unit":"Kilogram","value":5750000000},
+    {"id":"hoover-dam-mass","singularName":"Hoover Dam","pluralName":"Hoover Dams","quantity":"Mass","unit":"Kilogram","value":6600000000},
+    {"id":"semi-trailer-length","singularName":"semi-trailer long","pluralName":"semi-trailers long","quantity":"Length","unit":"Meter","value":16},
+    {"id":"articulated-bus-length","singularName":"articulated bus long","pluralName":"articulated buses long","quantity":"Length","unit":"Meter","value":18},
+    {"id":"jumbo-jet-length","singularName":"jumbo jet long","pluralName":"jumbo jets long","quantity":"Length","unit":"Meter","value":73},
+    {"id":"london-eye-height","singularName":"London Eye tall","pluralName":"London Eyes tall","quantity":"Length","unit":"Meter","value":135,"aspect":"height"},
+    {"id":"great-pyramid-height","singularName":"Great Pyramid tall","pluralName":"Great Pyramids tall","quantity":"Length","unit":"Meter","value":139,"aspect":"height"},
+    {"id":"cruise-ship-length","singularName":"large cruise ship long","pluralName":"large cruise ships long","quantity":"Length","unit":"Meter","value":362},
+    {"id":"empire-state-building-height","singularName":"Empire State Building tall","pluralName":"Empire State Buildings tall","quantity":"Length","unit":"Meter","value":443,"aspect":"height"},
+    {"id":"channel-tunnel-length","singularName":"Channel Tunnel long","pluralName":"Channel Tunnels long","quantity":"Length","unit":"Kilometer","value":50.5},
+    {"id":"panama-canal-length","singularName":"Panama Canal long","pluralName":"Panama Canals long","quantity":"Length","unit":"Kilometer","value":82},
+    {"id":"great-wall-length","singularName":"Great Wall of China long","pluralName":"Great Walls of China long","quantity":"Length","unit":"Kilometer","value":21196},
+    {"id":"hot-air-balloon-volume","singularName":"hot-air balloon envelope","pluralName":"hot-air balloon envelopes","quantity":"Volume","unit":"Liter","value":2500000},
+    {"id":"water-tower-volume","singularName":"municipal water tower","pluralName":"municipal water towers","quantity":"Volume","unit":"Liter","value":2000000},
+    {"id":"grain-silo-volume","singularName":"large grain silo","pluralName":"large grain silos","quantity":"Volume","unit":"Liter","value":5000000},
+    {"id":"concert-hall-volume","singularName":"concert hall interior","pluralName":"concert hall interiors","quantity":"Volume","unit":"Liter","value":15000000},
+    {"id":"supertanker-volume","singularName":"supertanker cargo hold","pluralName":"supertanker cargo holds","quantity":"Volume","unit":"Liter","value":300000000},
+    {"id":"stadium-volume","singularName":"large stadium bowl","pluralName":"large stadium bowls","quantity":"Volume","unit":"Liter","value":1500000000},
+    {"id":"great-pyramid-volume","singularName":"Great Pyramid volume","pluralName":"Great Pyramid volumes","quantity":"Volume","unit":"Liter","value":2600000000},
+    {"id":"three-gorges-reservoir-volume","singularName":"Three Gorges reservoir","pluralName":"Three Gorges reservoirs","quantity":"Volume","unit":"Liter","value":39300000000000},
+    {"id":"lake-tahoe-volume","singularName":"Lake Tahoe","pluralName":"Lake Tahoes","quantity":"Volume","unit":"Liter","value":150000000000000},
+    {"id":"lake-superior-volume","singularName":"Lake Superior","pluralName":"Lake Superiors","quantity":"Volume","unit":"Liter","value":12100000000000000}
+  ]
+}

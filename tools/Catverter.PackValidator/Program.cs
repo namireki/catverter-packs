@@ -43,7 +43,10 @@ if (!result.IsValid)
 }
 
 var action = args[0] == "update-catalog" ? "Updated and validated" : "Validated";
-Console.WriteLine($"{action} {result.PackCount} pack(s).");
+Console.WriteLine(
+    $"{action} {result.PackCount} pack(s): " +
+    $"{result.OfficialPackCount} official, {result.ContributedPackCount} contributed; " +
+    $"{result.LocaleCount} locale(s).");
 return 0;
 
 static void PrintUsage()

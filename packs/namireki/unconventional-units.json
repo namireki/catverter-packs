@@ -1,0 +1,1442 @@
+{
+  "$schema": "../../schemas/catverter-pack-v1.schema.json",
+  "documentType": "catverter-pack",
+  "schemaVersion": 1,
+  "packageId": "com.namirekistudio.catverter.pack.unconventional-units",
+  "id": "unconventional-units",
+  "name": "Unconventional Units",
+  "version": "1.0.0",
+  "minimumAppVersion": "1.0.0",
+  "description": "Sourced non-coherent units from engineering, science, culture, and everyday comparisons.",
+  "metadata": {
+    "authors": ["Namireki Studio"],
+    "license": "Apache-2.0",
+    "tags": ["unconventional-units", "science", "engineering", "culture"],
+    "accentColor": "#8A5A44"
+  },
+  "conversions": [
+    {
+      "id": "watchmaking-ligne",
+      "singularName": "watchmaking ligne",
+      "pluralName": "watchmaking lignes",
+      "quantity": "Length",
+      "unit": "Millimeter",
+      "value": 2.2558,
+      "sourceUrl": "https://reference.grail-watch.com/word/ligne/",
+      "notes": "Approximate French watchmaking definition; distinct from the button-making ligne."
+    },
+    {
+      "id": "button-ligne",
+      "singularName": "button ligne",
+      "pluralName": "button lignes",
+      "quantity": "Length",
+      "unit": "Inch",
+      "value": 0.025,
+      "sourceUrl": "https://www.hodinkee.com/articles/technical-perspectives-movements-lignes-prime-marks",
+      "notes": "Exactly one fortieth of an inch in button sizing; not the French watchmaking ligne."
+    },
+    {
+      "id": "eurocard-horizontal-pitch",
+      "singularName": "Eurocard horizontal pitch",
+      "pluralName": "Eurocard horizontal pitches",
+      "quantity": "Length",
+      "unit": "Inch",
+      "value": 0.2,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Horizontal_pitch",
+      "notes": "Exactly 0.2 inch; the modular horizontal spacing used by Eurocard equipment."
+    },
+    {
+      "id": "rack-unit",
+      "singularName": "rack unit",
+      "pluralName": "rack units",
+      "quantity": "Length",
+      "unit": "Inch",
+      "value": 1.75,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Rack_unit",
+      "notes": "Exactly 1.75 inches of nominal vertical rack space; equipment includes clearance within that space."
+    },
+    {
+      "id": "hand",
+      "singularName": "hand",
+      "pluralName": "hands",
+      "quantity": "Length",
+      "unit": "Inch",
+      "value": 4,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Hand_(unit)",
+      "notes": "Exactly four inches. Horse-height notation uses the part after the point as inches, not decimal hands."
+    },
+    {
+      "id": "light-nanosecond",
+      "singularName": "light-nanosecond",
+      "pluralName": "light-nanoseconds",
+      "quantity": "Length",
+      "unit": "Centimeter",
+      "value": 29.9792458,
+      "sourceUrl": "https://americanhistory.si.edu/collections/object/nmah_692464",
+      "notes": "Exact distance traveled by light in vacuum during one nanosecond."
+    },
+    {
+      "id": "metric-foot",
+      "singularName": "metric foot",
+      "pluralName": "metric feet",
+      "quantity": "Length",
+      "unit": "Millimeter",
+      "value": 300,
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_non-coherent_units_of_measurement#Metric_foot",
+      "notes": "Unofficial UK usage defined as 300 millimeters."
+    },
+    {
+      "id": "metric-inch",
+      "singularName": "metric inch",
+      "pluralName": "metric inches",
+      "quantity": "Length",
+      "unit": "Millimeter",
+      "value": 25,
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_non-coherent_units_of_measurement#Metric_foot",
+      "notes": "A 25 millimeter spacing used in some Soviet components; not the 25.4 millimeter international inch."
+    },
+    {
+      "id": "horse-length",
+      "singularName": "horse length",
+      "pluralName": "horse lengths",
+      "quantity": "Length",
+      "unit": "Foot",
+      "value": 8,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Horse_length",
+      "notes": "Approximate racing margin represented here as eight feet; actual horses and race conventions vary."
+    },
+    {
+      "id": "rowing-eight-length",
+      "singularName": "rowing eight length",
+      "pluralName": "rowing eight lengths",
+      "quantity": "Length",
+      "unit": "Foot",
+      "value": 62,
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_non-coherent_units_of_measurement#Boat_length",
+      "notes": "Approximate length of a racing eight; other boat-length usages depend on the vessel."
+    },
+    {
+      "id": "american-football-playing-field-length",
+      "singularName": "American football playing-field length",
+      "pluralName": "American football playing-field lengths",
+      "quantity": "Length",
+      "unit": "Yard",
+      "value": 100,
+      "sourceUrl": "https://operations.nfl.com/rules-officiating/2026-nfl-rulebook/",
+      "notes": "Goal-line to goal-line length, excluding the two end zones."
+    },
+    {
+      "id": "american-football-field-width",
+      "singularName": "American football field width",
+      "pluralName": "American football field widths",
+      "quantity": "Length",
+      "unit": "Foot",
+      "value": 160,
+      "aspect": "width",
+      "sourceUrl": "https://operations.nfl.com/rules-officiating/2026-nfl-rulebook/",
+      "notes": "Regulation field width."
+    },
+    {
+      "id": "association-football-pitch-width",
+      "singularName": "recommended international football pitch width",
+      "pluralName": "recommended international football pitch widths",
+      "quantity": "Length",
+      "unit": "Meter",
+      "value": 68,
+      "aspect": "width",
+      "sourceUrl": "https://www.theifab.com/laws/latest/the-field-of-play/",
+      "notes": "Recommended major-competition width; permitted pitch dimensions span wider ranges."
+    },
+    {
+      "id": "canadian-football-playing-field-length",
+      "singularName": "Canadian football playing-field length",
+      "pluralName": "Canadian football playing-field lengths",
+      "quantity": "Length",
+      "unit": "Yard",
+      "value": 110,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Canadian_football#The_field",
+      "notes": "Goal-line to goal-line length, excluding end zones."
+    },
+    {
+      "id": "canadian-football-total-field-length",
+      "singularName": "Canadian football total field length",
+      "pluralName": "Canadian football total field lengths",
+      "quantity": "Length",
+      "unit": "Yard",
+      "value": 150,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Canadian_football#The_field",
+      "notes": "Includes two 20-yard end zones."
+    },
+    {
+      "id": "canadian-football-field-width",
+      "singularName": "Canadian football field width",
+      "pluralName": "Canadian football field widths",
+      "quantity": "Length",
+      "unit": "Yard",
+      "value": 65,
+      "aspect": "width",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Canadian_football#The_field",
+      "notes": "Regulation field width."
+    },
+    {
+      "id": "manhattan-block",
+      "singularName": "Manhattan north-south block",
+      "pluralName": "Manhattan north-south blocks",
+      "quantity": "Length",
+      "unit": "Mile",
+      "value": 0.05,
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_non-coherent_units_of_measurement#Block",
+      "notes": "Approximate one-twentieth-mile short block; generic city blocks are not standardized."
+    },
+    {
+      "id": "mean-earth-radius",
+      "singularName": "mean Earth radius",
+      "pluralName": "mean Earth radii",
+      "quantity": "Length",
+      "unit": "Kilometer",
+      "value": 6371,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Earth_radius",
+      "notes": "Globally averaged radius rounded to the kilometer."
+    },
+    {
+      "id": "barn",
+      "singularName": "barn",
+      "pluralName": "barns",
+      "quantity": "Area",
+      "unit": "SquareMeter",
+      "value": 1e-28,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Barn_(unit)",
+      "notes": "Exactly 10^-28 square meters; used for nuclear and particle cross sections."
+    },
+    {
+      "id": "microbarn-outhouse",
+      "singularName": "outhouse",
+      "pluralName": "outhouses",
+      "quantity": "Area",
+      "unit": "SquareMeter",
+      "value": 1e-34,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Barn_(unit)",
+      "notes": "Humorous name for a microbarn, exactly one millionth of a barn."
+    },
+    {
+      "id": "yoctobarn-shed",
+      "singularName": "shed",
+      "pluralName": "sheds",
+      "quantity": "Area",
+      "unit": "SquareMeter",
+      "value": 1e-52,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Barn_(unit)",
+      "notes": "Humorous name for a yoctobarn, exactly 10^-24 barn."
+    },
+    {
+      "id": "construction-brass-area",
+      "singularName": "construction brass of area",
+      "pluralName": "construction brasses of area",
+      "quantity": "Area",
+      "unit": "SquareFoot",
+      "value": 100,
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_non-coherent_units_of_measurement#Brass_or_square",
+      "notes": "Indian construction usage; distinct from the volume also called a brass."
+    },
+    {
+      "id": "roofing-square",
+      "singularName": "roofing square",
+      "pluralName": "roofing squares",
+      "quantity": "Area",
+      "unit": "SquareFoot",
+      "value": 100,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Square_(unit)",
+      "notes": "North American construction unit. It overlaps numerically with an area brass but has a distinct regional context."
+    },
+    {
+      "id": "association-football-field-area",
+      "singularName": "recommended international football field area",
+      "pluralName": "recommended international football field areas",
+      "quantity": "Area",
+      "unit": "SquareMeter",
+      "value": 7140,
+      "sourceUrl": "https://www.theifab.com/laws/latest/the-field-of-play/",
+      "notes": "Area of the recommended 105 by 68 meter major-competition pitch."
+    },
+    {
+      "id": "american-football-field-area",
+      "singularName": "American football field area",
+      "pluralName": "American football field areas",
+      "quantity": "Area",
+      "unit": "SquareFoot",
+      "value": 57600,
+      "sourceUrl": "https://operations.nfl.com/rules-officiating/2026-nfl-rulebook/",
+      "notes": "Includes both end zones."
+    },
+    {
+      "id": "canadian-football-field-area",
+      "singularName": "Canadian football field area",
+      "pluralName": "Canadian football field areas",
+      "quantity": "Area",
+      "unit": "SquareFoot",
+      "value": 87750,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Canadian_football#The_field",
+      "notes": "Includes both end zones."
+    },
+    {
+      "id": "australian-football-field-area",
+      "singularName": "large Australian football field area",
+      "pluralName": "large Australian football field areas",
+      "quantity": "Area",
+      "unit": "SquareMeter",
+      "value": 15900,
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_non-coherent_units_of_measurement#Football_field_(area)",
+      "notes": "Approximate elliptical area for a 150 by 135 meter playing field."
+    },
+    {
+      "id": "wales-area",
+      "singularName": "area of Wales",
+      "pluralName": "areas of Wales",
+      "quantity": "Area",
+      "unit": "SquareKilometer",
+      "value": 20779,
+      "sourceUrl": "https://www.bbc.co.uk/news/uk-wales-46737277",
+      "notes": "Journalistic comparison using the stated area of Wales."
+    },
+    {
+      "id": "belgium-area",
+      "singularName": "area of Belgium",
+      "pluralName": "areas of Belgium",
+      "quantity": "Area",
+      "unit": "SquareKilometer",
+      "value": 30528,
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_non-coherent_units_of_measurement#Countries,_regions,_and_cities",
+      "notes": "Journalistic comparison using the article's stated area."
+    },
+    {
+      "id": "saarland-area",
+      "singularName": "area of Saarland",
+      "pluralName": "areas of Saarland",
+      "quantity": "Area",
+      "unit": "SquareKilometer",
+      "value": 2569.69,
+      "sourceUrl": "https://www.welt.de/wissenschaft/article6452153/Das-Saarland-das-Vergleichsmass-vieler-Dinge.html",
+      "notes": "German comparison unit using the stated state area."
+    },
+    {
+      "id": "washington-dc-area",
+      "singularName": "area of Washington, D.C.",
+      "pluralName": "areas of Washington, D.C.",
+      "quantity": "Area",
+      "unit": "SquareMile",
+      "value": 61.4,
+      "sourceUrl": "https://www.cia.gov/the-world-factbook/field/area-comparative/",
+      "notes": "Comparative area rounded to one decimal square mile."
+    },
+    {
+      "id": "metric-ounce-25ml",
+      "singularName": "25 mL metric ounce",
+      "pluralName": "25 mL metric ounces",
+      "quantity": "Volume",
+      "unit": "Milliliter",
+      "value": 25,
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_non-coherent_units_of_measurement#Metric_ounce",
+      "notes": "One of two common informal metric-ounce volume conventions."
+    },
+    {
+      "id": "metric-ounce-30ml",
+      "singularName": "30 mL metric ounce",
+      "pluralName": "30 mL metric ounces",
+      "quantity": "Volume",
+      "unit": "Milliliter",
+      "value": 30,
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_non-coherent_units_of_measurement#Metric_ounce",
+      "notes": "One of two common informal metric-ounce volume conventions."
+    },
+    {
+      "id": "metric-ounce-25g",
+      "singularName": "25 g metric ounce",
+      "pluralName": "25 g metric ounces",
+      "quantity": "Mass",
+      "unit": "Gram",
+      "value": 25,
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_non-coherent_units_of_measurement#Metric_ounce",
+      "notes": "One of two common informal metric-ounce mass conventions."
+    },
+    {
+      "id": "metric-ounce-30g",
+      "singularName": "30 g metric ounce",
+      "pluralName": "30 g metric ounces",
+      "quantity": "Mass",
+      "unit": "Gram",
+      "value": 30,
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_non-coherent_units_of_measurement#Metric_ounce",
+      "notes": "One of two common informal metric-ounce mass conventions."
+    },
+    {
+      "id": "dutch-ons",
+      "singularName": "Dutch ons",
+      "pluralName": "Dutch onzen",
+      "quantity": "Mass",
+      "unit": "Gram",
+      "value": 100,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Dutch_units_of_measurement",
+      "notes": "Modern informal Dutch metric ounce redefined as exactly 100 grams."
+    },
+    {
+      "id": "fda-labeling-fluid-ounce",
+      "singularName": "FDA food-labeling fluid ounce",
+      "pluralName": "FDA food-labeling fluid ounces",
+      "quantity": "Volume",
+      "unit": "Milliliter",
+      "value": 30,
+      "sourceUrl": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-101/section-101.9",
+      "notes": "US nutrition-labeling convention; deliberately overlaps the informal 30 mL metric ounce."
+    },
+    {
+      "id": "fda-labeling-ounce-weight",
+      "singularName": "FDA food-labeling ounce by weight",
+      "pluralName": "FDA food-labeling ounces by weight",
+      "quantity": "Mass",
+      "unit": "Gram",
+      "value": 28,
+      "sourceUrl": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-101/section-101.9",
+      "notes": "US nutrition-labeling convention rounded to 28 grams."
+    },
+    {
+      "id": "uk-spirit-shot-25ml",
+      "singularName": "UK 25 mL spirit shot",
+      "pluralName": "UK 25 mL spirit shots",
+      "quantity": "Volume",
+      "unit": "Milliliter",
+      "value": 25,
+      "sourceUrl": "https://www.gov.uk/weights-measures-and-packaging-the-law/specified-quantities",
+      "notes": "One permitted UK single-spirit measure; premises choose either 25 mL or 35 mL."
+    },
+    {
+      "id": "uk-spirit-shot-35ml",
+      "singularName": "UK 35 mL spirit shot",
+      "pluralName": "UK 35 mL spirit shots",
+      "quantity": "Volume",
+      "unit": "Milliliter",
+      "value": 35,
+      "sourceUrl": "https://www.gov.uk/weights-measures-and-packaging-the-law/specified-quantities",
+      "notes": "One permitted UK single-spirit measure; premises choose either 25 mL or 35 mL."
+    },
+    {
+      "id": "wolfram-pony-shot",
+      "singularName": "Wolfram pony shot",
+      "pluralName": "Wolfram pony shots",
+      "quantity": "Volume",
+      "unit": "Milliliter",
+      "value": 29.5735295625,
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_non-coherent_units_of_measurement#Shot",
+      "notes": "The article's explicitly attributed Wolfram Alpha definition of one US fluid ounce; other pony-shot definitions conflict or are ranges."
+    },
+    {
+      "id": "board-foot",
+      "singularName": "board foot",
+      "pluralName": "board feet",
+      "quantity": "Volume",
+      "unit": "BoardFoot",
+      "value": 1,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Board_foot",
+      "notes": "Geometric unit equal to 144 cubic inches; also called super foot or superficial foot in Australia and New Zealand."
+    },
+    {
+      "id": "pound-per-board-foot",
+      "singularName": "pound per board foot",
+      "pluralName": "pounds per board foot",
+      "quantity": "Density",
+      "unit": "PoundPerCubicFoot",
+      "value": 12,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Board_foot",
+      "notes": "Lumber-density unit; exactly 12 pounds per cubic foot because a board foot is one twelfth cubic foot."
+    },
+    {
+      "id": "hoppus-foot",
+      "singularName": "hoppus foot",
+      "pluralName": "hoppus feet",
+      "quantity": "Volume",
+      "unit": "CubicFoot",
+      "value": 1.273,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Hoppus",
+      "notes": "Approximate cubic equivalent of the quarter-girth timber estimate."
+    },
+    {
+      "id": "hoppus-board-foot",
+      "singularName": "hoppus board foot",
+      "pluralName": "hoppus board feet",
+      "quantity": "Volume",
+      "unit": "CubicFoot",
+      "value": 0.10608333333333334,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Hoppus",
+      "notes": "One twelfth of a hoppus foot; it yields about one conventional board foot after milling."
+    },
+    {
+      "id": "hoppus-ton",
+      "singularName": "hoppus ton",
+      "pluralName": "hoppus tons",
+      "quantity": "Volume",
+      "unit": "CubicFoot",
+      "value": 63.65,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Hoppus",
+      "notes": "Fifty hoppus feet; a timber-volume unit rather than a mass."
+    },
+    {
+      "id": "lumber-cubic-ton",
+      "singularName": "lumber cubic ton",
+      "pluralName": "lumber cubic tons",
+      "quantity": "Volume",
+      "unit": "CubicFoot",
+      "value": 40,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Cubic_ton",
+      "notes": "Current lumber convention; historical commodity definitions ranged from about 16 to 45 cubic feet."
+    },
+    {
+      "id": "construction-brass-volume",
+      "singularName": "construction brass of loose material",
+      "pluralName": "construction brasses of loose material",
+      "quantity": "Volume",
+      "unit": "CubicFoot",
+      "value": 100,
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_non-coherent_units_of_measurement#Brass_or_square",
+      "notes": "Indian construction usage for loose materials; distinct from the 100-square-foot area brass."
+    },
+    {
+      "id": "cord",
+      "singularName": "cord of stacked wood",
+      "pluralName": "cords of stacked wood",
+      "quantity": "Volume",
+      "unit": "CubicFoot",
+      "value": 128,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Cord_(unit)",
+      "notes": "Nominal stacked volume of aligned firewood, including air gaps."
+    },
+    {
+      "id": "sixteen-inch-face-cord",
+      "singularName": "16-inch face cord",
+      "pluralName": "16-inch face cords",
+      "quantity": "Volume",
+      "unit": "CubicFoot",
+      "value": 42.666666666666664,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Cord_(unit)#Firewood_measurements",
+      "notes": "Common 4-foot by 8-foot by 16-inch stack, exactly one third of a 128-cubic-foot cord; other regional rick and face-cord definitions vary."
+    },
+    {
+      "id": "acre-foot",
+      "singularName": "acre-foot",
+      "pluralName": "acre-feet",
+      "quantity": "Volume",
+      "unit": "AcreFoot",
+      "value": 1,
+      "sourceUrl": "https://www.usgs.gov/special-topics/water-science-school/science/acre-foot",
+      "notes": "Exactly one acre of area to a depth of one foot."
+    },
+    {
+      "id": "nist-olympic-pool",
+      "singularName": "NIST Olympic swimming pool",
+      "pluralName": "NIST Olympic swimming pools",
+      "quantity": "Volume",
+      "unit": "Liter",
+      "value": 1000000,
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_non-coherent_units_of_measurement#Casual_units",
+      "notes": "NIST educational comparison of one million liters; distinct from the existing 2.5-million-liter competition-pool conversion."
+    },
+    {
+      "id": "melbourne-cricket-ground-volume",
+      "singularName": "Melbourne Cricket Ground volume",
+      "pluralName": "Melbourne Cricket Ground volumes",
+      "quantity": "Volume",
+      "unit": "CubicMeter",
+      "value": 1574000,
+      "sourceUrl": "https://www.abc.net.au/news/2015-08-20/surveyors-find-exact-measurements-of-melbourne-cricket-ground/6709520",
+      "notes": "Survey-based stadium-bowl volume used as an Australian comparison."
+    },
+    {
+      "id": "sydney-harbour",
+      "singularName": "Sydney Harbour volume",
+      "pluralName": "Sydney Harbour volumes",
+      "quantity": "Volume",
+      "unit": "CubicMeter",
+      "value": 562000000,
+      "sourceUrl": "https://www.smh.com.au/national/the-secret-harbour-uncovered-20041211-gdkah2.html",
+      "notes": "Approximate volume of Port Jackson used for Australian water comparisons."
+    },
+    {
+      "id": "grand-canyon-volume",
+      "singularName": "Grand Canyon volume",
+      "pluralName": "Grand Canyon volumes",
+      "quantity": "Volume",
+      "unit": "CubicMeter",
+      "value": 4.17e12,
+      "sourceUrl": "https://www.nps.gov/grca/learn/management/statistics.htm",
+      "notes": "National Park Service estimate used for very large-volume comparisons."
+    },
+    {
+      "id": "miners-inch-new-zealand",
+      "singularName": "New Zealand miner's inch",
+      "pluralName": "New Zealand miner's inches",
+      "quantity": "VolumeFlow",
+      "unit": "CubicFootPerSecond",
+      "value": 0.016666666666666666,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Miner%27s_inch",
+      "notes": "Regional definition of one sixtieth cubic foot per second."
+    },
+    {
+      "id": "miners-inch-fiftieth",
+      "singularName": "one-fiftieth miner's inch",
+      "pluralName": "one-fiftieth miner's inches",
+      "quantity": "VolumeFlow",
+      "unit": "CubicFootPerSecond",
+      "value": 0.02,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Miner%27s_inch",
+      "notes": "Regional definition used in southern California and several western US states."
+    },
+    {
+      "id": "miners-inch-fortieth",
+      "singularName": "one-fortieth miner's inch",
+      "pluralName": "one-fortieth miner's inches",
+      "quantity": "VolumeFlow",
+      "unit": "CubicFootPerSecond",
+      "value": 0.025,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Miner%27s_inch",
+      "notes": "Regional definition used in Arizona, northern California, Montana, Nevada, and Oregon."
+    },
+    {
+      "id": "miners-inch-colorado",
+      "singularName": "Colorado miner's inch",
+      "pluralName": "Colorado miner's inches",
+      "quantity": "VolumeFlow",
+      "unit": "CubicFootPerSecond",
+      "value": 0.02631578947368421,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Miner%27s_inch",
+      "notes": "Colorado definition of one thirty-eighth cubic foot per second."
+    },
+    {
+      "id": "miners-inch-british-columbia",
+      "singularName": "British Columbia miner's inch",
+      "pluralName": "British Columbia miner's inches",
+      "quantity": "VolumeFlow",
+      "unit": "CubicFootPerSecond",
+      "value": 0.027777777777777776,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Miner%27s_inch",
+      "notes": "British Columbia definition of one thirty-sixth cubic foot per second."
+    },
+    {
+      "id": "electronvolt-mass",
+      "singularName": "electronvolt per c-squared of mass",
+      "pluralName": "electronvolts per c-squared of mass",
+      "quantity": "Mass",
+      "unit": "Kilogram",
+      "value": 1.782661921e-36,
+      "sourceUrl": "https://physics.nist.gov/cgi-bin/cuu/Value?eqevkg",
+      "notes": "CODATA mass equivalent of one electronvolt divided by the speed of light squared."
+    },
+    {
+      "id": "old-cement-bag",
+      "singularName": "old hundredweight cement bag",
+      "pluralName": "old hundredweight cement bags",
+      "quantity": "Mass",
+      "unit": "Pound",
+      "value": 112,
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_non-coherent_units_of_measurement#Bag_of_cement_and_bag_mix",
+      "notes": "Historical British bag mass of one long hundredweight."
+    },
+    {
+      "id": "cement-bag",
+      "singularName": "US concrete-industry cement bag",
+      "pluralName": "US concrete-industry cement bags",
+      "quantity": "Mass",
+      "unit": "Pound",
+      "value": 94,
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_non-coherent_units_of_measurement#Bag_of_cement_and_bag_mix",
+      "notes": "Concrete and petroleum-industry convention chosen because the cement occupies about one cubic foot."
+    },
+    {
+      "id": "light-foot-time",
+      "singularName": "light-foot of time",
+      "pluralName": "light-feet of time",
+      "quantity": "Duration",
+      "unit": "Nanosecond",
+      "value": 1.01670336216397,
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_non-coherent_units_of_measurement#Light-distance",
+      "notes": "Time for light in vacuum to travel one international foot."
+    },
+    {
+      "id": "light-mile-time",
+      "singularName": "light-mile of time",
+      "pluralName": "light-miles of time",
+      "quantity": "Duration",
+      "unit": "Microsecond",
+      "value": 5.36819375222575,
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_non-coherent_units_of_measurement#Light-distance",
+      "notes": "Time for light in vacuum to travel one international mile."
+    },
+    {
+      "id": "shake",
+      "singularName": "shake",
+      "pluralName": "shakes",
+      "quantity": "Duration",
+      "unit": "Nanosecond",
+      "value": 10,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Shake_(unit)",
+      "notes": "Exactly ten nanoseconds in nuclear engineering and astrophysics."
+    },
+    {
+      "id": "centisecond-jiffy",
+      "singularName": "centisecond computing jiffy",
+      "pluralName": "centisecond computing jiffies",
+      "quantity": "Duration",
+      "unit": "Second",
+      "value": 0.01,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Jiffy_(time)",
+      "notes": "Common 100 Hz system-timer convention; a jiffy is platform dependent."
+    },
+    {
+      "id": "sixtieth-second-jiffy",
+      "singularName": "sixtieth-second computing jiffy",
+      "pluralName": "sixtieth-second computing jiffies",
+      "quantity": "Duration",
+      "unit": "Second",
+      "value": 0.016666666666666666,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Jiffy_(time)",
+      "notes": "NTSC-era and Commodore convention; distinct from the centisecond jiffy."
+    },
+    {
+      "id": "sexagesimal-third",
+      "singularName": "sexagesimal third",
+      "pluralName": "sexagesimal thirds",
+      "quantity": "Duration",
+      "unit": "Second",
+      "value": 0.016666666666666666,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Second#Sexagesimal_divisions_of_calendar_time_and_day",
+      "notes": "Exactly one sixtieth of a second."
+    },
+    {
+      "id": "sexagesimal-fourth",
+      "singularName": "sexagesimal fourth",
+      "pluralName": "sexagesimal fourths",
+      "quantity": "Duration",
+      "unit": "Second",
+      "value": 0.0002777777777777778,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Second#Sexagesimal_divisions_of_calendar_time_and_day",
+      "notes": "Exactly one sixtieth of a sexagesimal third."
+    },
+    {
+      "id": "average-medieval-moment",
+      "singularName": "average medieval moment",
+      "pluralName": "average medieval moments",
+      "quantity": "Duration",
+      "unit": "Second",
+      "value": 90,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Moment_(unit)",
+      "notes": "Average only; seasonal solar hours made the historical moment variable."
+    },
+    {
+      "id": "sidereal-day",
+      "singularName": "sidereal day",
+      "pluralName": "sidereal days",
+      "quantity": "Duration",
+      "unit": "Second",
+      "value": 86164.0905,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Sidereal_time",
+      "notes": "Approximate Earth rotation period relative to fixed stars."
+    },
+    {
+      "id": "historical-ke",
+      "singularName": "historical hundredth-day ke",
+      "pluralName": "historical hundredth-day ke",
+      "quantity": "Duration",
+      "unit": "Second",
+      "value": 864,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ke_(unit)",
+      "notes": "Historical Chinese definition of one hundredth of a day."
+    },
+    {
+      "id": "modern-ke",
+      "singularName": "modern ke",
+      "pluralName": "modern ke",
+      "quantity": "Duration",
+      "unit": "Minute",
+      "value": 15,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ke_(unit)",
+      "notes": "Modern redefinition as one ninety-sixth of a day."
+    },
+    {
+      "id": "french-decimal-hour",
+      "singularName": "French decimal hour",
+      "pluralName": "French decimal hours",
+      "quantity": "Duration",
+      "unit": "Second",
+      "value": 8640,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Decimal_time",
+      "notes": "One tenth of a mean solar day in French Republican decimal time."
+    },
+    {
+      "id": "french-decimal-minute",
+      "singularName": "French decimal minute",
+      "pluralName": "French decimal minutes",
+      "quantity": "Duration",
+      "unit": "Second",
+      "value": 86.4,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Decimal_time",
+      "notes": "One hundredth of a French decimal hour."
+    },
+    {
+      "id": "french-decimal-second",
+      "singularName": "French decimal second",
+      "pluralName": "French decimal seconds",
+      "quantity": "Duration",
+      "unit": "Second",
+      "value": 0.864,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Decimal_time",
+      "notes": "One hundredth of a French decimal minute."
+    },
+    {
+      "id": "swatch-beat",
+      "singularName": "Swatch Internet Time beat",
+      "pluralName": "Swatch Internet Time beats",
+      "quantity": "Duration",
+      "unit": "Second",
+      "value": 86.4,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Swatch_Internet_Time",
+      "notes": "Exactly one thousandth of a day; numerically equal to a French decimal minute."
+    },
+    {
+      "id": "decimal-stopwatch-unit",
+      "singularName": "decimal stopwatch hundredth-minute",
+      "pluralName": "decimal stopwatch hundredth-minutes",
+      "quantity": "Duration",
+      "unit": "Second",
+      "value": 0.6,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Decimal_time",
+      "notes": "Mechanical stopwatch subdivision of one conventional minute into 100 units."
+    },
+    {
+      "id": "hexadecimal-hour",
+      "singularName": "hexadecimal hour",
+      "pluralName": "hexadecimal hours",
+      "quantity": "Duration",
+      "unit": "Second",
+      "value": 5400,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Hexadecimal_time",
+      "notes": "One sixteenth of a day."
+    },
+    {
+      "id": "hexadecimal-minute",
+      "singularName": "hexadecimal minute",
+      "pluralName": "hexadecimal minutes",
+      "quantity": "Duration",
+      "unit": "Second",
+      "value": 21.09375,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Hexadecimal_time",
+      "notes": "One two-hundred-fifty-sixth of a hexadecimal hour."
+    },
+    {
+      "id": "hexadecimal-second",
+      "singularName": "hexadecimal second",
+      "pluralName": "hexadecimal seconds",
+      "quantity": "Duration",
+      "unit": "Second",
+      "value": 1.318359375,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Hexadecimal_time",
+      "notes": "One sixteenth of a hexadecimal minute."
+    },
+    {
+      "id": "mars-sol",
+      "singularName": "Mars sol",
+      "pluralName": "Mars sols",
+      "quantity": "Duration",
+      "unit": "Second",
+      "value": 88775,
+      "sourceUrl": "https://mars.nasa.gov/all-about-mars/facts/",
+      "notes": "Mean Martian solar day rounded to the second."
+    },
+    {
+      "id": "mars-hour",
+      "singularName": "Mars mission hour",
+      "pluralName": "Mars mission hours",
+      "quantity": "Duration",
+      "unit": "Second",
+      "value": 3698.9583333333335,
+      "sourceUrl": "https://mars.nasa.gov/mer/spotlight/spirit/a3_20040108.html",
+      "notes": "One twenty-fourth of the rounded 88,775-second sol used by stretched Mars mission clocks."
+    },
+    {
+      "id": "mars-minute",
+      "singularName": "Mars mission minute",
+      "pluralName": "Mars mission minutes",
+      "quantity": "Duration",
+      "unit": "Second",
+      "value": 61.64930555555556,
+      "sourceUrl": "https://mars.nasa.gov/mer/spotlight/spirit/a3_20040108.html",
+      "notes": "One sixtieth of a Mars mission hour."
+    },
+    {
+      "id": "mars-second",
+      "singularName": "Mars mission second",
+      "pluralName": "Mars mission seconds",
+      "quantity": "Duration",
+      "unit": "Second",
+      "value": 1.027488425925926,
+      "sourceUrl": "https://mars.nasa.gov/mer/spotlight/spirit/a3_20040108.html",
+      "notes": "One sixtieth of a Mars mission minute, about 2.75 percent longer than an SI second."
+    },
+    {
+      "id": "darian-common-year",
+      "singularName": "Darian common year",
+      "pluralName": "Darian common years",
+      "quantity": "Duration",
+      "unit": "Second",
+      "value": 59301700,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Darian_calendar",
+      "notes": "A 668-sol common year, expressed using the article's rounded 88,775-second sol."
+    },
+    {
+      "id": "darian-leap-year",
+      "singularName": "Darian leap year",
+      "pluralName": "Darian leap years",
+      "quantity": "Duration",
+      "unit": "Second",
+      "value": 59390475,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Darian_calendar",
+      "notes": "A 669-sol leap year, expressed using the article's rounded 88,775-second sol."
+    },
+    {
+      "id": "dog-year-one-seventh",
+      "singularName": "one-seventh dog year",
+      "pluralName": "one-seventh dog years",
+      "quantity": "Duration",
+      "unit": "JulianYear",
+      "value": 0.14285714285714285,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Aging_in_dogs#Terminology",
+      "notes": "One of two opposing folklore definitions, represented as one seventh of a Julian year; it is not a biological ageing model."
+    },
+    {
+      "id": "dog-year-calendar",
+      "singularName": "365-day dog year",
+      "pluralName": "365-day dog years",
+      "quantity": "Duration",
+      "unit": "Day",
+      "value": 365,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Aging_in_dogs#Terminology",
+      "notes": "The opposing folklore definition: one 365-day calendar year of a dog's life; it does not imply a linear human-age equivalence."
+    },
+    {
+      "id": "galactic-year",
+      "singularName": "galactic year",
+      "pluralName": "galactic years",
+      "quantity": "Duration",
+      "unit": "JulianYear",
+      "value": 250000000,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Galactic_year",
+      "notes": "Approximate Solar System orbital period around the Galactic Center."
+    },
+    {
+      "id": "furman",
+      "singularName": "Furman",
+      "pluralName": "Furmans",
+      "quantity": "Angle",
+      "unit": "Revolution",
+      "value": 0.0000152587890625,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Binary_angular_measurement",
+      "notes": "Exactly one 65,536th of a full turn."
+    },
+    {
+      "id": "eight-bit-furman",
+      "singularName": "8-bit Furman",
+      "pluralName": "8-bit Furmans",
+      "quantity": "Angle",
+      "unit": "Revolution",
+      "value": 0.00390625,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Binary_angular_measurement",
+      "notes": "Exactly one 256th of a full turn; the name is not universally standardized."
+    },
+    {
+      "id": "nato-mil",
+      "singularName": "NATO mil",
+      "pluralName": "NATO mils",
+      "quantity": "Angle",
+      "unit": "NatoMil",
+      "value": 1,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Milliradian#Military_organizations",
+      "notes": "Exactly one 6,400th of a turn in the NATO convention."
+    },
+    {
+      "id": "warsaw-pact-mil",
+      "singularName": "Warsaw Pact mil",
+      "pluralName": "Warsaw Pact mils",
+      "quantity": "Angle",
+      "unit": "Revolution",
+      "value": 0.00016666666666666666,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Milliradian#Military_organizations",
+      "notes": "Exactly one 6,000th of a turn."
+    },
+    {
+      "id": "swedish-streck",
+      "singularName": "Swedish streck",
+      "pluralName": "Swedish strecks",
+      "quantity": "Angle",
+      "unit": "Revolution",
+      "value": 0.00015873015873015873,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Milliradian#Military_organizations",
+      "notes": "Exactly one 6,300th of a turn."
+    },
+    {
+      "id": "mathematical-mil",
+      "singularName": "true mathematical mil",
+      "pluralName": "true mathematical mils",
+      "quantity": "Angle",
+      "unit": "Milliradian",
+      "value": 1,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Milliradian",
+      "notes": "Exactly one milliradian, unlike rounded military turn divisions."
+    },
+    {
+      "id": "scope-click",
+      "singularName": "0.1 mil scope click",
+      "pluralName": "0.1 mil scope clicks",
+      "quantity": "Angle",
+      "unit": "Milliradian",
+      "value": 0.1,
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_non-coherent_units_of_measurement#Mils,_strecks",
+      "notes": "Common metric riflescope adjustment equal to one tenth of a true mathematical mil."
+    },
+    {
+      "id": "gon",
+      "singularName": "gon",
+      "pluralName": "gons",
+      "quantity": "Angle",
+      "unit": "Gradian",
+      "value": 1,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Gradian",
+      "notes": "Exactly one hundredth of a right angle, equal to 0.9 degree."
+    },
+    {
+      "id": "gasoline-gallon-equivalent",
+      "singularName": "gasoline gallon equivalent",
+      "pluralName": "gasoline gallon equivalents",
+      "quantity": "Energy",
+      "unit": "KilowattHour",
+      "value": 33.7,
+      "sourceUrl": "https://www.epa.gov/greenvehicles/fuel-economy-and-ev-range-testing",
+      "notes": "US EPA comparison value for the energy in one gallon of gasoline."
+    },
+    {
+      "id": "mile-per-gallon-gasoline-equivalent",
+      "singularName": "mile per gallon gasoline equivalent",
+      "pluralName": "miles per gallon gasoline equivalent",
+      "quantity": "FuelEfficiency",
+      "unit": "MilePerUsGallon",
+      "value": 1,
+      "sourceUrl": "https://www.epa.gov/greenvehicles/fuel-economy-and-ev-range-testing",
+      "notes": "Selected dimension is fuel efficiency; the gallon is the 33.7 kWh energy equivalent rather than liquid volume consumed."
+    },
+    {
+      "id": "ton-tnt",
+      "singularName": "ton of TNT equivalent",
+      "pluralName": "tons of TNT equivalent",
+      "quantity": "Energy",
+      "unit": "Joule",
+      "value": 4.184e9,
+      "sourceUrl": "https://en.wikipedia.org/wiki/TNT_equivalent",
+      "notes": "Exactly 4.184 gigajoules by convention, not a measured property of every TNT charge."
+    },
+    {
+      "id": "kiloton-tnt",
+      "singularName": "kiloton of TNT equivalent",
+      "pluralName": "kilotons of TNT equivalent",
+      "quantity": "Energy",
+      "unit": "Joule",
+      "value": 4.184e12,
+      "sourceUrl": "https://en.wikipedia.org/wiki/TNT_equivalent",
+      "notes": "Exactly one thousand tons of TNT equivalent."
+    },
+    {
+      "id": "megaton-tnt",
+      "singularName": "megaton of TNT equivalent",
+      "pluralName": "megatons of TNT equivalent",
+      "quantity": "Energy",
+      "unit": "Joule",
+      "value": 4.184e15,
+      "sourceUrl": "https://en.wikipedia.org/wiki/TNT_equivalent",
+      "notes": "Exactly one million tons of TNT equivalent."
+    },
+    {
+      "id": "gigaton-tnt",
+      "singularName": "gigaton of TNT equivalent",
+      "pluralName": "gigatons of TNT equivalent",
+      "quantity": "Energy",
+      "unit": "Joule",
+      "value": 4.184e18,
+      "sourceUrl": "https://en.wikipedia.org/wiki/TNT_equivalent",
+      "notes": "Exactly one billion tons of TNT equivalent."
+    },
+    {
+      "id": "hiroshima-bomb",
+      "singularName": "Hiroshima bomb equivalent",
+      "pluralName": "Hiroshima bomb equivalents",
+      "quantity": "Energy",
+      "unit": "Joule",
+      "value": 6e13,
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_non-coherent_units_of_measurement#Hiroshima_bomb_and_Halifax_explosion",
+      "notes": "Approximate 15-kiloton comparison for the Little Boy explosion."
+    },
+    {
+      "id": "halifax-explosion",
+      "singularName": "Halifax Explosion equivalent",
+      "pluralName": "Halifax Explosion equivalents",
+      "quantity": "Energy",
+      "unit": "Joule",
+      "value": 1.26e13,
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_non-coherent_units_of_measurement#Hiroshima_bomb_and_Halifax_explosion",
+      "notes": "Approximate three-kiloton comparison."
+    },
+    {
+      "id": "quad",
+      "singularName": "quad",
+      "pluralName": "quads",
+      "quantity": "Energy",
+      "unit": "BritishThermalUnit",
+      "value": 1e15,
+      "sourceUrl": "https://www.eia.gov/tools/glossary/index.php?id=Q",
+      "notes": "Exactly one quadrillion British thermal units."
+    },
+    {
+      "id": "foe",
+      "singularName": "foe",
+      "pluralName": "foes",
+      "quantity": "Energy",
+      "unit": "Joule",
+      "value": 1e44,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Foe_(unit)",
+      "notes": "Exactly 10^51 ergs, used for supernova energy."
+    },
+    {
+      "id": "ton-refrigeration",
+      "singularName": "ton of refrigeration",
+      "pluralName": "tons of refrigeration",
+      "quantity": "Power",
+      "unit": "TonOfRefrigeration",
+      "value": 1,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Ton_of_refrigeration",
+      "notes": "Cooling-power unit equal to 12,000 BTU per hour."
+    },
+    {
+      "id": "watt-equivalent",
+      "singularName": "incandescent watt equivalent",
+      "pluralName": "incandescent watt equivalents",
+      "quantity": "LuminousFlux",
+      "unit": "Lumen",
+      "value": 15,
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_non-coherent_units_of_measurement#Luminous_flux:_watt_equivalent",
+      "notes": "Marketing comparison represented as 15 lumens per incandescent-replacement watt."
+    },
+    {
+      "id": "amazon-river-flow",
+      "singularName": "Amazon River discharge",
+      "pluralName": "Amazon River discharges",
+      "quantity": "VolumeFlow",
+      "unit": "CubicMeterPerSecond",
+      "value": 216000,
+      "sourceUrl": "https://www.britannica.com/place/Amazon-River",
+      "notes": "Approximate discharge used to compare very large water flows."
+    },
+    {
+      "id": "sverdrup",
+      "singularName": "sverdrup",
+      "pluralName": "sverdrups",
+      "quantity": "VolumeFlow",
+      "unit": "CubicMeterPerSecond",
+      "value": 1000000,
+      "sourceUrl": "https://oceanservice.noaa.gov/facts/sverdrup.html",
+      "notes": "Exactly one million cubic meters per second in oceanography."
+    },
+    {
+      "id": "bubnoff-unit",
+      "singularName": "Bubnoff unit",
+      "pluralName": "Bubnoff units",
+      "quantity": "Speed",
+      "unit": "MeterPerSecond",
+      "value": 3.16880878140289e-14,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Bubnoff_unit",
+      "notes": "One micrometer per Julian year, used for geological denudation rates."
+    },
+    {
+      "id": "langley",
+      "singularName": "langley",
+      "pluralName": "langleys",
+      "quantity": "Irradiation",
+      "unit": "JoulePerSquareMeter",
+      "value": 41840,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Langley_(unit)",
+      "notes": "One thermochemical calorie per square centimeter."
+    },
+    {
+      "id": "stokes",
+      "singularName": "stokes",
+      "pluralName": "stokes",
+      "quantity": "KinematicViscosity",
+      "unit": "Stokes",
+      "value": 1,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Stokes_(unit)",
+      "notes": "CGS kinematic-viscosity unit equal to one square centimeter per second."
+    },
+    {
+      "id": "meru",
+      "singularName": "milli Earth rate unit",
+      "pluralName": "milli Earth rate units",
+      "quantity": "RotationalSpeed",
+      "unit": "RadianPerSecond",
+      "value": 7.292115e-8,
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_non-coherent_units_of_measurement#Angular_velocity",
+      "notes": "One thousandth of Earth's conventional rotation rate."
+    },
+    {
+      "id": "metre-water-equivalent",
+      "singularName": "metre water equivalent",
+      "pluralName": "metres water equivalent",
+      "quantity": "Length",
+      "unit": "Meter",
+      "value": 1,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Metre_water_equivalent",
+      "notes": "Selected dimension is equivalent shielding depth; actual material thickness depends on composition and geometry."
+    },
+    {
+      "id": "kilometre-water-equivalent",
+      "singularName": "kilometre water equivalent",
+      "pluralName": "kilometres water equivalent",
+      "quantity": "Length",
+      "unit": "Kilometer",
+      "value": 1,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Metre_water_equivalent",
+      "notes": "Deep-site multiple of the metre water equivalent; it remains an equivalent shielding depth."
+    },
+    {
+      "id": "banana-equivalent-dose",
+      "singularName": "banana equivalent dose",
+      "pluralName": "banana equivalent doses",
+      "quantity": "RadiationEquivalentDose",
+      "unit": "Nanosievert",
+      "value": 78,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Banana_equivalent_dose",
+      "notes": "Approximate additional effective dose from eating one banana."
+    },
+    {
+      "id": "flight-hour-equivalent-dose",
+      "singularName": "flight-hour equivalent dose",
+      "pluralName": "flight-hour equivalent doses",
+      "quantity": "RadiationEquivalentDose",
+      "unit": "Microsievert",
+      "value": 4,
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_non-coherent_units_of_measurement#Flight-time_equivalent_dose",
+      "notes": "Approximate dose received during one hour at aircraft cruising altitude."
+    },
+    {
+      "id": "cellulose-intrinsic-viscosity-unit",
+      "singularName": "deciliter-per-gram cellulose intrinsic-viscosity unit",
+      "pluralName": "deciliter-per-gram cellulose intrinsic-viscosity units",
+      "quantity": "SpecificVolume",
+      "unit": "CubicMeterPerKilogram",
+      "value": 0.1,
+      "sourceUrl": "https://doi.org/10.1016/j.chroma.2013.01.038",
+      "notes": "Selected dimension is volume per mass. The material-specific nonlinear conversion from this assay to molar mass is not encoded."
+    },
+    {
+      "id": "micromort",
+      "singularName": "micromort",
+      "pluralName": "micromorts",
+      "quantity": "Ratio",
+      "unit": "PartPerMillion",
+      "value": 1,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Micromort",
+      "notes": "One-in-a-million probability of death; selected dimension is probability ratio."
+    },
+    {
+      "id": "microprobability",
+      "singularName": "microprobability",
+      "pluralName": "microprobabilities",
+      "quantity": "Ratio",
+      "unit": "PartPerMillion",
+      "value": 1,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Micromort",
+      "notes": "Generic one-in-a-million event probability; deliberately overlaps numerically with the mortality-specific micromort."
+    },
+    {
+      "id": "cd-rom-650mb",
+      "singularName": "650 MB CD-ROM",
+      "pluralName": "650 MB CD-ROMs",
+      "quantity": "Information",
+      "unit": "Megabyte",
+      "value": 650,
+      "sourceUrl": "https://en.wikipedia.org/wiki/CD-ROM#Capacity",
+      "notes": "Historical nominal capacity used in journalistic comparisons; usable capacity and binary-versus-decimal reporting vary by disc format."
+    },
+    {
+      "id": "bible-data",
+      "singularName": "plain-text King James Bible",
+      "pluralName": "plain-text King James Bibles",
+      "quantity": "Information",
+      "unit": "Megabyte",
+      "value": 4.5,
+      "sourceUrl": "https://www.gutenberg.org/ebooks/10",
+      "notes": "Approximate 4.5 million 8-bit characters in uncompressed plain text."
+    },
+    {
+      "id": "britannica-data",
+      "singularName": "print Encyclopaedia Britannica data set",
+      "pluralName": "print Encyclopaedia Britannica data sets",
+      "quantity": "Information",
+      "unit": "Megabyte",
+      "value": 300,
+      "sourceUrl": "https://www.nytimes.com/1994/02/08/business/44-million-words-strong-britannica-to-join-internet.html",
+      "notes": "Approximate uncompressed character count represented as 8-bit text."
+    },
+    {
+      "id": "library-of-congress-data",
+      "singularName": "Library of Congress print collection of data",
+      "pluralName": "Library of Congress print collections of data",
+      "quantity": "Information",
+      "unit": "Terabyte",
+      "value": 10,
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_non-coherent_units_of_measurement#Data_volume",
+      "notes": "Research estimate for uncompressed textual data, not the institution's complete digital holdings."
+    },
+    {
+      "id": "nibble",
+      "singularName": "nibble",
+      "pluralName": "nibbles",
+      "quantity": "Information",
+      "unit": "Bit",
+      "value": 4,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Nibble",
+      "notes": "Canonical modern definition of half an eight-bit byte; historical architectures used other widths."
+    },
+    {
+      "id": "flop-per-second",
+      "singularName": "floating-point operation per second",
+      "pluralName": "floating-point operations per second",
+      "quantity": "Frequency",
+      "unit": "PerSecond",
+      "value": 1,
+      "sourceUrl": "https://en.wikipedia.org/wiki/FLOPS",
+      "notes": "Selected dimension is inverse time; operation definitions and benchmark workloads remain context dependent."
+    },
+    {
+      "id": "error-per-kloc",
+      "singularName": "error per KLOC",
+      "pluralName": "errors per KLOC",
+      "quantity": "Ratio",
+      "unit": "PartPerThousand",
+      "value": 1,
+      "sourceUrl": "https://en.wikipedia.org/wiki/List_of_non-coherent_units_of_measurement#KLOC",
+      "notes": "Selected dimension is defect density: one error per thousand source lines, with language and counting rules left contextual."
+    },
+    {
+      "id": "iodine-value-point",
+      "singularName": "iodine value point",
+      "pluralName": "iodine value points",
+      "quantity": "Ratio",
+      "unit": "Percent",
+      "value": 1,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Iodine_value",
+      "notes": "One gram of iodine consumed per 100 grams of sample; represented as a mass ratio, not iodine content."
+    },
+    {
+      "id": "bromine-number-point",
+      "singularName": "bromine number point",
+      "pluralName": "bromine number points",
+      "quantity": "Ratio",
+      "unit": "Percent",
+      "value": 1,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Bromine_number",
+      "notes": "One gram of bromine consumed per 100 grams of sample; represented as a mass ratio, not bromine content."
+    },
+    {
+      "id": "centimorgan",
+      "singularName": "centimorgan",
+      "pluralName": "centimorgans",
+      "quantity": "Ratio",
+      "unit": "Percent",
+      "value": 1,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Centimorgan",
+      "notes": "Selected dimension is the expected crossover count of 0.01 per generation, not a fixed base-pair length."
+    },
+    {
+      "id": "centipawn",
+      "singularName": "centipawn",
+      "pluralName": "centipawns",
+      "quantity": "Ratio",
+      "unit": "Percent",
+      "value": 1,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Chess_piece_relative_value",
+      "notes": "Selected dimension is one percent of a nominal pawn value; chess-engine evaluations are position dependent."
+    },
+    {
+      "id": "asta-pungency-unit",
+      "singularName": "ASTA pungency unit",
+      "pluralName": "ASTA pungency units",
+      "quantity": "Ratio",
+      "unit": "PartPerMillion",
+      "value": 1,
+      "sourceUrl": "https://journals.ashs.org/view/journals/hortsci/30/1/article-p137.xml",
+      "notes": "One part capsaicin-equivalent heat per million parts dried pepper mass."
+    },
+    {
+      "id": "scoville-heat-unit",
+      "singularName": "Scoville heat unit",
+      "pluralName": "Scoville heat units",
+      "quantity": "Ratio",
+      "unit": "PartPerMillion",
+      "value": 0.06666666666666667,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Scoville_scale",
+      "notes": "Approximate HPLC conversion using 15 SHU per ASTA pungency unit; legacy tasting results can vary substantially."
+    },
+    {
+      "id": "us-proof-degree",
+      "singularName": "US proof degree",
+      "pluralName": "US proof degrees",
+      "quantity": "Ratio",
+      "unit": "Percent",
+      "value": 0.5,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Alcohol_proof",
+      "notes": "Exactly one half percentage point of alcohol by volume."
+    },
+    {
+      "id": "uk-proof-degree",
+      "singularName": "historical UK proof degree",
+      "pluralName": "historical UK proof degrees",
+      "quantity": "Ratio",
+      "unit": "Percent",
+      "value": 0.5715,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Alcohol_proof",
+      "notes": "Approximate one-hundredth of the historical 57.15 percent ABV proof-spirit reference."
+    },
+    {
+      "id": "erlang",
+      "singularName": "erlang of traffic",
+      "pluralName": "erlangs of traffic",
+      "quantity": "Ratio",
+      "unit": "DecimalFraction",
+      "value": 1,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Erlang_(unit)",
+      "notes": "Selected dimension is resource occupancy: one continuously used resource or equivalent average load."
+    },
+    {
+      "id": "crab-xray-intensity",
+      "singularName": "Crab X-ray intensity",
+      "pluralName": "Crab X-ray intensities",
+      "quantity": "Irradiance",
+      "unit": "PicowattPerSquareMeter",
+      "value": 24,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Crab_(unit)",
+      "notes": "Approximate broadband X-ray irradiance; actual Crab calibration depends on photon energy and instrument band."
+    },
+    {
+      "id": "millicrab-xray-intensity",
+      "singularName": "milliCrab X-ray intensity",
+      "pluralName": "milliCrab X-ray intensities",
+      "quantity": "Irradiance",
+      "unit": "PicowattPerSquareMeter",
+      "value": 0.024,
+      "sourceUrl": "https://en.wikipedia.org/wiki/Crab_(unit)",
+      "notes": "One thousandth of the approximate 24-picowatt-per-square-meter Crab reference."
+    }
+  ]
+}
