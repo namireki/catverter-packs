@@ -29,16 +29,16 @@ assumptions, and approximation notes should be recorded in `sourceUrl` and
 
 ## Validate locally
 
-Use the standalone validator from a sibling Catverter checkout:
+Use the standalone validator included in this repository:
 
 ```pwsh
-dotnet run --project ../CatverterV2/tools/Catverter.ContentTool -- validate-pack-repository .
+dotnet run --project tools/Catverter.PackValidator -- validate-pack-repository .
 ```
 
 Refresh catalog hashes with:
 
 ```pwsh
-dotnet run --project ../CatverterV2/tools/Catverter.ContentTool -- update-catalog .
+dotnet run --project tools/Catverter.PackValidator -- update-catalog .
 ```
 
 Pull requests run the same validation in GitHub Actions.
