@@ -5,10 +5,10 @@
   "packageId": "com.namirekistudio.catverter.pack.technology",
   "id": "technology",
   "name": "Technology",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "minimumAppVersion": "1.0.0",
   "description": "Approximate gadget masses, microscopic features, hardware volumes, and machine speeds from a transistor to a fiber pulse.",
-  "metadata": { "authors": ["Namireki Studio"], "license": "Apache-2.0", "tags": ["technology", "mass", "length", "volume", "speed"] },
+  "metadata": { "authors": ["Namireki Studio"], "license": "Apache-2.0", "tags": ["technology", "mass", "length", "volume", "speed", "frequency"] },
   "modifiers": [
     { "id": "tiny", "name": "tiny", "multiplier": 0.5, "quantities": ["Mass", "Length", "Volume"], "combinationGroup": "scale" },
     { "id": "slim", "name": "slim", "multiplier": 0.75, "quantities": ["Mass", "Length"], "combinationGroup": "profile" },
@@ -67,6 +67,16 @@
     {"id":"warehouse-robot-speed","singularName":"warehouse robot","pluralName":"warehouse robots","quantity":"Speed","unit":"KilometerPerHour","value":10},
     {"id":"experimental-maglev-speed","singularName":"experimental maglev","pluralName":"experimental maglevs","quantity":"Speed","unit":"KilometerPerHour","value":600},
     {"id":"copper-signal-speed","singularName":"signal in copper cable","pluralName":"signals in copper cable","quantity":"Speed","unit":"KilometerPerHour","value":720000000},
-    {"id":"vacuum-light-speed","singularName":"light pulse in vacuum","pluralName":"light pulses in vacuum","quantity":"Speed","unit":"KilometerPerHour","value":1079252848.8}
+    {"id":"vacuum-light-speed","singularName":"light pulse in vacuum","pluralName":"light pulses in vacuum","quantity":"Speed","unit":"KilometerPerHour","value":1079252848.8},
+    {"id":"cpu-clock-tick","singularName":"CPU clock tick","pluralName":"CPU clock ticks","quantity":"Frequency","unit":"PerSecond","value":3200000000.0},
+    {"id":"keyboard-clack","singularName":"keyboard clack","pluralName":"keyboard clacks","quantity":"Frequency","unit":"PerSecond","value":6.0},
+    {"id":"router-light-blink","singularName":"router-light blink","pluralName":"router-light blinks","quantity":"Frequency","unit":"PerSecond","value":2.0},
+    {"id":"notification-ping","singularName":"notification ping","pluralName":"notification pings","quantity":"Frequency","unit":"PerSecond","value":0.01},
+    {"id":"loading-spinner-lap","singularName":"loading-spinner lap","pluralName":"loading-spinner laps","quantity":"Frequency","unit":"PerSecond","value":1.0},
+    {"id":"autosave-pulse","singularName":"autosave pulse","pluralName":"autosave pulses","quantity":"Frequency","unit":"PerSecond","value":0.00333333333333333},
+    {"id":"captcha-existential-crisis","singularName":"CAPTCHA existential crisis","pluralName":"CAPTCHA existential crises","quantity":"Frequency","unit":"PerSecond","value":0.000555555555555556},
+    {"id":"merge-conflict-spawn","singularName":"merge-conflict spawn","pluralName":"merge-conflict spawns","quantity":"Frequency","unit":"PerSecond","value":0.000277777777777778},
+    {"id":"printer-paper-jam","singularName":"printer paper jam","pluralName":"printer paper jams","quantity":"Frequency","unit":"PerSecond","value":0.000138888888888889},
+    {"id":"reboot-remedy","singularName":"turn-it-off-and-on-again remedy","pluralName":"turn-it-off-and-on-again remedies","quantity":"Frequency","unit":"PerSecond","value":1.15740740740741E-05}
   ]
 }

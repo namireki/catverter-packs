@@ -5,10 +5,10 @@
   "packageId": "com.namirekistudio.catverter.pack.household-items",
   "id": "household-items",
   "name": "Household items",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "minimumAppVersion": "1.0.0",
   "description": "Approximate everyday masses, lengths, and volumes from around the home.",
-  "metadata": { "authors": ["Namireki Studio"], "license": "Apache-2.0", "tags": ["household", "mass", "length", "volume"] },
+  "metadata": { "authors": ["Namireki Studio"], "license": "Apache-2.0", "tags": ["household", "mass", "length", "volume", "frequency"] },
   "modifiers": [
     { "id": "tiny", "name": "tiny", "multiplier": 0.5, "quantities": ["Mass", "Length", "Volume"], "combinationGroup": "scale" },
     { "id": "slim", "name": "slim", "multiplier": 0.75, "quantities": ["Mass"], "combinationGroup": "profile" },
@@ -205,6 +205,16 @@
     {"id":"kitchen-sink-volume","singularName":"kitchen sink","pluralName":"kitchen sinks","quantity":"Volume","unit":"Liter","value":20},
     {"id":"wheelie-bin-volume","singularName":"wheelie bin","pluralName":"wheelie bins","quantity":"Volume","unit":"Liter","value":120},
     {"id":"refrigerator-volume","singularName":"refrigerator interior","pluralName":"refrigerator interiors","quantity":"Volume","unit":"Liter","value":350},
-    {"id":"room-volume","singularName":"roomful","pluralName":"roomfuls","quantity":"Volume","unit":"Liter","value":30000}
+    {"id":"room-volume","singularName":"roomful","pluralName":"roomfuls","quantity":"Volume","unit":"Liter","value":30000},
+    {"id":"wall-clock-tick","singularName":"wall-clock tick","pluralName":"wall-clock ticks","quantity":"Frequency","unit":"PerSecond","value":1.0},
+    {"id":"ceiling-fan-turn","singularName":"ceiling-fan turn","pluralName":"ceiling-fan turns","quantity":"Frequency","unit":"PerSecond","value":3.0},
+    {"id":"washing-machine-spin","singularName":"washing-machine spin","pluralName":"washing-machine spins","quantity":"Frequency","unit":"PerSecond","value":20.0},
+    {"id":"low-battery-chirp","singularName":"low-battery smoke-alarm chirp","pluralName":"low-battery smoke-alarm chirps","quantity":"Frequency","unit":"PerSecond","value":0.0166666666666667},
+    {"id":"doorbell-ding-dong","singularName":"doorbell ding-dong","pluralName":"doorbell ding-dongs","quantity":"Frequency","unit":"PerSecond","value":0.5},
+    {"id":"vacuum-carpet-pass","singularName":"vacuum-cleaner carpet pass","pluralName":"vacuum-cleaner carpet passes","quantity":"Frequency","unit":"PerSecond","value":0.25},
+    {"id":"dishwasher-plate-clink","singularName":"dishwasher plate clink","pluralName":"dishwasher plate clinks","quantity":"Frequency","unit":"PerSecond","value":2.0},
+    {"id":"electric-toothbrush-buzz","singularName":"electric-toothbrush buzz","pluralName":"electric-toothbrush buzzes","quantity":"Frequency","unit":"PerSecond","value":250.0},
+    {"id":"sock-disappearance","singularName":"mysterious sock disappearance","pluralName":"mysterious sock disappearances","quantity":"Frequency","unit":"PerSecond","value":1.15740740740741E-05},
+    {"id":"midnight-fridge-hum","singularName":"midnight fridge hum","pluralName":"midnight fridge hums","quantity":"Frequency","unit":"PerSecond","value":50.0}
   ]
 }

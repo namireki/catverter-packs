@@ -99,7 +99,17 @@
         "ostrich-run-speed": { "one": "autruche à la course", "other": "autruches à la course" },
         "sailfish-speed": { "one": "espadon voilier à pleine vitesse", "other": "espadons voiliers à pleine vitesse" },
         "common-swift-speed": { "one": "martinet noir en vol", "other": "martinets noirs en vol" },
-        "golden-eagle-dive-speed": { "one": "aigle royal en piqué", "other": "aigles royaux en piqué" }
+        "golden-eagle-dive-speed": { "one": "aigle royal en piqué", "other": "aigles royaux en piqué" },
+        "sloth-high-five-rate": {"one":"high five de paresseux","other":"high fives de paresseux"},
+        "hummingbird-wingbeat": {"one":"battement d'aile de colibri","other":"battements d'aile de colibri"},
+        "dog-tail-wag": {"one":"battement de queue enthousiaste","other":"battements de queue enthousiastes"},
+        "pigeon-head-bob": {"one":"hochement de tête de pigeon","other":"hochements de tête de pigeon"},
+        "rabbit-nose-twitch": {"one":"frémissement de nez de lapin","other":"frémissements de nez de lapin"},
+        "woodpecker-peck": {"one":"coup de bec de pic","other":"coups de bec de pic"},
+        "firefly-blink": {"one":"clignotement de luciole","other":"clignotements de luciole"},
+        "cricket-chirp": {"one":"stridulation de grillon","other":"stridulations de grillon"},
+        "galloping-horse-hoofbeat": {"one":"coup de sabot au galop","other":"coups de sabot au galop"},
+        "owl-judgmental-blink": {"one":"clignement de hibou qui juge","other":"clignements de hiboux qui jugent"}
       }
     },
     "astronomy": {
@@ -155,7 +165,17 @@
         "voyager-one-speed": { "one": "vitesse de Voyager 1", "other": "vitesses de Voyager 1" },
         "mercury-orbital-speed": { "one": "vitesse orbitale de Mercure", "other": "vitesses orbitales de Mercure" },
         "parker-solar-probe-speed": { "one": "vitesse de Parker Solar Probe", "other": "vitesses de Parker Solar Probe" },
-        "solar-system-galactic-speed": { "one": "vitesse galactique du Système solaire", "other": "vitesses galactiques du Système solaire" }
+        "solar-system-galactic-speed": { "one": "vitesse galactique du Système solaire", "other": "vitesses galactiques du Système solaire" },
+        "millisecond-pulsar-pulse": {"one":"impulsion de pulsar milliseconde","other":"impulsions de pulsar milliseconde"},
+        "earth-dramatic-spin": {"one":"rotation dramatique de la Terre","other":"rotations dramatiques de la Terre"},
+        "moon-victory-lap": {"one":"tour d'honneur de la Lune","other":"tours d'honneur de la Lune"},
+        "earth-solar-lap": {"one":"tour de la Terre autour du Soleil","other":"tours de la Terre autour du Soleil"},
+        "iss-victory-lap": {"one":"tour d'honneur de l'ISS","other":"tours d'honneur de l'ISS"},
+        "halley-late-visit": {"one":"visite très tardive de la comète de Halley","other":"visites très tardives de la comète de Halley"},
+        "solar-mood-swing": {"one":"saut d'humeur solaire","other":"sauts d'humeur solaires"},
+        "shooting-star-wish": {"one":"occasion de vœu sur une étoile filante","other":"occasions de vœux sur des étoiles filantes"},
+        "alien-beacon-ping": {"one":"ping suspect de balise extraterrestre","other":"pings suspects de balises extraterrestres"},
+        "mission-control-coffee-refill": {"one":"remplissage de café du contrôle de mission","other":"remplissages de café du contrôle de mission"}
       }
     },
     "big-stuff": {
@@ -211,7 +231,17 @@
         "great-pyramid-volume": { "one": "volume de la grande pyramide", "other": "volumes de la grande pyramide" },
         "three-gorges-reservoir-volume": { "one": "réservoir des Trois-Gorges", "other": "réservoirs des Trois-Gorges" },
         "lake-tahoe-volume": { "one": "lac Tahoe", "other": "lacs Tahoe" },
-        "lake-superior-volume": { "one": "lac Supérieur", "other": "lacs Supérieur" }
+        "lake-superior-volume": { "one": "lac Supérieur", "other": "lacs Supérieur" },
+        "stadium-wave-lap": {"one":"tour de ola dans le stade","other":"tours de ola dans le stade"},
+        "skyscraper-elevator-ding": {"one":"ding d'ascenseur de gratte-ciel","other":"dings d'ascenseurs de gratte-ciel"},
+        "wrecking-ball-swing": {"one":"balancement de boule de démolition","other":"balancements de boules de démolition"},
+        "cargo-crane-lift": {"one":"levage de grue cargo","other":"levages de grue cargo"},
+        "drawbridge-opening": {"one":"grande ouverture de pont-levis","other":"grandes ouvertures de ponts-levis"},
+        "container-ship-horn": {"one":"coup de corne de porte-conteneurs","other":"coups de corne de porte-conteneurs"},
+        "wind-turbine-turn": {"one":"tour d'éolienne","other":"tours d'éoliennes"},
+        "giant-bell-toll": {"one":"coup de cloche géante","other":"coups de cloches géantes"},
+        "construction-cone-migration": {"one":"migration de cône de chantier","other":"migrations de cônes de chantier"},
+        "monument-selfie": {"one":"selfie avec monument","other":"selfies avec monuments"}
       }
     },
     "cats": {
@@ -267,7 +297,17 @@
         "cat-hallway-trot-speed": { "one": "chat trottant dans le couloir", "other": "chats trottant dans le couloir" },
         "cat-pounce-speed": { "one": "chat qui bondit", "other": "chats qui bondissent" },
         "laser-chase-speed": { "one": "chat poursuivant un laser", "other": "chats poursuivant un laser" },
-        "bathtub-escape-speed": { "one": "chat fuyant la baignoire", "other": "chats fuyant la baignoire" }
+        "bathtub-escape-speed": { "one": "chat fuyant la baignoire", "other": "chats fuyant la baignoire" },
+        "purr-vibration": {"one":"vibration de ronronnement","other":"vibrations de ronronnement"},
+        "biscuit-paw-press": {"one":"pression de patte pétrisseuse","other":"pressions de pattes pétrisseuses"},
+        "midnight-zoomie-lap": {"one":"tour de zoomie de minuit","other":"tours de zoomie de minuit"},
+        "judgmental-slow-blink": {"one":"clignement lent qui juge","other":"clignements lents qui jugent"},
+        "tail-tip-flick": {"one":"coup de bout de queue","other":"coups de bout de queue"},
+        "empty-bowl-complaint": {"one":"plainte pour gamelle vide","other":"plaintes pour gamelles vides"},
+        "cardboard-box-inspection": {"one":"inspection de carton","other":"inspections de cartons"},
+        "keyboard-interruption": {"one":"interruption de clavier","other":"interruptions de clavier"},
+        "laser-dot-pounce": {"one":"bond sur point laser","other":"bonds sur point laser"},
+        "dawn-meow": {"one":"miaulement à l'aube","other":"miaulements à l'aube"}
       }
     },
     "food-and-drink": {
@@ -323,7 +363,17 @@
         "microwave-turntable-speed": { "one": "bord de plateau tournant de micro-ondes", "other": "bords de plateau tournant de micro-ondes" },
         "restaurant-trolley-speed": { "one": "chariot de restaurant", "other": "chariots de restaurant" },
         "coffee-courier-speed": { "one": "vélo de livreur de café", "other": "vélos de livreur de café" },
-        "champagne-cork-speed": { "one": "bouchon de champagne en vol", "other": "bouchons de champagne en vol" }
+        "champagne-cork-speed": { "one": "bouchon de champagne en vol", "other": "bouchons de champagne en vol" },
+        "popcorn-pop": {"one":"éclatement de pop-corn","other":"éclatements de pop-corn"},
+        "coffee-drip": {"one":"goutte de café","other":"gouttes de café"},
+        "blender-dramatic-whirl": {"one":"tour dramatique de mixeur","other":"tours dramatiques de mixeur"},
+        "microwave-impatient-beep": {"one":"bip impatient de micro-ondes","other":"bips impatients de micro-ondes"},
+        "toaster-victory-pop": {"one":"pop victorieux de grille-pain","other":"pops victorieux de grille-pain"},
+        "soda-bubble-escape": {"one":"évasion de bulle de soda","other":"évasions de bulles de soda"},
+        "spaghetti-slurp": {"one":"aspiration de spaghetti","other":"aspirations de spaghetti"},
+        "cookie-jar-raid": {"one":"raid sur le bocal à biscuits","other":"raids sur le bocal à biscuits"},
+        "kettle-rumble": {"one":"grondement de bouilloire","other":"grondements de bouilloire"},
+        "pizza-doorbell": {"one":"sonnette de pizza","other":"sonnettes de pizza"}
       }
     },
     "household-items": {
@@ -379,7 +429,17 @@
         "kitchen-sink-volume": { "one": "évier de cuisine", "other": "éviers de cuisine" },
         "wheelie-bin-volume": { "one": "poubelle à roulettes", "other": "poubelles à roulettes" },
         "refrigerator-volume": { "one": "volume intérieur de réfrigérateur", "other": "volumes intérieurs de réfrigérateur" },
-        "room-volume": { "one": "pièce remplie", "other": "pièces remplies" }
+        "room-volume": { "one": "pièce remplie", "other": "pièces remplies" },
+        "wall-clock-tick": {"one":"tic d'horloge murale","other":"tics d'horloges murales"},
+        "ceiling-fan-turn": {"one":"tour de ventilateur de plafond","other":"tours de ventilateurs de plafond"},
+        "washing-machine-spin": {"one":"tour de machine à laver","other":"tours de machine à laver"},
+        "low-battery-chirp": {"one":"pépiement de détecteur de fumée déchargé","other":"pépiements de détecteurs de fumée déchargés"},
+        "doorbell-ding-dong": {"one":"ding-dong de sonnette","other":"ding-dongs de sonnettes"},
+        "vacuum-carpet-pass": {"one":"passage d'aspirateur sur tapis","other":"passages d'aspirateur sur tapis"},
+        "dishwasher-plate-clink": {"one":"tintement d'assiette au lave-vaisselle","other":"tintements d'assiettes au lave-vaisselle"},
+        "electric-toothbrush-buzz": {"one":"bourdonnement de brosse à dents électrique","other":"bourdonnements de brosses à dents électriques"},
+        "sock-disappearance": {"one":"mystérieuse disparition de chaussette","other":"mystérieuses disparitions de chaussettes"},
+        "midnight-fridge-hum": {"one":"ronronnement nocturne de réfrigérateur","other":"ronronnements nocturnes de réfrigérateurs"}
       }
     },
     "nature-and-weather": {
@@ -435,7 +495,17 @@
         "lava-flow-speed": { "one": "coulée de lave lente", "other": "coulées de lave lentes" },
         "river-current-speed": { "one": "courant fluvial rapide", "other": "courants fluviaux rapides" },
         "avalanche-speed": { "one": "avalanche de poudreuse", "other": "avalanches de poudreuse" },
-        "tsunami-speed": { "one": "tsunami en haute mer", "other": "tsunamis en haute mer" }
+        "tsunami-speed": { "one": "tsunami en haute mer", "other": "tsunamis en haute mer" },
+        "raindrop-window-tap": {"one":"tapotement de goutte sur la fenêtre","other":"tapotements de gouttes sur la fenêtre"},
+        "ocean-wave-crash": {"one":"fracas de vague océanique","other":"fracas de vagues océaniques"},
+        "lightning-flash": {"one":"éclair","other":"éclairs"},
+        "thunder-grumble": {"one":"grondement de tonnerre","other":"grondements de tonnerre"},
+        "breeze-leaf-rustle": {"one":"bruissement de feuille à énergie éolienne","other":"bruissements de feuilles à énergie éolienne"},
+        "geyser-eruption": {"one":"éruption de geyser","other":"éruptions de geyser"},
+        "snowflake-nose-landing": {"one":"atterrissage de flocon sur le nez","other":"atterrissages de flocons sur le nez"},
+        "volcano-dramatic-burp": {"one":"rot dramatique de volcan","other":"rots dramatiques de volcans"},
+        "tide-mood-swing": {"one":"saut d'humeur de marée","other":"sauts d'humeur de marées"},
+        "sunflower-sun-check": {"one":"vérification du Soleil par tournesol","other":"vérifications du Soleil par tournesols"}
       }
     },
     "unconventional-units": {
@@ -583,7 +653,16 @@
         "uk-proof-degree": { "one": "degré proof britannique historique", "other": "degrés proof britanniques historiques" },
         "erlang": { "one": "erlang de trafic", "other": "erlangs de trafic" },
         "crab-xray-intensity": { "one": "Crab d'intensité de rayons X", "other": "Crabs d'intensité de rayons X" },
-        "millicrab-xray-intensity": { "one": "milliCrab d'intensité de rayons X", "other": "milliCrabs d'intensité de rayons X" }
+        "millicrab-xray-intensity": { "one": "milliCrab d'intensité de rayons X", "other": "milliCrabs d'intensité de rayons X" },
+        "new-york-minute": {"one":"minute new-yorkaise","other":"minutes new-yorkaises"},
+        "banana-scale-deployment": {"one":"déploiement de banane étalon","other":"déploiements de bananes étalons"},
+        "rubber-duck-debug-quack": {"one":"coin de débogage au canard","other":"coins de débogage aux canards"},
+        "internet-forever-spinner": {"one":"tour de roue d'internet éternel","other":"tours de roue d'internet éternel"},
+        "blue-moon-appearance": {"one":"apparition tous les trente-six du mois","other":"apparitions tous les trente-six du mois"},
+        "nuclear-physicist-shake": {"one":"shake de physicien nucléaire","other":"shakes de physiciens nucléaires"},
+        "bureaucratic-stamp-thump": {"one":"coup de tampon bureaucratique","other":"coups de tampons bureaucratiques"},
+        "cosmic-eye-roll": {"one":"roulement d'yeux cosmique","other":"roulements d'yeux cosmiques"},
+        "meeting-jiffy": {"one":"petite seconde avant la réunion","other":"petites secondes avant la réunion"}
       }
     },
     "sports-and-games": {
@@ -639,7 +718,17 @@
         "ski-jumper-speed": { "one": "sauteur à ski", "other": "sauteurs à ski" },
         "downhill-skier-speed": { "one": "skieur de descente", "other": "skieurs de descente" },
         "squash-ball-speed": { "one": "balle de squash professionnelle", "other": "balles de squash professionnelles" },
-        "jai-alai-pelota-speed": { "one": "pelote de jai alai", "other": "pelotes de jai alai" }
+        "jai-alai-pelota-speed": { "one": "pelote de jai alai", "other": "pelotes de jai alai" },
+        "ping-pong-rally-hit": {"one":"frappe d'échange de ping-pong","other":"frappes d'échange de ping-pong"},
+        "basketball-dribble": {"one":"dribble de basket","other":"dribbles de basket"},
+        "jump-rope-skip": {"one":"saut à la corde","other":"sauts à la corde"},
+        "stadium-clap": {"one":"applaudissement de stade","other":"applaudissements de stade"},
+        "chess-clock-slap": {"one":"claque sur horloge d'échecs","other":"claques sur horloge d'échecs"},
+        "table-football-spin": {"one":"tour de baby-foot","other":"tours de baby-foot"},
+        "bowling-pin-crash": {"one":"fracas de quilles","other":"fracas de quilles"},
+        "golf-clap": {"one":"applaudissement poli de golf","other":"applaudissements polis de golf"},
+        "video-game-rage-quit": {"one":"abandon rageur de jeu vidéo","other":"abandons rageurs de jeux vidéo"},
+        "referee-whistle": {"one":"coup de sifflet d'arbitre","other":"coups de sifflet d'arbitre"}
       }
     },
     "technology": {
@@ -695,7 +784,17 @@
         "warehouse-robot-speed": { "one": "robot d'entrepôt", "other": "robots d'entrepôt" },
         "experimental-maglev-speed": { "one": "train maglev expérimental", "other": "trains maglev expérimentaux" },
         "copper-signal-speed": { "one": "signal dans un câble de cuivre", "other": "signaux dans un câble de cuivre" },
-        "vacuum-light-speed": { "one": "impulsion lumineuse dans le vide", "other": "impulsions lumineuses dans le vide" }
+        "vacuum-light-speed": { "one": "impulsion lumineuse dans le vide", "other": "impulsions lumineuses dans le vide" },
+        "cpu-clock-tick": {"one":"tic d'horloge de processeur","other":"tics d'horloge de processeurs"},
+        "keyboard-clack": {"one":"claquement de clavier","other":"claquements de claviers"},
+        "router-light-blink": {"one":"clignotement de voyant de routeur","other":"clignotements de voyants de routeur"},
+        "notification-ping": {"one":"ping de notification","other":"pings de notifications"},
+        "loading-spinner-lap": {"one":"tour de roue de chargement","other":"tours de roue de chargement"},
+        "autosave-pulse": {"one":"impulsion de sauvegarde automatique","other":"impulsions de sauvegarde automatique"},
+        "captcha-existential-crisis": {"one":"crise existentielle de CAPTCHA","other":"crises existentielles de CAPTCHA"},
+        "merge-conflict-spawn": {"one":"apparition de conflit de fusion","other":"apparitions de conflits de fusion"},
+        "printer-paper-jam": {"one":"bourrage d'imprimante","other":"bourrages d'imprimantes"},
+        "reboot-remedy": {"one":"remède éteindre-et-rallumer","other":"remèdes éteindre-et-rallumer"}
       }
     },
     "transport": {
@@ -751,7 +850,17 @@
         "electric-scooter-speed": { "one": "trottinette électrique", "other": "trottinettes électriques" },
         "passenger-ferry-speed": { "one": "transbordeur de passagers", "other": "transbordeurs de passagers" },
         "bullet-train-speed": { "one": "train à grande vitesse japonais", "other": "trains à grande vitesse japonais" },
-        "supersonic-jet-speed": { "one": "avion de ligne supersonique", "other": "avions de ligne supersoniques" }
+        "supersonic-jet-speed": { "one": "avion de ligne supersonique", "other": "avions de ligne supersoniques" },
+        "turn-signal-click": {"one":"clic de clignotant","other":"clics de clignotants"},
+        "windshield-wiper-swipe": {"one":"passage d'essuie-glace","other":"passages d'essuie-glaces"},
+        "train-wheel-clack": {"one":"claquement de roue de train","other":"claquements de roues de train"},
+        "bicycle-pedal-turn": {"one":"tour de pédale","other":"tours de pédales"},
+        "helicopter-rotor-turn": {"one":"tour de rotor d'hélicoptère","other":"tours de rotors d'hélicoptère"},
+        "subway-door-chime": {"one":"carillon de porte de métro","other":"carillons de portes de métro"},
+        "airplane-seatbelt-ding": {"one":"ding de ceinture d'avion","other":"dings de ceintures d'avion"},
+        "traffic-light-change": {"one":"changement de feu","other":"changements de feux"},
+        "scooter-bell-ring": {"one":"coup de sonnette de trottinette","other":"coups de sonnette de trottinette"},
+        "gps-recalculating-sigh": {"one":"soupir de recalcul du GPS","other":"soupirs de recalcul du GPS"}
       }
     }
   }

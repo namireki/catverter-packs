@@ -5,13 +5,13 @@
   "packageId": "com.namirekistudio.catverter.pack.unconventional-units",
   "id": "unconventional-units",
   "name": "Unconventional Units",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "minimumAppVersion": "1.0.0",
   "description": "Sourced non-coherent units from engineering, science, culture, and everyday comparisons.",
   "metadata": {
     "authors": ["Namireki Studio"],
     "license": "Apache-2.0",
-    "tags": ["unconventional-units", "science", "engineering", "culture"],
+    "tags": ["unconventional-units", "science", "engineering", "culture", "frequency"],
     "accentColor": "#8A5A44"
   },
   "conversions": [
@@ -1437,6 +1437,15 @@
       "value": 0.024,
       "sourceUrl": "https://en.wikipedia.org/wiki/Crab_(unit)",
       "notes": "One thousandth of the approximate 24-picowatt-per-square-meter Crab reference."
-    }
+    },
+    {"id":"new-york-minute","singularName":"New York minute","pluralName":"New York minutes","quantity":"Frequency","unit":"PerSecond","value":0.0166666666666667},
+    {"id":"banana-scale-deployment","singularName":"banana-for-scale deployment","pluralName":"banana-for-scale deployments","quantity":"Frequency","unit":"PerSecond","value":0.00166666666666667},
+    {"id":"rubber-duck-debug-quack","singularName":"rubber-duck debugging quack","pluralName":"rubber-duck debugging quacks","quantity":"Frequency","unit":"PerSecond","value":0.1},
+    {"id":"internet-forever-spinner","singularName":"internet-forever spinner lap","pluralName":"internet-forever spinner laps","quantity":"Frequency","unit":"PerSecond","value":1.0},
+    {"id":"blue-moon-appearance","singularName":"once-in-a-blue-moon appearance","pluralName":"once-in-a-blue-moon appearances","quantity":"Frequency","unit":"PerSecond","value":1.17407570131587E-08},
+    {"id":"nuclear-physicist-shake","singularName":"nuclear physicist's shake","pluralName":"nuclear physicists' shakes","quantity":"Frequency","unit":"PerSecond","value":100000000.0},
+    {"id":"bureaucratic-stamp-thump","singularName":"bureaucratic stamp thump","pluralName":"bureaucratic stamp thumps","quantity":"Frequency","unit":"PerSecond","value":0.0333333333333333},
+    {"id":"cosmic-eye-roll","singularName":"cosmic eye roll","pluralName":"cosmic eye rolls","quantity":"Frequency","unit":"PerSecond","value":3.16880878140289E-08},
+    {"id":"meeting-jiffy","singularName":"“just a jiffy” before the meeting","pluralName":"“just a jiffy” moments before the meeting","quantity":"Frequency","unit":"PerSecond","value":0.2}
   ]
 }

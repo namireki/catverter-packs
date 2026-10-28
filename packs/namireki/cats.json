@@ -5,10 +5,10 @@
   "packageId": "com.namirekistudio.catverter.pack.cats",
   "id": "cats",
   "name": "Cats",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "minimumAppVersion": "1.0.0",
   "description": "Approximate kitten, breed, body-part, cat-supply, and zoomie-sized comparisons.",
-  "metadata": { "authors": ["Namireki Studio"], "license": "Apache-2.0", "tags": ["cats", "mass", "length", "volume", "speed"] },
+  "metadata": { "authors": ["Namireki Studio"], "license": "Apache-2.0", "tags": ["cats", "mass", "length", "volume", "speed", "frequency"] },
   "modifiers": [
     { "id": "tiny", "name": "tiny", "multiplier": 0.5, "quantities": ["Mass", "Length", "Volume"], "combinationGroup": "scale" },
     { "id": "slim", "name": "slim", "multiplier": 0.75, "quantities": ["Mass"], "combinationGroup": "build" },
@@ -209,6 +209,16 @@
     {"id":"cat-hallway-trot-speed","singularName":"hallway-trotting cat","pluralName":"hallway-trotting cats","quantity":"Speed","unit":"KilometerPerHour","value":12},
     {"id":"cat-pounce-speed","singularName":"pouncing cat","pluralName":"pouncing cats","quantity":"Speed","unit":"KilometerPerHour","value":25},
     {"id":"laser-chase-speed","singularName":"laser-chasing cat","pluralName":"laser-chasing cats","quantity":"Speed","unit":"KilometerPerHour","value":35},
-    {"id":"bathtub-escape-speed","singularName":"cat escaping a bathtub","pluralName":"cats escaping a bathtub","quantity":"Speed","unit":"KilometerPerHour","value":40}
+    {"id":"bathtub-escape-speed","singularName":"cat escaping a bathtub","pluralName":"cats escaping a bathtub","quantity":"Speed","unit":"KilometerPerHour","value":40},
+    {"id":"purr-vibration","singularName":"purr vibration","pluralName":"purr vibrations","quantity":"Frequency","unit":"PerSecond","value":25.0},
+    {"id":"biscuit-paw-press","singularName":"biscuit-making paw press","pluralName":"biscuit-making paw presses","quantity":"Frequency","unit":"PerSecond","value":1.5},
+    {"id":"midnight-zoomie-lap","singularName":"midnight zoomie lap","pluralName":"midnight zoomie laps","quantity":"Frequency","unit":"PerSecond","value":0.05},
+    {"id":"judgmental-slow-blink","singularName":"judgmental slow blink","pluralName":"judgmental slow blinks","quantity":"Frequency","unit":"PerSecond","value":0.2},
+    {"id":"tail-tip-flick","singularName":"tail-tip flick","pluralName":"tail-tip flicks","quantity":"Frequency","unit":"PerSecond","value":2.0},
+    {"id":"empty-bowl-complaint","singularName":"empty-bowl complaint","pluralName":"empty-bowl complaints","quantity":"Frequency","unit":"PerSecond","value":0.1},
+    {"id":"cardboard-box-inspection","singularName":"cardboard-box inspection","pluralName":"cardboard-box inspections","quantity":"Frequency","unit":"PerSecond","value":0.0333333333333333},
+    {"id":"keyboard-interruption","singularName":"keyboard interruption","pluralName":"keyboard interruptions","quantity":"Frequency","unit":"PerSecond","value":0.0166666666666667},
+    {"id":"laser-dot-pounce","singularName":"laser-dot pounce","pluralName":"laser-dot pounces","quantity":"Frequency","unit":"PerSecond","value":0.5},
+    {"id":"dawn-meow","singularName":"dawn meow","pluralName":"dawn meows","quantity":"Frequency","unit":"PerSecond","value":0.25}
   ]
 }

@@ -5,10 +5,10 @@
   "packageId": "com.namirekistudio.catverter.pack.astronomy",
   "id": "astronomy",
   "name": "Astronomy",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "minimumAppVersion": "1.0.0",
   "description": "Approximate cosmic masses, sizes, distances, volumes, and speeds from the Moon to the Sun.",
-  "metadata": { "authors": ["Namireki Studio"], "license": "Apache-2.0", "tags": ["astronomy", "mass", "length", "volume", "speed"] },
+  "metadata": { "authors": ["Namireki Studio"], "license": "Apache-2.0", "tags": ["astronomy", "mass", "length", "volume", "speed", "frequency"] },
   "modifiers": [
     { "id": "miniature", "name": "miniature", "multiplier": 0.1, "quantities": ["Mass", "Length", "Volume"], "combinationGroup": "scale" },
     { "id": "colossal", "name": "colossal", "multiplier": 10, "quantities": ["Mass", "Length", "Volume"], "combinationGroup": "scale" },
@@ -206,6 +206,16 @@
     {"id":"voyager-one-speed","singularName":"Voyager 1 speed","pluralName":"Voyager 1 speeds","quantity":"Speed","unit":"KilometerPerHour","value":61200},
     {"id":"mercury-orbital-speed","singularName":"Mercury orbital speed","pluralName":"Mercury orbital speeds","quantity":"Speed","unit":"KilometerPerHour","value":170500},
     {"id":"parker-solar-probe-speed","singularName":"Parker Solar Probe speed","pluralName":"Parker Solar Probe speeds","quantity":"Speed","unit":"KilometerPerHour","value":635266},
-    {"id":"solar-system-galactic-speed","singularName":"Solar System galactic speed","pluralName":"Solar System galactic speeds","quantity":"Speed","unit":"KilometerPerHour","value":828000}
+    {"id":"solar-system-galactic-speed","singularName":"Solar System galactic speed","pluralName":"Solar System galactic speeds","quantity":"Speed","unit":"KilometerPerHour","value":828000},
+    {"id":"millisecond-pulsar-pulse","singularName":"millisecond pulsar pulse","pluralName":"millisecond pulsar pulses","quantity":"Frequency","unit":"PerSecond","value":642.0},
+    {"id":"earth-dramatic-spin","singularName":"dramatic Earth spin","pluralName":"dramatic Earth spins","quantity":"Frequency","unit":"PerSecond","value":1.15740740740741E-05},
+    {"id":"moon-victory-lap","singularName":"Moon victory lap","pluralName":"Moon victory laps","quantity":"Frequency","unit":"PerSecond","value":4.23911193312747E-07},
+    {"id":"earth-solar-lap","singularName":"Earth lap around the Sun","pluralName":"Earth laps around the Sun","quantity":"Frequency","unit":"PerSecond","value":3.16880878140289E-08},
+    {"id":"iss-victory-lap","singularName":"ISS victory lap","pluralName":"ISS victory laps","quantity":"Frequency","unit":"PerSecond","value":0.000179985601151908},
+    {"id":"halley-late-visit","singularName":"extremely late Halley's Comet visit","pluralName":"extremely late Halley's Comet visits","quantity":"Frequency","unit":"PerSecond","value":4.22746385568565E-10},
+    {"id":"solar-mood-swing","singularName":"solar mood swing","pluralName":"solar mood swings","quantity":"Frequency","unit":"PerSecond","value":2.88090250807752E-09},
+    {"id":"shooting-star-wish","singularName":"shooting-star wish opportunity","pluralName":"shooting-star wish opportunities","quantity":"Frequency","unit":"PerSecond","value":0.01},
+    {"id":"alien-beacon-ping","singularName":"suspicious alien beacon ping","pluralName":"suspicious alien beacon pings","quantity":"Frequency","unit":"PerSecond","value":0.0333333333333333},
+    {"id":"mission-control-coffee-refill","singularName":"mission-control coffee refill","pluralName":"mission-control coffee refills","quantity":"Frequency","unit":"PerSecond","value":0.000277777777777778}
   ]
 }

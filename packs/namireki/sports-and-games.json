@@ -5,10 +5,10 @@
   "packageId": "com.namirekistudio.catverter.pack.sports-and-games",
   "id": "sports-and-games",
   "name": "Sports & games",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "minimumAppVersion": "1.0.0",
   "description": "Approximate equipment, playing distances, containers, and record-worthy speeds across popular sports and games.",
-  "metadata": { "authors": ["Namireki Studio"], "license": "Apache-2.0", "tags": ["sports", "games", "mass", "length", "volume"] },
+  "metadata": { "authors": ["Namireki Studio"], "license": "Apache-2.0", "tags": ["sports", "games", "mass", "length", "volume", "frequency"] },
   "modifiers": [
     { "id": "tiny", "name": "tiny", "multiplier": 0.5, "quantities": ["Mass", "Length", "Volume"], "combinationGroup": "scale" },
     { "id": "junior", "name": "junior-sized", "multiplier": 0.7, "quantities": ["Mass", "Length", "Volume"], "combinationGroup": "league", "incompatibleWith": ["giant"] },
@@ -66,6 +66,16 @@
     {"id":"ski-jumper-speed","singularName":"ski jumper","pluralName":"ski jumpers","quantity":"Speed","unit":"KilometerPerHour","value":95},
     {"id":"downhill-skier-speed","singularName":"downhill skier","pluralName":"downhill skiers","quantity":"Speed","unit":"KilometerPerHour","value":130},
     {"id":"squash-ball-speed","singularName":"professional squash ball","pluralName":"professional squash balls","quantity":"Speed","unit":"KilometerPerHour","value":280},
-    {"id":"jai-alai-pelota-speed","singularName":"jai alai pelota","pluralName":"jai alai pelotas","quantity":"Speed","unit":"KilometerPerHour","value":302}
+    {"id":"jai-alai-pelota-speed","singularName":"jai alai pelota","pluralName":"jai alai pelotas","quantity":"Speed","unit":"KilometerPerHour","value":302},
+    {"id":"ping-pong-rally-hit","singularName":"ping-pong rally hit","pluralName":"ping-pong rally hits","quantity":"Frequency","unit":"PerSecond","value":3.0},
+    {"id":"basketball-dribble","singularName":"basketball dribble","pluralName":"basketball dribbles","quantity":"Frequency","unit":"PerSecond","value":1.8},
+    {"id":"jump-rope-skip","singularName":"jump-rope skip","pluralName":"jump-rope skips","quantity":"Frequency","unit":"PerSecond","value":2.5},
+    {"id":"stadium-clap","singularName":"stadium clap","pluralName":"stadium claps","quantity":"Frequency","unit":"PerSecond","value":2.0},
+    {"id":"chess-clock-slap","singularName":"chess-clock slap","pluralName":"chess-clock slaps","quantity":"Frequency","unit":"PerSecond","value":0.1},
+    {"id":"table-football-spin","singularName":"table-football spin","pluralName":"table-football spins","quantity":"Frequency","unit":"PerSecond","value":4.0},
+    {"id":"bowling-pin-crash","singularName":"bowling-pin crash","pluralName":"bowling-pin crashes","quantity":"Frequency","unit":"PerSecond","value":0.0333333333333333},
+    {"id":"golf-clap","singularName":"polite golf clap","pluralName":"polite golf claps","quantity":"Frequency","unit":"PerSecond","value":1.0},
+    {"id":"video-game-rage-quit","singularName":"video-game rage quit","pluralName":"video-game rage quits","quantity":"Frequency","unit":"PerSecond","value":0.000277777777777778},
+    {"id":"referee-whistle","singularName":"referee whistle","pluralName":"referee whistles","quantity":"Frequency","unit":"PerSecond","value":0.0166666666666667}
   ]
 }

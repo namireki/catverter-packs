@@ -5,10 +5,10 @@
   "packageId": "com.namirekistudio.catverter.pack.food-and-drink",
   "id": "food-and-drink",
   "name": "Food & drink",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "minimumAppVersion": "1.0.0",
   "description": "Approximate edible masses, lengths, servings, containers, and delivery speeds from a grain of rice to a mixing vat.",
-  "metadata": { "authors": ["Namireki Studio"], "license": "Apache-2.0", "tags": ["food", "drink", "mass", "length", "volume"] },
+  "metadata": { "authors": ["Namireki Studio"], "license": "Apache-2.0", "tags": ["food", "drink", "mass", "length", "volume", "frequency"] },
   "modifiers": [
     { "id": "bite-sized", "name": "bite-sized", "multiplier": 0.5, "quantities": ["Mass", "Length", "Volume"], "combinationGroup": "portion" },
     { "id": "generous", "name": "generous", "multiplier": 1.5, "quantities": ["Mass", "Volume"], "combinationGroup": "portion" },
@@ -66,6 +66,16 @@
     {"id":"microwave-turntable-speed","singularName":"microwave turntable edge","pluralName":"microwave turntable edges","quantity":"Speed","unit":"KilometerPerHour","value":0.1},
     {"id":"restaurant-trolley-speed","singularName":"restaurant trolley","pluralName":"restaurant trolleys","quantity":"Speed","unit":"KilometerPerHour","value":5},
     {"id":"coffee-courier-speed","singularName":"coffee courier bicycle","pluralName":"coffee courier bicycles","quantity":"Speed","unit":"KilometerPerHour","value":20},
-    {"id":"champagne-cork-speed","singularName":"flying champagne cork","pluralName":"flying champagne corks","quantity":"Speed","unit":"KilometerPerHour","value":40}
+    {"id":"champagne-cork-speed","singularName":"flying champagne cork","pluralName":"flying champagne corks","quantity":"Speed","unit":"KilometerPerHour","value":40},
+    {"id":"popcorn-pop","singularName":"popcorn pop","pluralName":"popcorn pops","quantity":"Frequency","unit":"PerSecond","value":8.0},
+    {"id":"coffee-drip","singularName":"coffee drip","pluralName":"coffee drips","quantity":"Frequency","unit":"PerSecond","value":1.5},
+    {"id":"blender-dramatic-whirl","singularName":"dramatic blender whirl","pluralName":"dramatic blender whirls","quantity":"Frequency","unit":"PerSecond","value":300.0},
+    {"id":"microwave-impatient-beep","singularName":"impatient microwave beep","pluralName":"impatient microwave beeps","quantity":"Frequency","unit":"PerSecond","value":0.5},
+    {"id":"toaster-victory-pop","singularName":"toaster victory pop","pluralName":"toaster victory pops","quantity":"Frequency","unit":"PerSecond","value":0.000277777777777778},
+    {"id":"soda-bubble-escape","singularName":"soda-bubble escape","pluralName":"soda-bubble escapes","quantity":"Frequency","unit":"PerSecond","value":12.0},
+    {"id":"spaghetti-slurp","singularName":"spaghetti slurp","pluralName":"spaghetti slurps","quantity":"Frequency","unit":"PerSecond","value":0.75},
+    {"id":"cookie-jar-raid","singularName":"cookie-jar raid","pluralName":"cookie-jar raids","quantity":"Frequency","unit":"PerSecond","value":1.15740740740741E-05},
+    {"id":"kettle-rumble","singularName":"kettle rumble","pluralName":"kettle rumbles","quantity":"Frequency","unit":"PerSecond","value":10.0},
+    {"id":"pizza-doorbell","singularName":"pizza doorbell","pluralName":"pizza doorbells","quantity":"Frequency","unit":"PerSecond","value":0.000138888888888889}
   ]
 }

@@ -16,9 +16,10 @@ provenance, locale, and immutable-download fields are optional schema-v1
 extensions for compatibility with existing readers, but this repository's
 semantic validator requires them on the canonical catalog.
 
-The current catalog contains 11 official packs synchronized from CatverterV2
-commit `6dd430bfda08211d27aa7212526567f186d70004`, one contributed pack, and
-complete French and Italian locales for the official set. Official source
+The current catalog contains 11 official packs derived from CatverterV2
+commit `6dd430bfda08211d27aa7212526567f186d70004`, one contributed pack, at least
+ten Frequency conversions in every cataloged pack, and complete French and
+Italian locales for the official set. Official source
 hashes are kept in each entry's `source` object; the entry's top-level
 `sha256` covers the relocated file in this repository.
 

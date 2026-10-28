@@ -5,10 +5,10 @@
   "packageId": "com.namirekistudio.catverter.pack.nature-and-weather",
   "id": "nature-and-weather",
   "name": "Nature & weather",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "minimumAppVersion": "1.0.0",
   "description": "Approximate natural masses, heights, water volumes, and weather speeds from a snowflake to a lightning stroke.",
-  "metadata": { "authors": ["Namireki Studio"], "license": "Apache-2.0", "tags": ["nature", "weather", "mass", "length", "volume", "speed"] },
+  "metadata": { "authors": ["Namireki Studio"], "license": "Apache-2.0", "tags": ["nature", "weather", "mass", "length", "volume", "speed", "frequency"] },
   "modifiers": [
     { "id": "tiny", "name": "tiny", "multiplier": 0.25, "quantities": ["Mass", "Length", "Volume"], "combinationGroup": "scale" },
     { "id": "lush", "name": "lush", "multiplier": 1.5, "quantities": ["Mass", "Length", "Volume"], "combinationGroup": "condition" },
@@ -67,6 +67,16 @@
     {"id":"lava-flow-speed","singularName":"slow lava flow","pluralName":"slow lava flows","quantity":"Speed","unit":"KilometerPerHour","value":0.1},
     {"id":"river-current-speed","singularName":"swift river current","pluralName":"swift river currents","quantity":"Speed","unit":"KilometerPerHour","value":5},
     {"id":"avalanche-speed","singularName":"powder avalanche","pluralName":"powder avalanches","quantity":"Speed","unit":"KilometerPerHour","value":130},
-    {"id":"tsunami-speed","singularName":"deep-ocean tsunami","pluralName":"deep-ocean tsunamis","quantity":"Speed","unit":"KilometerPerHour","value":800}
+    {"id":"tsunami-speed","singularName":"deep-ocean tsunami","pluralName":"deep-ocean tsunamis","quantity":"Speed","unit":"KilometerPerHour","value":800},
+    {"id":"raindrop-window-tap","singularName":"raindrop window tap","pluralName":"raindrop window taps","quantity":"Frequency","unit":"PerSecond","value":5.0},
+    {"id":"ocean-wave-crash","singularName":"ocean-wave crash","pluralName":"ocean-wave crashes","quantity":"Frequency","unit":"PerSecond","value":0.1},
+    {"id":"lightning-flash","singularName":"lightning flash","pluralName":"lightning flashes","quantity":"Frequency","unit":"PerSecond","value":0.01},
+    {"id":"thunder-grumble","singularName":"thunder grumble","pluralName":"thunder grumbles","quantity":"Frequency","unit":"PerSecond","value":0.02},
+    {"id":"breeze-leaf-rustle","singularName":"breeze-powered leaf rustle","pluralName":"breeze-powered leaf rustles","quantity":"Frequency","unit":"PerSecond","value":3.0},
+    {"id":"geyser-eruption","singularName":"geyser eruption","pluralName":"geyser eruptions","quantity":"Frequency","unit":"PerSecond","value":0.000277777777777778},
+    {"id":"snowflake-nose-landing","singularName":"snowflake nose landing","pluralName":"snowflake nose landings","quantity":"Frequency","unit":"PerSecond","value":0.2},
+    {"id":"volcano-dramatic-burp","singularName":"volcano's dramatic burp","pluralName":"volcanoes' dramatic burps","quantity":"Frequency","unit":"PerSecond","value":1.15740740740741E-05},
+    {"id":"tide-mood-swing","singularName":"tidal mood swing","pluralName":"tidal mood swings","quantity":"Frequency","unit":"PerSecond","value":2.31481481481481E-05},
+    {"id":"sunflower-sun-check","singularName":"sunflower sun check","pluralName":"sunflower sun checks","quantity":"Frequency","unit":"PerSecond","value":1.15740740740741E-05}
   ]
 }

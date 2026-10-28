@@ -5,10 +5,10 @@
   "packageId": "com.namirekistudio.catverter.pack.big-stuff",
   "id": "big-stuff",
   "name": "Big stuff",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "minimumAppVersion": "1.0.0",
   "description": "Approximate fields, pools, vehicles, landmarks, and other satisfyingly oversized comparisons.",
-  "metadata": { "authors": ["Namireki Studio"], "license": "Apache-2.0", "tags": ["big-stuff", "mass", "length", "volume"] },
+  "metadata": { "authors": ["Namireki Studio"], "license": "Apache-2.0", "tags": ["big-stuff", "mass", "length", "volume", "frequency"] },
   "modifiers": [
     { "id": "compact", "name": "compact", "multiplier": 0.5, "quantities": ["Mass", "Length", "Volume"], "combinationGroup": "scale" },
     { "id": "supersized", "name": "supersized", "multiplier": 2, "quantities": ["Mass", "Length", "Volume"], "combinationGroup": "scale" },
@@ -207,6 +207,16 @@
     {"id":"great-pyramid-volume","singularName":"Great Pyramid volume","pluralName":"Great Pyramid volumes","quantity":"Volume","unit":"Liter","value":2600000000},
     {"id":"three-gorges-reservoir-volume","singularName":"Three Gorges reservoir","pluralName":"Three Gorges reservoirs","quantity":"Volume","unit":"Liter","value":39300000000000},
     {"id":"lake-tahoe-volume","singularName":"Lake Tahoe","pluralName":"Lake Tahoes","quantity":"Volume","unit":"Liter","value":150000000000000},
-    {"id":"lake-superior-volume","singularName":"Lake Superior","pluralName":"Lake Superiors","quantity":"Volume","unit":"Liter","value":12100000000000000}
+    {"id":"lake-superior-volume","singularName":"Lake Superior","pluralName":"Lake Superiors","quantity":"Volume","unit":"Liter","value":12100000000000000},
+    {"id":"stadium-wave-lap","singularName":"stadium-wave lap","pluralName":"stadium-wave laps","quantity":"Frequency","unit":"PerSecond","value":0.005},
+    {"id":"skyscraper-elevator-ding","singularName":"skyscraper elevator ding","pluralName":"skyscraper elevator dings","quantity":"Frequency","unit":"PerSecond","value":0.025},
+    {"id":"wrecking-ball-swing","singularName":"wrecking-ball swing","pluralName":"wrecking-ball swings","quantity":"Frequency","unit":"PerSecond","value":0.2},
+    {"id":"cargo-crane-lift","singularName":"cargo-crane lift","pluralName":"cargo-crane lifts","quantity":"Frequency","unit":"PerSecond","value":0.00833333333333333},
+    {"id":"drawbridge-opening","singularName":"drawbridge grand opening","pluralName":"drawbridge grand openings","quantity":"Frequency","unit":"PerSecond","value":0.000277777777777778},
+    {"id":"container-ship-horn","singularName":"container-ship horn blast","pluralName":"container-ship horn blasts","quantity":"Frequency","unit":"PerSecond","value":0.00166666666666667},
+    {"id":"wind-turbine-turn","singularName":"wind-turbine turn","pluralName":"wind-turbine turns","quantity":"Frequency","unit":"PerSecond","value":0.25},
+    {"id":"giant-bell-toll","singularName":"giant bell toll","pluralName":"giant bell tolls","quantity":"Frequency","unit":"PerSecond","value":0.0166666666666667},
+    {"id":"construction-cone-migration","singularName":"construction-cone migration","pluralName":"construction-cone migrations","quantity":"Frequency","unit":"PerSecond","value":1.15740740740741E-05},
+    {"id":"monument-selfie","singularName":"monument selfie","pluralName":"monument selfies","quantity":"Frequency","unit":"PerSecond","value":0.1}
   ]
 }

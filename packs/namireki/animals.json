@@ -5,10 +5,10 @@
   "packageId": "com.namirekistudio.catverter.pack.animals",
   "id": "animals",
   "name": "Animals",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "minimumAppVersion": "1.0.0",
   "description": "Approximate animal masses, lengths, and speeds for wildly relatable comparisons.",
-  "metadata": { "authors": ["Namireki Studio"], "license": "Apache-2.0", "tags": ["animals", "mass", "length", "speed"] },
+  "metadata": { "authors": ["Namireki Studio"], "license": "Apache-2.0", "tags": ["animals", "mass", "length", "speed", "frequency"] },
   "modifiers": [
     { "id": "tiny", "name": "tiny", "multiplier": 0.5, "quantities": ["Mass", "Length"], "combinationGroup": "scale" },
     { "id": "hefty", "name": "hefty", "multiplier": 1.5, "quantities": ["Mass"], "combinationGroup": "scale" },
@@ -207,6 +207,16 @@
     {"id":"ostrich-run-speed","singularName":"running ostrich","pluralName":"running ostriches","quantity":"Speed","unit":"KilometerPerHour","value":72},
     {"id":"sailfish-speed","singularName":"sprinting sailfish","pluralName":"sprinting sailfish","quantity":"Speed","unit":"KilometerPerHour","value":110},
     {"id":"common-swift-speed","singularName":"flying common swift","pluralName":"flying common swifts","quantity":"Speed","unit":"KilometerPerHour","value":170},
-    {"id":"golden-eagle-dive-speed","singularName":"diving golden eagle","pluralName":"diving golden eagles","quantity":"Speed","unit":"KilometerPerHour","value":240}
+    {"id":"golden-eagle-dive-speed","singularName":"diving golden eagle","pluralName":"diving golden eagles","quantity":"Speed","unit":"KilometerPerHour","value":240},
+    {"id":"sloth-high-five-rate","singularName":"sloth high-five","pluralName":"sloth high-fives","quantity":"Frequency","unit":"PerSecond","value":0.0166666666666667},
+    {"id":"hummingbird-wingbeat","singularName":"hummingbird wingbeat","pluralName":"hummingbird wingbeats","quantity":"Frequency","unit":"PerSecond","value":53.0},
+    {"id":"dog-tail-wag","singularName":"enthusiastic dog-tail wag","pluralName":"enthusiastic dog-tail wags","quantity":"Frequency","unit":"PerSecond","value":5.0},
+    {"id":"pigeon-head-bob","singularName":"pigeon head bob","pluralName":"pigeon head bobs","quantity":"Frequency","unit":"PerSecond","value":2.0},
+    {"id":"rabbit-nose-twitch","singularName":"rabbit nose twitch","pluralName":"rabbit nose twitches","quantity":"Frequency","unit":"PerSecond","value":4.0},
+    {"id":"woodpecker-peck","singularName":"woodpecker peck","pluralName":"woodpecker pecks","quantity":"Frequency","unit":"PerSecond","value":20.0},
+    {"id":"firefly-blink","singularName":"firefly blink","pluralName":"firefly blinks","quantity":"Frequency","unit":"PerSecond","value":1.0},
+    {"id":"cricket-chirp","singularName":"cricket chirp","pluralName":"cricket chirps","quantity":"Frequency","unit":"PerSecond","value":3.0},
+    {"id":"galloping-horse-hoofbeat","singularName":"galloping horse hoofbeat","pluralName":"galloping horse hoofbeats","quantity":"Frequency","unit":"PerSecond","value":2.5},
+    {"id":"owl-judgmental-blink","singularName":"owl's judgmental blink","pluralName":"owls' judgmental blinks","quantity":"Frequency","unit":"PerSecond","value":0.1}
   ]
 }
