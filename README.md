@@ -17,10 +17,10 @@ extensions for compatibility with existing readers, but this repository's
 semantic validator requires them on the canonical catalog.
 
 The current catalog contains 11 official packs synchronized from CatverterV2
-commit `6dd430bfda08211d27aa7212526567f186d70004`, one contributed pack, and the
-complete Italian locale for the official set. Official source hashes are kept
-in each entry's `source` object; the entry's top-level `sha256` covers the
-relocated file in this repository.
+commit `6dd430bfda08211d27aa7212526567f186d70004`, one contributed pack, and
+complete French and Italian locales for the official set. Official source
+hashes are kept in each entry's `source` object; the entry's top-level
+`sha256` covers the relocated file in this repository.
 
 ## Catalog and download contract
 
@@ -55,7 +55,8 @@ namespace.
 Official entries retain their CatverterV2 repository, revision, author-scoped
 path, and SHA-256 under `source`. `sha256` always covers the file at this
 repository's current `file` path. Catalog locale entries use the same hash and
-provenance rules; clients may apply a locale only after its catalog hash and
+provenance rules, while their source revision may identify a later upstream
+localization commit. Clients may apply a locale only after its catalog hash and
 locale identity validate.
 
 Consumers should treat the bundled snapshot as the initial official

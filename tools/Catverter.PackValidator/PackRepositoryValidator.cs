@@ -1381,15 +1381,10 @@ public sealed partial class PackRepositoryValidator
                 if (!string.Equals(
                         entry.Source.Repository,
                         sourceCatalog.Repository,
-                        StringComparison.Ordinal) ||
-                    !string.Equals(
-                        entry.Source.Revision,
-                        sourceCatalog.Revision,
                         StringComparison.Ordinal))
                 {
                     errors.Add(
-                        $"{entry.Context}.source must use the catalog source repository " +
-                        "and revision.");
+                        $"{entry.Context}.source must use the catalog source repository.");
                 }
 
                 var expectedSourceFile = $"packs/{entry.File}";
