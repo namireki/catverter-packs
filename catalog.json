@@ -3,7 +3,7 @@
   "documentType": "catverter-catalog",
   "schemaVersion": 1,
   "repositoryId": "io.github.namireki.catverter.packs",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "minimumAppVersion": "1.1.0",
   "contentBaseUrl": "https://raw.githubusercontent.com/namireki/catverter-packs/{revision}/",
   "sourceCatalog": {
@@ -190,6 +190,18 @@
     }
   ],
   "locales": [
+    {
+      "locale": "fr",
+      "name": "Français",
+      "file": "locales/fr.json",
+      "sha256": "aacdbb8d84a374dc85d9702dcceca6e121ca36cc7d1bd39a27f877b8996a7a94",
+      "source": {
+        "repository": "https://github.com/namireki/CatverterV2",
+        "revision": "761d910d3d2b6af52500d28f6d4a35fd75e68fe8",
+        "file": "packs/locales/fr.json",
+        "sha256": "aacdbb8d84a374dc85d9702dcceca6e121ca36cc7d1bd39a27f877b8996a7a94"
+      }
+    },
     {
       "locale": "it",
       "name": "Italiano",

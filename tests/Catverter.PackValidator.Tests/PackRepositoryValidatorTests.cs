@@ -44,6 +44,18 @@ public sealed class PackRepositoryValidatorTests : IDisposable
     }
 
     [Fact]
+    public void Validate_AcceptsLocaleFromIndependentSourceRevision()
+    {
+        CreateValidRepository(
+            localeSourceRevision: "1111111111111111111111111111111111111111");
+
+        var result = new PackRepositoryValidator().Validate(_root);
+
+        Assert.True(result.IsValid, string.Join(Environment.NewLine, result.Errors));
+        Assert.Equal(1, result.LocaleCount);
+    }
+
+    [Fact]
     public void Validate_RejectsContributedPackUsingOfficialNamespace()
     {
         CreateValidRepository(
@@ -260,7 +272,8 @@ public sealed class PackRepositoryValidatorTests : IDisposable
         string classification = "contributed",
         string maintainer = "author",
         string authorName = "Example Author",
-        string repository = "https://github.com/author/catverter-packs")
+        string repository = "https://github.com/author/catverter-packs",
+        string localeSourceRevision = "0000000000000000000000000000000000000000")
     {
         var packDirectory = Path.Combine(_root, "packs", packAuthor);
         Directory.CreateDirectory(packDirectory);
@@ -368,7 +381,7 @@ public sealed class PackRepositoryValidatorTests : IDisposable
                   "sha256": "{{localeHash}}",
                   "source": {
                     "repository": "https://github.com/namireki/CatverterV2",
-                    "revision": "0000000000000000000000000000000000000000",
+                    "revision": "{{localeSourceRevision}}",
                     "file": "packs/locales/it.json",
                     "sha256": "{{localeHash}}"
                   }
