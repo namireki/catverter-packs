@@ -1619,7 +1619,7 @@ public sealed partial class PackRepositoryValidator
                         "and revision.");
                 }
 
-                var expectedSourceFile = $"packs/{entry.Id}.json";
+                var expectedSourceFile = $"packs/{entry.Maintainer}/{entry.Id}.json";
                 if (!string.Equals(
                         entry.Source.File,
                         expectedSourceFile,
@@ -2175,7 +2175,7 @@ public sealed partial class PackRepositoryValidator
     private static partial Regex RevisionRegex();
 
     [GeneratedRegex(
-        "^packs/(?:locales/)?[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.json$",
+        "^packs/(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/)?[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.json$",
         RegexOptions.CultureInvariant)]
     private static partial Regex SourceFileRegex();
 

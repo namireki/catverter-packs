@@ -3,12 +3,12 @@
   "documentType": "catverter-catalog",
   "schemaVersion": 1,
   "repositoryId": "io.github.namireki.catverter.packs",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "minimumAppVersion": "1.1.0",
   "contentBaseUrl": "https://raw.githubusercontent.com/namireki/catverter-packs/{revision}/",
   "sourceCatalog": {
     "repository": "https://github.com/namireki/CatverterV2",
-    "revision": "cd358b6b010a45f418768d00fab6b6d87f3aa109",
+    "revision": "6dd430bfda08211d27aa7212526567f186d70004",
     "file": "packs/catalog.json",
     "repositoryId": "com.namirekistudio.catverter.packs",
     "version": "1.7.0"
@@ -24,9 +24,9 @@
       "sha256": "35d012fe2eef0ac5da3efa1857404659f5f696a6f0df43d8db811ba3bad9aaae",
       "source": {
         "repository": "https://github.com/namireki/CatverterV2",
-        "revision": "cd358b6b010a45f418768d00fab6b6d87f3aa109",
-        "file": "packs/animals.json",
-        "sha256": "a6e45c39c03ac10decc6eaa565294bab802066a4e9862c039325dd266d9e69bc"
+        "revision": "6dd430bfda08211d27aa7212526567f186d70004",
+        "file": "packs/namireki/animals.json",
+        "sha256": "5cfefcf8593fc9325af7e85f76be357a48f9355e7faf1b16eef551e319a1b91f"
       }
     },
     {
@@ -39,9 +39,9 @@
       "sha256": "b61520d0bf77416edbc9322142eca43015d433ecb26ba4d83c923ecd7d995df0",
       "source": {
         "repository": "https://github.com/namireki/CatverterV2",
-        "revision": "cd358b6b010a45f418768d00fab6b6d87f3aa109",
-        "file": "packs/household-items.json",
-        "sha256": "630b3833082abeda57b823d6b1320cb1a7731d3548c699a7e73575528d4ab3a7"
+        "revision": "6dd430bfda08211d27aa7212526567f186d70004",
+        "file": "packs/namireki/household-items.json",
+        "sha256": "b46efe9258f73acccdf79769e6a424872c5fce38c3f1e36be3948bc90b4fb03f"
       }
     },
     {
@@ -54,9 +54,9 @@
       "sha256": "22025806c6108be15cd62fdbc659730ae20276e9d66741e53aa08212ed37f050",
       "source": {
         "repository": "https://github.com/namireki/CatverterV2",
-        "revision": "cd358b6b010a45f418768d00fab6b6d87f3aa109",
-        "file": "packs/astronomy.json",
-        "sha256": "d7b62bf37ada7cdd997b25c226377fed8a7176fb86059dc237fff12194a737c2"
+        "revision": "6dd430bfda08211d27aa7212526567f186d70004",
+        "file": "packs/namireki/astronomy.json",
+        "sha256": "6e29f7e06bdee98ef661186c43cc1d4cabec90608cea4b1613da48cc8d25f751"
       }
     },
     {
@@ -69,9 +69,9 @@
       "sha256": "99d8cf11f3b4648b31a90c51a1faf7f6438029d0c7ce1528d4ca9a2b217437b1",
       "source": {
         "repository": "https://github.com/namireki/CatverterV2",
-        "revision": "cd358b6b010a45f418768d00fab6b6d87f3aa109",
-        "file": "packs/big-stuff.json",
-        "sha256": "e9330e1e7fc39b338aa85789dcf73a2de1c6b0ec685ca86aa324a51dd721e34e"
+        "revision": "6dd430bfda08211d27aa7212526567f186d70004",
+        "file": "packs/namireki/big-stuff.json",
+        "sha256": "01a7a6e19a7a57d97f98280d28862558ae27de76995d1807f8c02283777c7895"
       }
     },
     {
@@ -84,9 +84,9 @@
       "sha256": "ad2ab0855473d23e16e3420cfd93c635e54f131ec82298ba8fc175af55aab44e",
       "source": {
         "repository": "https://github.com/namireki/CatverterV2",
-        "revision": "cd358b6b010a45f418768d00fab6b6d87f3aa109",
-        "file": "packs/cats.json",
-        "sha256": "38b6df734bd6d2b481a20c96c9291726a1bed3ef43782ce40bba847af483d12e"
+        "revision": "6dd430bfda08211d27aa7212526567f186d70004",
+        "file": "packs/namireki/cats.json",
+        "sha256": "69ab1acb60a670f0df6324f701155cc00a80fb4c6f1534938e1d9386ea63d0a8"
       }
     },
     {
@@ -99,9 +99,9 @@
       "sha256": "0ca472b8a375ecda48345421804c4e3183ecfbbde72ab34a3a9be239e0e730e6",
       "source": {
         "repository": "https://github.com/namireki/CatverterV2",
-        "revision": "cd358b6b010a45f418768d00fab6b6d87f3aa109",
-        "file": "packs/food-and-drink.json",
-        "sha256": "2be13d8076ecdc3b35d1f316a298fa94b14c9803e4fcbae75e4a5b1f4d370c51"
+        "revision": "6dd430bfda08211d27aa7212526567f186d70004",
+        "file": "packs/namireki/food-and-drink.json",
+        "sha256": "ec1143752c4fa6314a337f5d5c705f35ab9a51ca7f437ba12938f95584002a59"
       }
     },
     {
@@ -114,9 +114,9 @@
       "sha256": "2a2160e34450ff79b70e7d9db34f66432cb6d091af81799dabd76ec7426462da",
       "source": {
         "repository": "https://github.com/namireki/CatverterV2",
-        "revision": "cd358b6b010a45f418768d00fab6b6d87f3aa109",
-        "file": "packs/transport.json",
-        "sha256": "99c992abdcad67888e3674ec5c8ff3938d66ed48de38fd3aa9a626b686a04aa1"
+        "revision": "6dd430bfda08211d27aa7212526567f186d70004",
+        "file": "packs/namireki/transport.json",
+        "sha256": "ed7362c99fa69803bdcac54658695a4db04bb8d6eb68ee57fe936e82a126f9ec"
       }
     },
     {
@@ -129,9 +129,9 @@
       "sha256": "050a82a04636b4a8bca3fecc20d3a106c4e62cbcdf8a215da854d13e56221d99",
       "source": {
         "repository": "https://github.com/namireki/CatverterV2",
-        "revision": "cd358b6b010a45f418768d00fab6b6d87f3aa109",
-        "file": "packs/sports-and-games.json",
-        "sha256": "fdafc6d011962ea55a180c5591d6633981d1ce078864449eefdd043ba864a706"
+        "revision": "6dd430bfda08211d27aa7212526567f186d70004",
+        "file": "packs/namireki/sports-and-games.json",
+        "sha256": "57cc096132aaee1b40548015c278bbf4f063c063483c4dd6d5c8bea2e7665136"
       }
     },
     {
@@ -144,9 +144,9 @@
       "sha256": "94b8cf962307c319e636eea674b8d55b72ad9695ff93ab1ae8f5ae239d9505be",
       "source": {
         "repository": "https://github.com/namireki/CatverterV2",
-        "revision": "cd358b6b010a45f418768d00fab6b6d87f3aa109",
-        "file": "packs/technology.json",
-        "sha256": "7a4e95f40cc8ebdd1c5e2afd9dd41532993d4ae50136ad4aa8de61d27f587030"
+        "revision": "6dd430bfda08211d27aa7212526567f186d70004",
+        "file": "packs/namireki/technology.json",
+        "sha256": "b0cbcb186fa09e9702fd8407ae7ffb62ac9afa027cb6f73df9feda9ca55d6cb4"
       }
     },
     {
@@ -159,9 +159,9 @@
       "sha256": "9648267ec71d9f6220dfb8b240aa2dc879239c143ef141f21ac9e12aa4d519c0",
       "source": {
         "repository": "https://github.com/namireki/CatverterV2",
-        "revision": "cd358b6b010a45f418768d00fab6b6d87f3aa109",
-        "file": "packs/nature-and-weather.json",
-        "sha256": "c51d9e31915075cad87ae04200342c6b7d29c2fdb62ddc552784004e735434d1"
+        "revision": "6dd430bfda08211d27aa7212526567f186d70004",
+        "file": "packs/namireki/nature-and-weather.json",
+        "sha256": "b95920ab09048e475d95844d210098c34e99921c1976fb743b43eca483f18f3c"
       }
     },
     {
@@ -174,9 +174,9 @@
       "sha256": "8adee61e3681ad5bf5aeeae648878e7ea305eecff854b9a89679fc85b0cf3ded",
       "source": {
         "repository": "https://github.com/namireki/CatverterV2",
-        "revision": "cd358b6b010a45f418768d00fab6b6d87f3aa109",
-        "file": "packs/unconventional-units.json",
-        "sha256": "a3db45d90a90c32828a4ff449750e5189fa180282c6d69e4a5d9156453f84150"
+        "revision": "6dd430bfda08211d27aa7212526567f186d70004",
+        "file": "packs/namireki/unconventional-units.json",
+        "sha256": "322c496b1a2b907e22bc231a13f2b8422df2f8357009fc74ec375b264acfeead"
       }
     },
     {
@@ -197,7 +197,7 @@
       "sha256": "4b2224cab731a5e40b6c0e9fcb9140e7560d9f54ecb76f8159558b1a690007e2",
       "source": {
         "repository": "https://github.com/namireki/CatverterV2",
-        "revision": "cd358b6b010a45f418768d00fab6b6d87f3aa109",
+        "revision": "6dd430bfda08211d27aa7212526567f186d70004",
         "file": "packs/locales/it.json",
         "sha256": "4b2224cab731a5e40b6c0e9fcb9140e7560d9f54ecb76f8159558b1a690007e2"
       }

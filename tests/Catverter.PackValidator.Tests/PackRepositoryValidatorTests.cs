@@ -138,6 +138,31 @@ public sealed class PackRepositoryValidatorTests : IDisposable
                 StringComparison.Ordinal));
     }
 
+    [Fact]
+    public void Validate_RejectsOfficialPackWithFlatSourcePath()
+    {
+        CreateValidRepository(
+            catalogPath: "packs/namireki/sample.json",
+            packAuthor: "namireki",
+            packageId: "com.namirekistudio.catverter.pack.sample",
+            classification: "official",
+            maintainer: "namireki",
+            authorName: "Namireki Studio");
+        var catalogPath = Path.Combine(_root, "catalog.json");
+        var catalog = JsonNode.Parse(File.ReadAllText(catalogPath, Encoding.UTF8))!.AsObject();
+        catalog["packs"]![0]!["source"]!["file"] = "packs/sample.json";
+        File.WriteAllText(catalogPath, catalog.ToJsonString(), new UTF8Encoding(false));
+
+        var result = new PackRepositoryValidator().Validate(_root);
+
+        Assert.False(result.IsValid);
+        Assert.Contains(
+            result.Errors,
+            error => error.Contains(
+                "source.file must be 'packs/namireki/sample.json'",
+                StringComparison.Ordinal));
+    }
+
     [Theory]
     [InlineData("../outside.json", "traversal")]
     [InlineData("/packs/author/sample.json", "rooted")]
@@ -330,7 +355,7 @@ public sealed class PackRepositoryValidatorTests : IDisposable
                   "source": {
                     "repository": "https://github.com/namireki/CatverterV2",
                     "revision": "0000000000000000000000000000000000000000",
-                    "file": "packs/sample.json",
+                    "file": "packs/{{packAuthor}}/sample.json",
                     "sha256": "{{hash}}"
                   }
                 }
