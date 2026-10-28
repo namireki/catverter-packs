@@ -5,10 +5,10 @@
   "packageId": "com.namirekistudio.catverter.pack.astronomy",
   "id": "astronomy",
   "name": "Astronomy",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "minimumAppVersion": "1.0.0",
   "description": "Approximate cosmic masses, sizes, distances, volumes, and speeds from the Moon to the Sun.",
-  "metadata": { "authors": ["Namireki Studio"], "license": "Apache-2.0", "tags": ["astronomy", "mass", "length", "volume", "speed", "frequency"] },
+  "metadata": { "authors": ["Namireki Studio"], "license": "Apache-2.0", "tags": ["astronomy", "mass", "length", "volume", "speed", "frequency", "time"] },
   "modifiers": [
     { "id": "miniature", "name": "miniature", "multiplier": 0.1, "quantities": ["Mass", "Length", "Volume"], "combinationGroup": "scale" },
     { "id": "colossal", "name": "colossal", "multiplier": 10, "quantities": ["Mass", "Length", "Volume"], "combinationGroup": "scale" },
@@ -216,6 +216,11 @@
     {"id":"solar-mood-swing","singularName":"solar mood swing","pluralName":"solar mood swings","quantity":"Frequency","unit":"PerSecond","value":2.88090250807752E-09},
     {"id":"shooting-star-wish","singularName":"shooting-star wish opportunity","pluralName":"shooting-star wish opportunities","quantity":"Frequency","unit":"PerSecond","value":0.01},
     {"id":"alien-beacon-ping","singularName":"suspicious alien beacon ping","pluralName":"suspicious alien beacon pings","quantity":"Frequency","unit":"PerSecond","value":0.0333333333333333},
-    {"id":"mission-control-coffee-refill","singularName":"mission-control coffee refill","pluralName":"mission-control coffee refills","quantity":"Frequency","unit":"PerSecond","value":0.000277777777777778}
+    {"id":"mission-control-coffee-refill","singularName":"mission-control coffee refill","pluralName":"mission-control coffee refills","quantity":"Frequency","unit":"PerSecond","value":0.000277777777777778},
+    {"id":"camera-shutter-star-trail","singularName":"star-trail camera exposure","pluralName":"star-trail camera exposures","quantity":"Duration","unit":"Second","value":30.0},
+    {"id":"mission-control-hold-music","singularName":"mission-control hold music","pluralName":"mission-control hold-music sessions","quantity":"Duration","unit":"Second","value":120.0},
+    {"id":"iss-horizon-crossing","singularName":"ISS horizon crossing","pluralName":"ISS horizon crossings","quantity":"Duration","unit":"Second","value":300.0},
+    {"id":"sunlight-earth-journey","singularName":"sunlight journey to Earth","pluralName":"sunlight journeys to Earth","quantity":"Duration","unit":"Second","value":499.0},
+    {"id":"lunar-day-duration","singularName":"lunar day","pluralName":"lunar days","quantity":"Duration","unit":"Second","value":2551443.0}
   ]
 }

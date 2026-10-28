@@ -5,10 +5,10 @@
   "packageId": "com.namirekistudio.catverter.pack.big-stuff",
   "id": "big-stuff",
   "name": "Big stuff",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "minimumAppVersion": "1.0.0",
   "description": "Approximate fields, pools, vehicles, landmarks, and other satisfyingly oversized comparisons.",
-  "metadata": { "authors": ["Namireki Studio"], "license": "Apache-2.0", "tags": ["big-stuff", "mass", "length", "volume", "frequency"] },
+  "metadata": { "authors": ["Namireki Studio"], "license": "Apache-2.0", "tags": ["big-stuff", "mass", "length", "volume", "frequency", "time"] },
   "modifiers": [
     { "id": "compact", "name": "compact", "multiplier": 0.5, "quantities": ["Mass", "Length", "Volume"], "combinationGroup": "scale" },
     { "id": "supersized", "name": "supersized", "multiplier": 2, "quantities": ["Mass", "Length", "Volume"], "combinationGroup": "scale" },
@@ -217,6 +217,11 @@
     {"id":"wind-turbine-turn","singularName":"wind-turbine turn","pluralName":"wind-turbine turns","quantity":"Frequency","unit":"PerSecond","value":0.25},
     {"id":"giant-bell-toll","singularName":"giant bell toll","pluralName":"giant bell tolls","quantity":"Frequency","unit":"PerSecond","value":0.0166666666666667},
     {"id":"construction-cone-migration","singularName":"construction-cone migration","pluralName":"construction-cone migrations","quantity":"Frequency","unit":"PerSecond","value":1.15740740740741E-05},
-    {"id":"monument-selfie","singularName":"monument selfie","pluralName":"monument selfies","quantity":"Frequency","unit":"PerSecond","value":0.1}
+    {"id":"monument-selfie","singularName":"monument selfie","pluralName":"monument selfies","quantity":"Frequency","unit":"PerSecond","value":0.1},
+    {"id":"wrecking-ball-swing-time","singularName":"wrecking-ball swing","pluralName":"wrecking-ball swings","quantity":"Duration","unit":"Second","value":5.0},
+    {"id":"skyscraper-elevator-wait","singularName":"skyscraper elevator wait","pluralName":"skyscraper elevator waits","quantity":"Duration","unit":"Second","value":45.0},
+    {"id":"stadium-wave-lap-time","singularName":"stadium-wave lap","pluralName":"stadium-wave laps","quantity":"Duration","unit":"Second","value":120.0},
+    {"id":"drawbridge-traffic-pause","singularName":"drawbridge traffic pause","pluralName":"drawbridge traffic pauses","quantity":"Duration","unit":"Second","value":600.0},
+    {"id":"skyscraper-stair-climb","singularName":"skyscraper stair climb","pluralName":"skyscraper stair climbs","quantity":"Duration","unit":"Second","value":3600.0}
   ]
 }

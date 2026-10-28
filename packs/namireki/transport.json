@@ -5,10 +5,10 @@
   "packageId": "com.namirekistudio.catverter.pack.transport",
   "id": "transport",
   "name": "Transport",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "minimumAppVersion": "1.0.0",
   "description": "Approximate vehicle masses, lengths, capacities, and speeds from a skateboard to an orbital rocket.",
-  "metadata": { "authors": ["Namireki Studio"], "license": "Apache-2.0", "tags": ["transport", "mass", "length", "volume", "speed", "frequency"] },
+  "metadata": { "authors": ["Namireki Studio"], "license": "Apache-2.0", "tags": ["transport", "mass", "length", "volume", "speed", "frequency", "time"] },
   "modifiers": [
     { "id": "compact", "name": "compact", "multiplier": 0.6, "quantities": ["Mass", "Length", "Volume"], "combinationGroup": "body" },
     { "id": "stretched", "name": "stretched", "multiplier": 1.5, "quantities": ["Length"], "combinationGroup": "body" },
@@ -76,6 +76,11 @@
     {"id":"airplane-seatbelt-ding","singularName":"airplane seat-belt ding","pluralName":"airplane seat-belt dings","quantity":"Frequency","unit":"PerSecond","value":0.01},
     {"id":"traffic-light-change","singularName":"traffic-light change","pluralName":"traffic-light changes","quantity":"Frequency","unit":"PerSecond","value":0.0166666666666667},
     {"id":"scooter-bell-ring","singularName":"scooter-bell ring","pluralName":"scooter-bell rings","quantity":"Frequency","unit":"PerSecond","value":0.5},
-    {"id":"gps-recalculating-sigh","singularName":"GPS recalculating sigh","pluralName":"GPS recalculating sighs","quantity":"Frequency","unit":"PerSecond","value":0.0333333333333333}
+    {"id":"gps-recalculating-sigh","singularName":"GPS recalculating sigh","pluralName":"GPS recalculating sighs","quantity":"Frequency","unit":"PerSecond","value":0.0333333333333333},
+    {"id":"gps-recalculation-time","singularName":"GPS recalculation","pluralName":"GPS recalculations","quantity":"Duration","unit":"Second","value":3.0},
+    {"id":"traffic-light-wait","singularName":"traffic-light wait","pluralName":"traffic-light waits","quantity":"Duration","unit":"Second","value":60.0},
+    {"id":"just-missed-bus-wait","singularName":"just-missed-bus wait","pluralName":"just-missed-bus waits","quantity":"Duration","unit":"Second","value":600.0},
+    {"id":"train-delay-duration","singularName":"train delay","pluralName":"train delays","quantity":"Duration","unit":"Second","value":1800.0},
+    {"id":"flight-boarding","singularName":"flight boarding","pluralName":"flight boardings","quantity":"Duration","unit":"Second","value":2400.0}
   ]
 }

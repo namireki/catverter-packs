@@ -5,10 +5,10 @@
   "packageId": "com.namirekistudio.catverter.pack.food-and-drink",
   "id": "food-and-drink",
   "name": "Food & drink",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "minimumAppVersion": "1.0.0",
   "description": "Approximate edible masses, lengths, servings, containers, and delivery speeds from a grain of rice to a mixing vat.",
-  "metadata": { "authors": ["Namireki Studio"], "license": "Apache-2.0", "tags": ["food", "drink", "mass", "length", "volume", "frequency"] },
+  "metadata": { "authors": ["Namireki Studio"], "license": "Apache-2.0", "tags": ["food", "drink", "mass", "length", "volume", "frequency", "time"] },
   "modifiers": [
     { "id": "bite-sized", "name": "bite-sized", "multiplier": 0.5, "quantities": ["Mass", "Length", "Volume"], "combinationGroup": "portion" },
     { "id": "generous", "name": "generous", "multiplier": 1.5, "quantities": ["Mass", "Volume"], "combinationGroup": "portion" },
@@ -76,6 +76,11 @@
     {"id":"spaghetti-slurp","singularName":"spaghetti slurp","pluralName":"spaghetti slurps","quantity":"Frequency","unit":"PerSecond","value":0.75},
     {"id":"cookie-jar-raid","singularName":"cookie-jar raid","pluralName":"cookie-jar raids","quantity":"Frequency","unit":"PerSecond","value":1.15740740740741E-05},
     {"id":"kettle-rumble","singularName":"kettle rumble","pluralName":"kettle rumbles","quantity":"Frequency","unit":"PerSecond","value":10.0},
-    {"id":"pizza-doorbell","singularName":"pizza doorbell","pluralName":"pizza doorbells","quantity":"Frequency","unit":"PerSecond","value":0.000138888888888889}
+    {"id":"pizza-doorbell","singularName":"pizza doorbell","pluralName":"pizza doorbells","quantity":"Frequency","unit":"PerSecond","value":0.000138888888888889},
+    {"id":"microwave-final-minute","singularName":"microwave's final minute","pluralName":"microwaves' final minutes","quantity":"Duration","unit":"Second","value":60.0},
+    {"id":"instant-noodle-wait","singularName":"instant-noodle wait","pluralName":"instant-noodle waits","quantity":"Duration","unit":"Second","value":180.0},
+    {"id":"coffee-brew","singularName":"coffee brew","pluralName":"coffee brews","quantity":"Duration","unit":"Second","value":300.0},
+    {"id":"pizza-cooling-window","singularName":"pizza-cooling window","pluralName":"pizza-cooling windows","quantity":"Duration","unit":"Second","value":600.0},
+    {"id":"sourdough-proof","singularName":"sourdough proof","pluralName":"sourdough proofs","quantity":"Duration","unit":"Second","value":14400.0}
   ]
 }

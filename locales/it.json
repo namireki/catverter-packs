@@ -109,7 +109,12 @@
         "firefly-blink": {"one":"lampeggio di lucciola","other":"lampeggi di lucciola"},
         "cricket-chirp": {"one":"frinito di grillo","other":"friniti di grillo"},
         "galloping-horse-hoofbeat": {"one":"colpo di zoccolo al galoppo","other":"colpi di zoccolo al galoppo"},
-        "owl-judgmental-blink": {"one":"battito di ciglia giudicante di gufo","other":"battiti di ciglia giudicanti di gufo"}
+        "owl-judgmental-blink": {"one":"battito di ciglia giudicante di gufo","other":"battiti di ciglia giudicanti di gufo"},
+        "hummingbird-coffee-break": {"one":"pausa caffè di colibrì","other":"pause caffè di colibrì"},
+        "cat-decision-delay": {"one":"ritardo decisionale felino","other":"ritardi decisionali felini"},
+        "dog-fetch-return": {"one":"ritorno del cane con la pallina","other":"ritorni del cane con la pallina"},
+        "sloth-high-five-duration": {"one":"batti cinque con un bradipo","other":"batti cinque con bradipi"},
+        "tortoise-road-crossing": {"one":"attraversamento stradale di tartaruga","other":"attraversamenti stradali di tartarughe"}
       }
     },
     "astronomy": {
@@ -175,7 +180,12 @@
         "solar-mood-swing": {"one":"sbalzo d'umore solare","other":"sbalzi d'umore solari"},
         "shooting-star-wish": {"one":"occasione per desiderio su una stella cadente","other":"occasioni per desideri su stelle cadenti"},
         "alien-beacon-ping": {"one":"ping sospetto di radiofaro alieno","other":"ping sospetti di radiofari alieni"},
-        "mission-control-coffee-refill": {"one":"rabbocco di caffè del controllo missione","other":"rabbocchi di caffè del controllo missione"}
+        "mission-control-coffee-refill": {"one":"rabbocco di caffè del controllo missione","other":"rabbocchi di caffè del controllo missione"},
+        "camera-shutter-star-trail": {"one":"esposizione fotografica per scia stellare","other":"esposizioni fotografiche per scie stellari"},
+        "mission-control-hold-music": {"one":"musica d'attesa del controllo missione","other":"sessioni di musica d'attesa del controllo missione"},
+        "iss-horizon-crossing": {"one":"attraversamento dell'orizzonte della ISS","other":"attraversamenti dell'orizzonte della ISS"},
+        "sunlight-earth-journey": {"one":"viaggio della luce solare verso la Terra","other":"viaggi della luce solare verso la Terra"},
+        "lunar-day-duration": {"one":"giorno lunare","other":"giorni lunari"}
       }
     },
     "big-stuff": {
@@ -241,7 +251,12 @@
         "wind-turbine-turn": {"one":"giro di turbina eolica","other":"giri di turbine eoliche"},
         "giant-bell-toll": {"one":"rintocco di campana gigante","other":"rintocchi di campane giganti"},
         "construction-cone-migration": {"one":"migrazione di cono stradale","other":"migrazioni di coni stradali"},
-        "monument-selfie": {"one":"selfie con monumento","other":"selfie con monumenti"}
+        "monument-selfie": {"one":"selfie con monumento","other":"selfie con monumenti"},
+        "wrecking-ball-swing-time": {"one":"oscillazione di palla da demolizione","other":"oscillazioni di palle da demolizione"},
+        "skyscraper-elevator-wait": {"one":"attesa dell'ascensore del grattacielo","other":"attese degli ascensori dei grattacieli"},
+        "stadium-wave-lap-time": {"one":"giro di ola nello stadio","other":"giri di ola nello stadio"},
+        "drawbridge-traffic-pause": {"one":"pausa nel traffico per ponte levatoio","other":"pause nel traffico per ponti levatoi"},
+        "skyscraper-stair-climb": {"one":"salita a piedi di un grattacielo","other":"salite a piedi di grattacieli"}
       }
     },
     "cats": {
@@ -307,7 +322,12 @@
         "cardboard-box-inspection": {"one":"ispezione di scatola di cartone","other":"ispezioni di scatole di cartone"},
         "keyboard-interruption": {"one":"interruzione da tastiera","other":"interruzioni da tastiera"},
         "laser-dot-pounce": {"one":"agguato al puntino laser","other":"agguati al puntino laser"},
-        "dawn-meow": {"one":"miagolio all'alba","other":"miagolii all'alba"}
+        "dawn-meow": {"one":"miagolio all'alba","other":"miagolii all'alba"},
+        "doorway-decision": {"one":"decisione felina sulla soglia","other":"decisioni feline sulla soglia"},
+        "empty-bowl-eternity": {"one":"eternità da ciotola vuota","other":"eternità da ciotola vuota"},
+        "midnight-zoomie-burst": {"one":"raffica di zoomie di mezzanotte","other":"raffiche di zoomie di mezzanotte"},
+        "catnap-duration": {"one":"pisolino felino","other":"pisolini felini"},
+        "sunbeam-nap": {"one":"pisolino al sole","other":"pisolini al sole"}
       }
     },
     "food-and-drink": {
@@ -373,7 +393,12 @@
         "spaghetti-slurp": {"one":"risucchio di spaghetti","other":"risucchi di spaghetti"},
         "cookie-jar-raid": {"one":"incursione nel barattolo dei biscotti","other":"incursioni nel barattolo dei biscotti"},
         "kettle-rumble": {"one":"brontolio di bollitore","other":"brontolii di bollitore"},
-        "pizza-doorbell": {"one":"campanello della pizza","other":"campanelli della pizza"}
+        "pizza-doorbell": {"one":"campanello della pizza","other":"campanelli della pizza"},
+        "microwave-final-minute": {"one":"ultimo minuto del microonde","other":"ultimi minuti dei microonde"},
+        "instant-noodle-wait": {"one":"attesa dei noodle istantanei","other":"attese dei noodle istantanei"},
+        "coffee-brew": {"one":"preparazione del caffè","other":"preparazioni del caffè"},
+        "pizza-cooling-window": {"one":"finestra di raffreddamento della pizza","other":"finestre di raffreddamento della pizza"},
+        "sourdough-proof": {"one":"lievitazione del pane a pasta madre","other":"lievitazioni del pane a pasta madre"}
       }
     },
     "household-items": {
@@ -439,7 +464,12 @@
         "dishwasher-plate-clink": {"one":"tintinnio di piatto in lavastoviglie","other":"tintinnii di piatti in lavastoviglie"},
         "electric-toothbrush-buzz": {"one":"ronzio di spazzolino elettrico","other":"ronzii di spazzolini elettrici"},
         "sock-disappearance": {"one":"misteriosa sparizione di calzino","other":"misteriose sparizioni di calzini"},
-        "midnight-fridge-hum": {"one":"ronzio notturno di frigorifero","other":"ronzii notturni di frigoriferi"}
+        "midnight-fridge-hum": {"one":"ronzio notturno di frigorifero","other":"ronzii notturni di frigoriferi"},
+        "microwave-final-second": {"one":"ultimo secondo del microonde","other":"ultimi secondi dei microonde"},
+        "kettle-boil": {"one":"bollitura del bollitore","other":"bolliture del bollitore"},
+        "lost-remote-search": {"one":"ricerca del telecomando perduto","other":"ricerche del telecomando perduto"},
+        "fitted-sheet-folding-attempt": {"one":"tentativo di piegare un lenzuolo con angoli","other":"tentativi di piegare lenzuola con angoli"},
+        "washing-machine-cycle": {"one":"ciclo di lavatrice","other":"cicli di lavatrice"}
       }
     },
     "nature-and-weather": {
@@ -505,7 +535,12 @@
         "snowflake-nose-landing": {"one":"atterraggio di fiocco di neve sul naso","other":"atterraggi di fiocchi di neve sul naso"},
         "volcano-dramatic-burp": {"one":"rutto drammatico di vulcano","other":"rutti drammatici di vulcani"},
         "tide-mood-swing": {"one":"sbalzo d'umore della marea","other":"sbalzi d'umore delle maree"},
-        "sunflower-sun-check": {"one":"controllo del Sole da girasole","other":"controlli del Sole da girasoli"}
+        "sunflower-sun-check": {"one":"controllo del Sole da girasole","other":"controlli del Sole da girasoli"},
+        "lightning-thunder-suspense": {"one":"suspense tra lampo e tuono","other":"momenti di suspense tra lampo e tuono"},
+        "summer-shower-duration": {"one":"acquazzone estivo","other":"acquazzoni estivi"},
+        "rainbow-appearance": {"one":"apparizione di arcobaleno","other":"apparizioni di arcobaleni"},
+        "tide-half-cycle": {"one":"semiciclo di marea","other":"semicicli di marea"},
+        "snowman-lifespan": {"one":"vita ottimistica di un pupazzo di neve","other":"vite ottimistiche di pupazzi di neve"}
       }
     },
     "unconventional-units": {
@@ -662,7 +697,12 @@
         "nuclear-physicist-shake": {"one":"shake da fisico nucleare","other":"shake da fisici nucleari"},
         "bureaucratic-stamp-thump": {"one":"tonfo di timbro burocratico","other":"tonfi di timbri burocratici"},
         "cosmic-eye-roll": {"one":"alzata di occhi cosmica","other":"alzate di occhi cosmiche"},
-        "meeting-jiffy": {"one":"attimino prima della riunione","other":"attimini prima della riunione"}
+        "meeting-jiffy": {"one":"attimino prima della riunione","other":"attimini prima della riunione"},
+        "planck-time": {"one":"tempo di Planck","other":"tempi di Planck"},
+        "svedberg-time": {"one":"svedberg","other":"svedberg"},
+        "nanocentury": {"one":"nanosecolo","other":"nanosecoli"},
+        "microcentury": {"one":"microsecolo","other":"microsecoli"},
+        "fortnight-duration": {"one":"quindicina","other":"quindicine"}
       }
     },
     "sports-and-games": {
@@ -728,7 +768,12 @@
         "bowling-pin-crash": {"one":"schianto di birilli","other":"schianti di birilli"},
         "golf-clap": {"one":"educato applauso da golf","other":"educati applausi da golf"},
         "video-game-rage-quit": {"one":"abbandono furioso di videogioco","other":"abbandoni furiosi di videogiochi"},
-        "referee-whistle": {"one":"fischio dell'arbitro","other":"fischi dell'arbitro"}
+        "referee-whistle": {"one":"fischio dell'arbitro","other":"fischi dell'arbitro"},
+        "hundred-meter-sprint-time": {"one":"sprint sui cento metri","other":"sprint sui cento metri"},
+        "basketball-shot-clock-time": {"one":"cronometro di tiro nel basket","other":"cronometri di tiro nel basket"},
+        "chess-think": {"one":"riflessione scacchistica","other":"riflessioni scacchistiche"},
+        "football-halftime": {"one":"intervallo di calcio","other":"intervalli di calcio"},
+        "marathon-finish-time": {"one":"arrivo di maratona","other":"arrivi di maratona"}
       }
     },
     "technology": {
@@ -794,7 +839,12 @@
         "captcha-existential-crisis": {"one":"crisi esistenziale da CAPTCHA","other":"crisi esistenziali da CAPTCHA"},
         "merge-conflict-spawn": {"one":"comparsa di conflitto di merge","other":"comparse di conflitti di merge"},
         "printer-paper-jam": {"one":"inceppamento di stampante","other":"inceppamenti di stampanti"},
-        "reboot-remedy": {"one":"rimedio spegni-e-riaccendi","other":"rimedi spegni-e-riaccendi"}
+        "reboot-remedy": {"one":"rimedio spegni-e-riaccendi","other":"rimedi spegni-e-riaccendi"},
+        "button-response-time": {"one":"risposta di pulsante","other":"risposte di pulsanti"},
+        "reboot-eternity": {"one":"eternità di riavvio","other":"eternità di riavvio"},
+        "progress-bar-final-percent": {"one":"ultimo punto percentuale della barra di avanzamento","other":"ultimi punti percentuali delle barre di avanzamento"},
+        "password-reset-email": {"one":"arrivo dell'email di reimpostazione password","other":"arrivi delle email di reimpostazione password"},
+        "software-update-time": {"one":"aggiornamento software","other":"aggiornamenti software"}
       }
     },
     "transport": {
@@ -860,7 +910,12 @@
         "airplane-seatbelt-ding": {"one":"din delle cinture in aereo","other":"din delle cinture in aereo"},
         "traffic-light-change": {"one":"cambio di semaforo","other":"cambi di semaforo"},
         "scooter-bell-ring": {"one":"trillo di campanello da monopattino","other":"trilli di campanelli da monopattino"},
-        "gps-recalculating-sigh": {"one":"sospiro di ricalcolo del GPS","other":"sospiri di ricalcolo del GPS"}
+        "gps-recalculating-sigh": {"one":"sospiro di ricalcolo del GPS","other":"sospiri di ricalcolo del GPS"},
+        "gps-recalculation-time": {"one":"ricalcolo del GPS","other":"ricalcoli del GPS"},
+        "traffic-light-wait": {"one":"attesa al semaforo","other":"attese al semaforo"},
+        "just-missed-bus-wait": {"one":"attesa dell'autobus appena perso","other":"attese degli autobus appena persi"},
+        "train-delay-duration": {"one":"ritardo ferroviario","other":"ritardi ferroviari"},
+        "flight-boarding": {"one":"imbarco del volo","other":"imbarchi dei voli"}
       }
     }
   }

@@ -5,10 +5,10 @@
   "packageId": "com.namirekistudio.catverter.pack.nature-and-weather",
   "id": "nature-and-weather",
   "name": "Nature & weather",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "minimumAppVersion": "1.0.0",
   "description": "Approximate natural masses, heights, water volumes, and weather speeds from a snowflake to a lightning stroke.",
-  "metadata": { "authors": ["Namireki Studio"], "license": "Apache-2.0", "tags": ["nature", "weather", "mass", "length", "volume", "speed", "frequency"] },
+  "metadata": { "authors": ["Namireki Studio"], "license": "Apache-2.0", "tags": ["nature", "weather", "mass", "length", "volume", "speed", "frequency", "time"] },
   "modifiers": [
     { "id": "tiny", "name": "tiny", "multiplier": 0.25, "quantities": ["Mass", "Length", "Volume"], "combinationGroup": "scale" },
     { "id": "lush", "name": "lush", "multiplier": 1.5, "quantities": ["Mass", "Length", "Volume"], "combinationGroup": "condition" },
@@ -77,6 +77,11 @@
     {"id":"snowflake-nose-landing","singularName":"snowflake nose landing","pluralName":"snowflake nose landings","quantity":"Frequency","unit":"PerSecond","value":0.2},
     {"id":"volcano-dramatic-burp","singularName":"volcano's dramatic burp","pluralName":"volcanoes' dramatic burps","quantity":"Frequency","unit":"PerSecond","value":1.15740740740741E-05},
     {"id":"tide-mood-swing","singularName":"tidal mood swing","pluralName":"tidal mood swings","quantity":"Frequency","unit":"PerSecond","value":2.31481481481481E-05},
-    {"id":"sunflower-sun-check","singularName":"sunflower sun check","pluralName":"sunflower sun checks","quantity":"Frequency","unit":"PerSecond","value":1.15740740740741E-05}
+    {"id":"sunflower-sun-check","singularName":"sunflower sun check","pluralName":"sunflower sun checks","quantity":"Frequency","unit":"PerSecond","value":1.15740740740741E-05},
+    {"id":"lightning-thunder-suspense","singularName":"lightning-to-thunder suspense","pluralName":"lightning-to-thunder suspense periods","quantity":"Duration","unit":"Second","value":5.0},
+    {"id":"summer-shower-duration","singularName":"summer shower","pluralName":"summer showers","quantity":"Duration","unit":"Second","value":600.0},
+    {"id":"rainbow-appearance","singularName":"rainbow appearance","pluralName":"rainbow appearances","quantity":"Duration","unit":"Second","value":1200.0},
+    {"id":"tide-half-cycle","singularName":"tidal half-cycle","pluralName":"tidal half-cycles","quantity":"Duration","unit":"Second","value":22350.0},
+    {"id":"snowman-lifespan","singularName":"optimistic snowman lifespan","pluralName":"optimistic snowman lifespans","quantity":"Duration","unit":"Second","value":86400.0}
   ]
 }

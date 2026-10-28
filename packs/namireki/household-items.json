@@ -5,10 +5,10 @@
   "packageId": "com.namirekistudio.catverter.pack.household-items",
   "id": "household-items",
   "name": "Household items",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "minimumAppVersion": "1.0.0",
   "description": "Approximate everyday masses, lengths, and volumes from around the home.",
-  "metadata": { "authors": ["Namireki Studio"], "license": "Apache-2.0", "tags": ["household", "mass", "length", "volume", "frequency"] },
+  "metadata": { "authors": ["Namireki Studio"], "license": "Apache-2.0", "tags": ["household", "mass", "length", "volume", "frequency", "time"] },
   "modifiers": [
     { "id": "tiny", "name": "tiny", "multiplier": 0.5, "quantities": ["Mass", "Length", "Volume"], "combinationGroup": "scale" },
     { "id": "slim", "name": "slim", "multiplier": 0.75, "quantities": ["Mass"], "combinationGroup": "profile" },
@@ -215,6 +215,11 @@
     {"id":"dishwasher-plate-clink","singularName":"dishwasher plate clink","pluralName":"dishwasher plate clinks","quantity":"Frequency","unit":"PerSecond","value":2.0},
     {"id":"electric-toothbrush-buzz","singularName":"electric-toothbrush buzz","pluralName":"electric-toothbrush buzzes","quantity":"Frequency","unit":"PerSecond","value":250.0},
     {"id":"sock-disappearance","singularName":"mysterious sock disappearance","pluralName":"mysterious sock disappearances","quantity":"Frequency","unit":"PerSecond","value":1.15740740740741E-05},
-    {"id":"midnight-fridge-hum","singularName":"midnight fridge hum","pluralName":"midnight fridge hums","quantity":"Frequency","unit":"PerSecond","value":50.0}
+    {"id":"midnight-fridge-hum","singularName":"midnight fridge hum","pluralName":"midnight fridge hums","quantity":"Frequency","unit":"PerSecond","value":50.0},
+    {"id":"microwave-final-second","singularName":"microwave's final second","pluralName":"microwaves' final seconds","quantity":"Duration","unit":"Second","value":1.0},
+    {"id":"kettle-boil","singularName":"kettle boil","pluralName":"kettle boils","quantity":"Duration","unit":"Second","value":240.0},
+    {"id":"lost-remote-search","singularName":"lost-remote search","pluralName":"lost-remote searches","quantity":"Duration","unit":"Second","value":600.0},
+    {"id":"fitted-sheet-folding-attempt","singularName":"fitted-sheet folding attempt","pluralName":"fitted-sheet folding attempts","quantity":"Duration","unit":"Second","value":900.0},
+    {"id":"washing-machine-cycle","singularName":"washing-machine cycle","pluralName":"washing-machine cycles","quantity":"Duration","unit":"Second","value":3600.0}
   ]
 }

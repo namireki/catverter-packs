@@ -5,10 +5,10 @@
   "packageId": "com.namirekistudio.catverter.pack.cats",
   "id": "cats",
   "name": "Cats",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "minimumAppVersion": "1.0.0",
   "description": "Approximate kitten, breed, body-part, cat-supply, and zoomie-sized comparisons.",
-  "metadata": { "authors": ["Namireki Studio"], "license": "Apache-2.0", "tags": ["cats", "mass", "length", "volume", "speed", "frequency"] },
+  "metadata": { "authors": ["Namireki Studio"], "license": "Apache-2.0", "tags": ["cats", "mass", "length", "volume", "speed", "frequency", "time"] },
   "modifiers": [
     { "id": "tiny", "name": "tiny", "multiplier": 0.5, "quantities": ["Mass", "Length", "Volume"], "combinationGroup": "scale" },
     { "id": "slim", "name": "slim", "multiplier": 0.75, "quantities": ["Mass"], "combinationGroup": "build" },
@@ -219,6 +219,11 @@
     {"id":"cardboard-box-inspection","singularName":"cardboard-box inspection","pluralName":"cardboard-box inspections","quantity":"Frequency","unit":"PerSecond","value":0.0333333333333333},
     {"id":"keyboard-interruption","singularName":"keyboard interruption","pluralName":"keyboard interruptions","quantity":"Frequency","unit":"PerSecond","value":0.0166666666666667},
     {"id":"laser-dot-pounce","singularName":"laser-dot pounce","pluralName":"laser-dot pounces","quantity":"Frequency","unit":"PerSecond","value":0.5},
-    {"id":"dawn-meow","singularName":"dawn meow","pluralName":"dawn meows","quantity":"Frequency","unit":"PerSecond","value":0.25}
+    {"id":"dawn-meow","singularName":"dawn meow","pluralName":"dawn meows","quantity":"Frequency","unit":"PerSecond","value":0.25},
+    {"id":"doorway-decision","singularName":"cat doorway decision","pluralName":"cat doorway decisions","quantity":"Duration","unit":"Second","value":12.0},
+    {"id":"empty-bowl-eternity","singularName":"empty-bowl eternity","pluralName":"empty-bowl eternities","quantity":"Duration","unit":"Second","value":60.0},
+    {"id":"midnight-zoomie-burst","singularName":"midnight zoomie burst","pluralName":"midnight zoomie bursts","quantity":"Duration","unit":"Second","value":300.0},
+    {"id":"catnap-duration","singularName":"catnap","pluralName":"catnaps","quantity":"Duration","unit":"Second","value":900.0},
+    {"id":"sunbeam-nap","singularName":"sunbeam nap","pluralName":"sunbeam naps","quantity":"Duration","unit":"Second","value":7200.0}
   ]
 }

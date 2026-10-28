@@ -18,8 +18,8 @@ semantic validator requires them on the canonical catalog.
 
 The current catalog contains 11 official packs derived from CatverterV2
 commit `6dd430bfda08211d27aa7212526567f186d70004`, one contributed pack, at least
-ten Frequency conversions in every cataloged pack, and complete French and
-Italian locales for the official set. Official source
+ten Frequency conversions and five themed Duration conversions in every
+cataloged pack, and complete French and Italian locales for the official set. Official source
 hashes are kept in each entry's `source` object; the entry's top-level
 `sha256` covers the relocated file in this repository.
 

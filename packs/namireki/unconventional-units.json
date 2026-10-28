@@ -5,13 +5,13 @@
   "packageId": "com.namirekistudio.catverter.pack.unconventional-units",
   "id": "unconventional-units",
   "name": "Unconventional Units",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "minimumAppVersion": "1.0.0",
   "description": "Sourced non-coherent units from engineering, science, culture, and everyday comparisons.",
   "metadata": {
     "authors": ["Namireki Studio"],
     "license": "Apache-2.0",
-    "tags": ["unconventional-units", "science", "engineering", "culture", "frequency"],
+    "tags": ["unconventional-units", "science", "engineering", "culture", "frequency", "time"],
     "accentColor": "#8A5A44"
   },
   "conversions": [
@@ -1446,6 +1446,11 @@
     {"id":"nuclear-physicist-shake","singularName":"nuclear physicist's shake","pluralName":"nuclear physicists' shakes","quantity":"Frequency","unit":"PerSecond","value":100000000.0},
     {"id":"bureaucratic-stamp-thump","singularName":"bureaucratic stamp thump","pluralName":"bureaucratic stamp thumps","quantity":"Frequency","unit":"PerSecond","value":0.0333333333333333},
     {"id":"cosmic-eye-roll","singularName":"cosmic eye roll","pluralName":"cosmic eye rolls","quantity":"Frequency","unit":"PerSecond","value":3.16880878140289E-08},
-    {"id":"meeting-jiffy","singularName":"“just a jiffy” before the meeting","pluralName":"“just a jiffy” moments before the meeting","quantity":"Frequency","unit":"PerSecond","value":0.2}
+    {"id":"meeting-jiffy","singularName":"“just a jiffy” before the meeting","pluralName":"“just a jiffy” moments before the meeting","quantity":"Frequency","unit":"PerSecond","value":0.2},
+    {"id":"planck-time","singularName":"Planck time","pluralName":"Planck times","quantity":"Duration","unit":"Second","value":5.391247E-44,"sourceUrl":"https://physics.nist.gov/cgi-bin/cuu/Value?plkt","notes":"CODATA value of the Planck time in seconds."},
+    {"id":"svedberg-time","singularName":"svedberg","pluralName":"svedbergs","quantity":"Duration","unit":"Second","value":1E-13,"sourceUrl":"https://en.wikipedia.org/wiki/Svedberg","notes":"The sedimentation-time unit is exactly 10^-13 seconds."},
+    {"id":"nanocentury","singularName":"nanocentury","pluralName":"nanocenturies","quantity":"Duration","unit":"Second","value":3.15576,"sourceUrl":"https://en.wikipedia.org/wiki/List_of_unusual_units_of_measurement#Time","notes":"One billionth of a 100-year century, using a 365.25-day year."},
+    {"id":"microcentury","singularName":"microcentury","pluralName":"microcenturies","quantity":"Duration","unit":"Second","value":3155.76,"sourceUrl":"https://en.wikipedia.org/wiki/List_of_unusual_units_of_measurement#Time","notes":"One millionth of a 100-year century, using a 365.25-day year."},
+    {"id":"fortnight-duration","singularName":"fortnight","pluralName":"fortnights","quantity":"Duration","unit":"Second","value":1209600.0,"sourceUrl":"https://en.wikipedia.org/wiki/Fortnight","notes":"Exactly fourteen 24-hour days."}
   ]
 }

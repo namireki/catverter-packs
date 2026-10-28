@@ -5,7 +5,7 @@
   "packageId": "io.github.namireki.catverter.pack.office-life",
   "id": "office-life",
   "name": "Office life",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "minimumAppVersion": "1.0.0",
   "description": "Desks, stationery, caffeine infrastructure, and suspiciously mobile office equipment.",
   "metadata": {
@@ -13,7 +13,7 @@
     "license": "Apache-2.0",
     "homepage": "https://github.com/namireki/catverter-packs",
     "repository": "https://github.com/namireki/catverter-packs",
-    "tags": ["office", "stationery", "workplace", "frequency"],
+    "tags": ["office", "stationery", "workplace", "frequency", "time"],
     "accentColor": "#4F78A8"
   },
   "modifiers": [
@@ -474,6 +474,11 @@
     {"id":"swivel-chair-squeak","singularName":"swivel-chair squeak","pluralName":"swivel-chair squeaks","quantity":"Frequency","unit":"PerSecond","value":0.25},
     {"id":"watercooler-quick-chat","singularName":"watercooler “quick chat”","pluralName":"watercooler “quick chats”","quantity":"Frequency","unit":"PerSecond","value":0.00166666666666667},
     {"id":"printer-jam-ritual","singularName":"printer-jam ritual","pluralName":"printer-jam rituals","quantity":"Frequency","unit":"PerSecond","value":0.000138888888888889},
-    {"id":"lunch-countdown-glance","singularName":"lunch-countdown glance","pluralName":"lunch-countdown glances","quantity":"Frequency","unit":"PerSecond","value":0.0166666666666667}
+    {"id":"lunch-countdown-glance","singularName":"lunch-countdown glance","pluralName":"lunch-countdown glances","quantity":"Frequency","unit":"PerSecond","value":0.0166666666666667},
+    {"id":"reply-all-regret-onset","singularName":"reply-all regret onset","pluralName":"reply-all regret onsets","quantity":"Duration","unit":"Second","value":2.0},
+    {"id":"printer-warmup-time","singularName":"printer warm-up","pluralName":"printer warm-ups","quantity":"Duration","unit":"Second","value":45.0},
+    {"id":"coffee-desk-commute","singularName":"coffee-to-desk commute","pluralName":"coffee-to-desk commutes","quantity":"Duration","unit":"Second","value":120.0},
+    {"id":"friday-afternoon-minute","singularName":"Friday-afternoon minute","pluralName":"Friday-afternoon minutes","quantity":"Duration","unit":"Second","value":600.0},
+    {"id":"quick-meeting-duration","singularName":"“quick” meeting","pluralName":"“quick” meetings","quantity":"Duration","unit":"Second","value":3600.0}
   ]
 }

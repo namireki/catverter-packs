@@ -5,10 +5,10 @@
   "packageId": "com.namirekistudio.catverter.pack.animals",
   "id": "animals",
   "name": "Animals",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "minimumAppVersion": "1.0.0",
   "description": "Approximate animal masses, lengths, and speeds for wildly relatable comparisons.",
-  "metadata": { "authors": ["Namireki Studio"], "license": "Apache-2.0", "tags": ["animals", "mass", "length", "speed", "frequency"] },
+  "metadata": { "authors": ["Namireki Studio"], "license": "Apache-2.0", "tags": ["animals", "mass", "length", "speed", "frequency", "time"] },
   "modifiers": [
     { "id": "tiny", "name": "tiny", "multiplier": 0.5, "quantities": ["Mass", "Length"], "combinationGroup": "scale" },
     { "id": "hefty", "name": "hefty", "multiplier": 1.5, "quantities": ["Mass"], "combinationGroup": "scale" },
@@ -217,6 +217,11 @@
     {"id":"firefly-blink","singularName":"firefly blink","pluralName":"firefly blinks","quantity":"Frequency","unit":"PerSecond","value":1.0},
     {"id":"cricket-chirp","singularName":"cricket chirp","pluralName":"cricket chirps","quantity":"Frequency","unit":"PerSecond","value":3.0},
     {"id":"galloping-horse-hoofbeat","singularName":"galloping horse hoofbeat","pluralName":"galloping horse hoofbeats","quantity":"Frequency","unit":"PerSecond","value":2.5},
-    {"id":"owl-judgmental-blink","singularName":"owl's judgmental blink","pluralName":"owls' judgmental blinks","quantity":"Frequency","unit":"PerSecond","value":0.1}
+    {"id":"owl-judgmental-blink","singularName":"owl's judgmental blink","pluralName":"owls' judgmental blinks","quantity":"Frequency","unit":"PerSecond","value":0.1},
+    {"id":"hummingbird-coffee-break","singularName":"hummingbird coffee break","pluralName":"hummingbird coffee breaks","quantity":"Duration","unit":"Second","value":0.25},
+    {"id":"cat-decision-delay","singularName":"cat decision delay","pluralName":"cat decision delays","quantity":"Duration","unit":"Second","value":3.0},
+    {"id":"dog-fetch-return","singularName":"dog fetch return","pluralName":"dog fetch returns","quantity":"Duration","unit":"Second","value":12.0},
+    {"id":"sloth-high-five-duration","singularName":"sloth high-five","pluralName":"sloth high-fives","quantity":"Duration","unit":"Second","value":30.0},
+    {"id":"tortoise-road-crossing","singularName":"tortoise road crossing","pluralName":"tortoise road crossings","quantity":"Duration","unit":"Second","value":3600.0}
   ]
 }

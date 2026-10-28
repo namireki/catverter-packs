@@ -5,10 +5,10 @@
   "packageId": "com.namirekistudio.catverter.pack.technology",
   "id": "technology",
   "name": "Technology",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "minimumAppVersion": "1.0.0",
   "description": "Approximate gadget masses, microscopic features, hardware volumes, and machine speeds from a transistor to a fiber pulse.",
-  "metadata": { "authors": ["Namireki Studio"], "license": "Apache-2.0", "tags": ["technology", "mass", "length", "volume", "speed", "frequency"] },
+  "metadata": { "authors": ["Namireki Studio"], "license": "Apache-2.0", "tags": ["technology", "mass", "length", "volume", "speed", "frequency", "time"] },
   "modifiers": [
     { "id": "tiny", "name": "tiny", "multiplier": 0.5, "quantities": ["Mass", "Length", "Volume"], "combinationGroup": "scale" },
     { "id": "slim", "name": "slim", "multiplier": 0.75, "quantities": ["Mass", "Length"], "combinationGroup": "profile" },
@@ -77,6 +77,11 @@
     {"id":"captcha-existential-crisis","singularName":"CAPTCHA existential crisis","pluralName":"CAPTCHA existential crises","quantity":"Frequency","unit":"PerSecond","value":0.000555555555555556},
     {"id":"merge-conflict-spawn","singularName":"merge-conflict spawn","pluralName":"merge-conflict spawns","quantity":"Frequency","unit":"PerSecond","value":0.000277777777777778},
     {"id":"printer-paper-jam","singularName":"printer paper jam","pluralName":"printer paper jams","quantity":"Frequency","unit":"PerSecond","value":0.000138888888888889},
-    {"id":"reboot-remedy","singularName":"turn-it-off-and-on-again remedy","pluralName":"turn-it-off-and-on-again remedies","quantity":"Frequency","unit":"PerSecond","value":1.15740740740741E-05}
+    {"id":"reboot-remedy","singularName":"turn-it-off-and-on-again remedy","pluralName":"turn-it-off-and-on-again remedies","quantity":"Frequency","unit":"PerSecond","value":1.15740740740741E-05},
+    {"id":"button-response-time","singularName":"button response","pluralName":"button responses","quantity":"Duration","unit":"Second","value":0.1},
+    {"id":"reboot-eternity","singularName":"reboot eternity","pluralName":"reboot eternities","quantity":"Duration","unit":"Second","value":120.0},
+    {"id":"progress-bar-final-percent","singularName":"progress bar's final percent","pluralName":"progress bars' final percents","quantity":"Duration","unit":"Second","value":300.0},
+    {"id":"password-reset-email","singularName":"password-reset email arrival","pluralName":"password-reset email arrivals","quantity":"Duration","unit":"Second","value":600.0},
+    {"id":"software-update-time","singularName":"software update","pluralName":"software updates","quantity":"Duration","unit":"Second","value":3600.0}
   ]
 }
