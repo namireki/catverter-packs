@@ -5,8 +5,8 @@
   "packageId": "io.github.namireki.catverter.pack.office-life",
   "id": "office-life",
   "name": "Office life",
-  "version": "1.3.0",
-  "minimumAppVersion": "1.0.0",
+  "version": "1.3.1",
+  "minimumAppVersion": "1.1.0",
   "description": "Desks, stationery, caffeine infrastructure, and suspiciously mobile office equipment.",
   "metadata": {
     "authors": ["Namireki Studio"],

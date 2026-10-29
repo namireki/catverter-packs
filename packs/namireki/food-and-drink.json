@@ -5,8 +5,8 @@
   "packageId": "com.namirekistudio.catverter.pack.food-and-drink",
   "id": "food-and-drink",
   "name": "Food & drink",
-  "version": "1.9.0",
-  "minimumAppVersion": "1.0.0",
+  "version": "1.9.1",
+  "minimumAppVersion": "1.1.0",
   "description": "Approximate edible masses, lengths, surface areas, servings, containers, delivery speeds, and kitchen rhythms from a grain of rice to a mixing vat.",
   "metadata": { "authors": ["Namireki Studio"], "license": "Apache-2.0", "tags": ["food", "drink", "mass", "length", "area", "volume", "temperature", "acceleration", "data-rate", "illuminance", "frequency", "time", "power"] },
   "modifiers": [

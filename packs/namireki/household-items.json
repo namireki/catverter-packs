@@ -5,8 +5,8 @@
   "packageId": "com.namirekistudio.catverter.pack.household-items",
   "id": "household-items",
   "name": "Household items",
-  "version": "1.9.0",
-  "minimumAppVersion": "1.0.0",
+  "version": "1.9.1",
+  "minimumAppVersion": "1.1.0",
   "description": "Approximate everyday masses, lengths, areas, volumes, and rhythms from around the home.",
   "metadata": { "authors": ["Namireki Studio"], "license": "Apache-2.0", "tags": ["household", "mass", "length", "area", "volume", "temperature", "acceleration", "data-rate", "illuminance", "frequency", "time", "power"] },
   "modifiers": [

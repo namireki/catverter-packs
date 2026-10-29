@@ -11,6 +11,18 @@ the root uncluttered. All public JSON documents currently use
 `schemaVersion: 1`; content versions such as `1.0.0` are versioned
 independently.
 
+See the [pack v1 freeze readiness checklist](docs/pack-v1-freeze-readiness.md)
+for the authentic historical v1 source fixture, minimum supported app
+requirements, final cross-version test gate and annotated-tag procedure.
+The pack schema is **not tagged or frozen yet**.
+
+See the [pack v1 compatibility and publication policy](docs/pack-v1-contract.md)
+for ID scope, safe physical ratios, version-bump rules, and minimum-app
+compatibility requirements. This is the **candidate freeze contract**, not
+yet a tagged guarantee. Public CI also compares proposed pack changes to
+the currently published `main` catalog and rejects identity reuse or
+silent version changes.
+
 The pack document contract remains schema v1. The catalog's trust,
 provenance, locale, and immutable-download fields are optional schema-v1
 extensions for compatibility with existing readers, but this repository's

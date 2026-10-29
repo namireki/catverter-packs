@@ -97,6 +97,39 @@ public sealed class PackRepositoryValidatorTests : IDisposable
         }
     }
 
+    [Theory]
+    [InlineData("Kelvin", true)]
+    [InlineData("DegreeCelsius", false)]
+    [InlineData("DegreeFahrenheit", false)]
+    public void Validate_requires_absolute_temperature_references(
+        string unit, bool valid)
+    {
+        CreateValidRepository();
+        var packPath = Path.Combine(_root, "packs", "author", "sample.json");
+        var pack = JsonNode.Parse(File.ReadAllText(packPath))!.AsObject();
+        var conversion = pack["conversions"]![0]!;
+        conversion["quantity"] = "Temperature";
+        conversion["unit"] = unit;
+        conversion["value"] = 293.15;
+        File.WriteAllText(
+            packPath, pack.ToJsonString(), new UTF8Encoding(false));
+
+        var catalogPath = Path.Combine(_root, "catalog.json");
+        var catalog = JsonNode.Parse(File.ReadAllText(catalogPath))!.AsObject();
+        catalog["packs"]![0]!["sha256"] =
+            PackRepositoryValidator.ComputeCanonicalSha256(packPath);
+        File.WriteAllText(
+            catalogPath, catalog.ToJsonString(), new UTF8Encoding(false));
+
+        var result = new PackRepositoryValidator().Validate(_root);
+        Assert.Equal(valid, result.IsValid);
+        if (!valid)
+        {
+            Assert.Contains(result.Errors, error =>
+                error.Contains("must use Kelvin", StringComparison.Ordinal));
+        }
+    }
+
     [Fact]
     public void Validate_AcceptsNestedAuthorPack()
     {

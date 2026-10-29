@@ -5,8 +5,8 @@
   "packageId": "com.namirekistudio.catverter.pack.sports-and-games",
   "id": "sports-and-games",
   "name": "Sports & games",
-  "version": "1.9.0",
-  "minimumAppVersion": "1.0.0",
+  "version": "1.9.1",
+  "minimumAppVersion": "1.1.0",
   "description": "Approximate equipment, playing distances and areas, containers, record-worthy speeds, and competitive rhythms across popular sports and games.",
   "metadata": { "authors": ["Namireki Studio"], "license": "Apache-2.0", "tags": ["sports", "games", "mass", "length", "area", "volume", "temperature", "acceleration", "data-rate", "illuminance", "frequency", "time", "power"] },
   "modifiers": [

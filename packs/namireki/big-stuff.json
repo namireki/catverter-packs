@@ -5,8 +5,8 @@
   "packageId": "com.namirekistudio.catverter.pack.big-stuff",
   "id": "big-stuff",
   "name": "Big stuff",
-  "version": "1.9.0",
-  "minimumAppVersion": "1.0.0",
+  "version": "1.9.1",
+  "minimumAppVersion": "1.1.0",
   "description": "Approximate fields, floor areas, pools, vehicles, landmarks, machinery rhythms, and other satisfyingly oversized comparisons.",
   "metadata": { "authors": ["Namireki Studio"], "license": "Apache-2.0", "tags": ["big-stuff", "mass", "length", "area", "volume", "temperature", "acceleration", "data-rate", "illuminance", "frequency", "time", "power"] },
   "modifiers": [

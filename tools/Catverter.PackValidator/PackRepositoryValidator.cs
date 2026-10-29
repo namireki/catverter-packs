@@ -664,6 +664,17 @@ public sealed partial class PackRepositoryValidator
             TryGetString(conversion, "unit", context, errors, out var unit);
             ValidateQuantityAndUnit(quantity, unit, context, errors);
 
+            // Catverter presents "how many X" ratios. Offset temperature
+            // scales are not ratio scales (20 °C is not twice 10 °C).
+            // Use an absolute zero reference for temperature comparisons.
+            if (string.Equals(quantity, "Temperature", StringComparison.Ordinal)
+                && !string.Equals(unit, "Kelvin", StringComparison.Ordinal))
+            {
+                errors.Add(
+                    $"{context}.unit Temperature references must use Kelvin " +
+                    "(an absolute scale).");
+            }
+
             // The app's current Power creation pathway may convert through
             // System.Decimal. Do not publish Watt values it cannot represent.
             if (string.Equals(quantity, "Power", StringComparison.Ordinal)

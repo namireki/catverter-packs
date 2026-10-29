@@ -5,8 +5,8 @@
   "packageId": "com.namirekistudio.catverter.pack.cats",
   "id": "cats",
   "name": "Cats",
-  "version": "1.9.0",
-  "minimumAppVersion": "1.0.0",
+  "version": "1.9.1",
+  "minimumAppVersion": "1.1.0",
   "description": "Approximate kitten, breed, body-part, territory-area, cat-supply, zoomie, and feline-rhythm comparisons.",
   "metadata": { "authors": ["Namireki Studio"], "license": "Apache-2.0", "tags": ["cats", "mass", "length", "area", "volume", "temperature", "speed", "acceleration", "data-rate", "illuminance", "frequency", "time", "power"] },
   "modifiers": [
