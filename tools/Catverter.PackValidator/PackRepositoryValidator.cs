@@ -664,6 +664,19 @@ public sealed partial class PackRepositoryValidator
             TryGetString(conversion, "unit", context, errors, out var unit);
             ValidateQuantityAndUnit(quantity, unit, context, errors);
 
+            // The app's current Power creation pathway may convert through
+            // System.Decimal. Do not publish Watt values it cannot represent.
+            if (string.Equals(quantity, "Power", StringComparison.Ordinal)
+                && string.Equals(unit, "Watt", StringComparison.Ordinal)
+                && conversion.TryGetPropertyValue("value", out var powerValue)
+                && powerValue is JsonValue jsonPower
+                && jsonPower.TryGetValue<double>(out var watts)
+                && watts > (double)decimal.MaxValue)
+            {
+                errors.Add(
+                    $"{context}.value exceeds the supported decimal range for Power/Watt.");
+            }
+
             if (conversion.TryGetPropertyValue("modifierIds", out var modifierIdsNode))
             {
                 foreach (var modifierId in ValidateUniqueStringArray(
