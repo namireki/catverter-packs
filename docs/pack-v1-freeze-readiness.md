@@ -4,6 +4,12 @@
 The structural `schemaVersion: 1` stays unchanged. The online catalog
 transport format is **not** frozen by the pack-document freeze.
 
+The pack-v1 JSON Schema is now **byte-identical** in both repositories,
+with canonical `$id`:
+`urn:com.namirekistudio.catverter:schema:pack:v1`.
+Previously the app copy used a branch-specific raw URL; the metadata
+was normalized before any freeze tag, without changing validation rules.
+
 ## Historical compatibility evidence
 
 | Reference | Version claim | Reproducible artifact | Verification |
