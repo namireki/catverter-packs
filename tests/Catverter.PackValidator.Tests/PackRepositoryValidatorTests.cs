@@ -54,14 +54,47 @@ public sealed class PackRepositoryValidatorTests : IDisposable
                     c.GetProperty("quantity").GetString() == "Power"),
                 conversion =>
                 {
+                    var watts = conversion.GetProperty("value").GetDouble();
                     Assert.True(
-                        conversion.GetProperty("value").GetDouble() > 0,
-                        name + " has an invalid Power value");
+                        watts > 0 && watts <= (double)decimal.MaxValue,
+                        name + " has a Power magnitude outside the supported range");
                 });
         }
 
         Assert.Equal(11, officialCount);
         Assert.Equal(1, contributedCount);
+    }
+
+    [Theory]
+    [InlineData(1e27, true)]
+    [InlineData(1e29, false)]
+    [InlineData(1e41, false)]
+    public void Validate_Rejects_unsupported_power_magnitudes(
+        double watts, bool isValid)
+    {
+        CreateValidRepository();
+        var packPath = Path.Combine(_root, "packs", "author", "sample.json");
+        var pack = JsonNode.Parse(File.ReadAllText(packPath))!.AsObject();
+        var conversion = pack["conversions"]![0]!;
+        conversion["quantity"] = "Power";
+        conversion["unit"] = "Watt";
+        conversion["value"] = watts;
+        File.WriteAllText(packPath, pack.ToJsonString(), new UTF8Encoding(false));
+
+        var catalogPath = Path.Combine(_root, "catalog.json");
+        var catalog = JsonNode.Parse(File.ReadAllText(catalogPath))!.AsObject();
+        catalog["packs"]![0]!["sha256"] =
+            PackRepositoryValidator.ComputeCanonicalSha256(packPath);
+        File.WriteAllText(
+            catalogPath, catalog.ToJsonString(), new UTF8Encoding(false));
+
+        var result = new PackRepositoryValidator().Validate(_root);
+        Assert.Equal(isValid, result.IsValid);
+        if (!isValid)
+        {
+            Assert.Contains(result.Errors, error =>
+                error.Contains("supported decimal range", StringComparison.Ordinal));
+        }
     }
 
     [Fact]
