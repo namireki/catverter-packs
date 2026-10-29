@@ -97,12 +97,17 @@ def main() -> None:
     app = args.app.resolve()
     root = Path(__file__).resolve().parent.parent
     ensure_no_dirty_files(app)
-    revision = repository_revision(app)
-    if not re.fullmatch(r"[a-f0-9]{40}", revision):
+    current_revision = repository_revision(app)
+    if not re.fullmatch(r"[a-f0-9]{40}", current_revision):
         raise ValueError("CatverterV2 checkout does not identify a Git commit")
 
     bundled_catalog = read_json(app / "packs" / "catalog.json")
     canonical_catalog = read_json(root / "catalog.json")
+    # Verification compares bytes/identities against the published source
+    # revision, even if the app subsequently merged documentation commits.
+    # Actual synchronization always records the current committed revision.
+    revision = (canonical_catalog["sourceCatalog"]["revision"]
+                if args.verify else current_revision)
     official = {entry["id"]: entry for entry in canonical_catalog["packs"]
                 if entry.get("classification") == "official"}
     bundled = {entry["id"]: entry for entry in bundled_catalog["packs"]}
