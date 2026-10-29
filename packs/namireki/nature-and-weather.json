@@ -5,8 +5,8 @@
   "packageId": "com.namirekistudio.catverter.pack.nature-and-weather",
   "id": "nature-and-weather",
   "name": "Nature & weather",
-  "version": "1.9.0",
-  "minimumAppVersion": "1.0.0",
+  "version": "1.9.1",
+  "minimumAppVersion": "1.1.0",
   "description": "Approximate natural masses, heights, areas, water volumes, weather speeds, and frequencies from a snowflake to a lightning stroke.",
   "metadata": { "authors": ["Namireki Studio"], "license": "Apache-2.0", "tags": ["nature", "weather", "mass", "length", "area", "volume", "temperature", "speed", "acceleration", "data-rate", "illuminance", "frequency", "time", "power"] },
   "modifiers": [
