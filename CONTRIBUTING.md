@@ -15,6 +15,14 @@ set `maintainer` to the same author slug used by the pack folder. The
 official packs. Classification is a trust decision made during repository
 review and must never be inferred from display names or maintainer names.
 
+Follow the [pack v1 compatibility policy](docs/pack-v1-contract.md):
+the globally unique `packageId` and the catalog-wide unique `id` are
+permanent; never reuse a conversion ID for another quantity/unit.
+Use three-part `MAJOR.MINOR.PATCH` versions in new publications. A
+payload edit needs at least a patch bump, an additive conversion/modifier
+change at least a minor bump, and contributed-pack removals a major bump.
+Official packs cannot silently drop shipped identities.
+
 Use invariant UnitsNet quantity and unit names. Include a useful range of
 values, document approximations, cite published reference values with HTTPS
 `sourceUrl` entries, and use only text or media you have permission to submit.
