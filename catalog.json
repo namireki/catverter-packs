@@ -3,15 +3,15 @@
   "documentType": "catverter-catalog",
   "schemaVersion": 1,
   "repositoryId": "io.github.namireki.catverter.packs",
-  "version": "2.3.0",
+  "version": "2.4.0",
   "minimumAppVersion": "1.1.0",
   "contentBaseUrl": "https://raw.githubusercontent.com/namireki/catverter-packs/{revision}/",
   "sourceCatalog": {
     "repository": "https://github.com/namireki/CatverterV2",
-    "revision": "6dd430bfda08211d27aa7212526567f186d70004",
+    "revision": "a134aea4416bf6c567ee0d19606f6ade776047ba",
     "file": "packs/catalog.json",
     "repositoryId": "com.namirekistudio.catverter.packs",
-    "version": "1.7.0"
+    "version": "1.12.0"
   },
   "packs": [
     {
