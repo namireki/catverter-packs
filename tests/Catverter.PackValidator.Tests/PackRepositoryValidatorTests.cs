@@ -96,6 +96,38 @@ public sealed class PackRepositoryValidatorTests : IDisposable
         Assert.Equal(0, result.ContributedPackCount);
     }
 
+    [Theory]
+    [InlineData("1.7.0")]
+    [InlineData("1.12.0")]
+    [InlineData("2.4.0")]
+    public void Validate_AcceptsAnUpdatedSourceCatalogVersion(string version)
+    {
+        CreateValidRepository();
+        SetSourceCatalogVersion(version);
+
+        var result = new PackRepositoryValidator().Validate(_root);
+
+        Assert.True(result.IsValid, string.Join(Environment.NewLine, result.Errors));
+    }
+
+    [Theory]
+    [InlineData("latest")]
+    [InlineData("1.12.0-preview")]
+    public void Validate_RejectsMalformedSourceCatalogVersions(string version)
+    {
+        CreateValidRepository();
+        SetSourceCatalogVersion(version);
+
+        var result = new PackRepositoryValidator().Validate(_root);
+
+        Assert.False(result.IsValid);
+        Assert.Contains(
+            result.Errors,
+            error => error.Contains(
+                "catalog.json.sourceCatalog.version has an invalid value",
+                StringComparison.Ordinal));
+    }
+
     [Fact]
     public void Validate_AcceptsLocaleFromIndependentSourceRevision()
     {
@@ -315,6 +347,20 @@ public sealed class PackRepositoryValidatorTests : IDisposable
         {
             Directory.Delete(_root, recursive: true);
         }
+    }
+
+    private void SetSourceCatalogVersion(string version)
+    {
+        var path = Path.Combine(_root, "catalog.json");
+        var catalog = JsonNode.Parse(File.ReadAllText(path))!.AsObject();
+        catalog["sourceCatalog"]!["version"] = version;
+        File.WriteAllText(
+            path,
+            catalog.ToJsonString(new JsonSerializerOptions
+            {
+                WriteIndented = true
+            }),
+            new UTF8Encoding(false));
     }
 
     private void CreateValidRepository(
