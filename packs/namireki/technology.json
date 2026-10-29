@@ -5,8 +5,8 @@
   "packageId": "com.namirekistudio.catverter.pack.technology",
   "id": "technology",
   "name": "Technology",
-  "version": "1.9.0",
-  "minimumAppVersion": "1.0.0",
+  "version": "1.9.1",
+  "minimumAppVersion": "1.1.0",
   "description": "Approximate gadget masses, microscopic features and areas, hardware volumes, machine speeds, clocks, and carrier frequencies from a transistor to a fiber pulse.",
   "metadata": { "authors": ["Namireki Studio"], "license": "Apache-2.0", "tags": ["technology", "mass", "length", "area", "volume", "temperature", "speed", "acceleration", "data-rate", "illuminance", "frequency", "time", "power"] },
   "modifiers": [
