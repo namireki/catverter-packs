@@ -42,6 +42,13 @@ alone. Both locale files must cover every official conversion, including all
 so the app cannot regress to older online pack versions. Newly authored
 English fallback translations require later linguistic review.
 
+**Power numeric safety:** The current application may convert Power values
+through .NET `decimal`. For `Power` / `Watt` references, the validator
+rejects magnitudes above `decimal.MaxValue` (approximately
+`7.9228 × 10^28 W`). Keep published illustrative comparisons in a safely
+representable range, rather than relabeling extremely luminous objects with
+incorrectly reduced powers. Update the app and public pack copies together.
+
 When a pack changes:
 
 1. Increment the pack content version.

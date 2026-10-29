@@ -421,11 +421,11 @@
         "brown-dwarf-glow-power": { "one": "riferimento di potenza: brown dwarf glow", "other": "riferimenti di potenza: brown dwarf glow" },
         "white-dwarf-glow-power": { "one": "riferimento di potenza: white dwarf glow", "other": "riferimenti di potenza: white dwarf glow" },
         "sun-luminosity-power": { "one": "riferimento di potenza: solar luminosity", "other": "riferimenti di potenza: solar luminosity" },
-        "bright-blue-star-power": { "one": "riferimento di potenza: bright blue star luminosity", "other": "riferimenti di potenza: bright blue star luminosity" },
-        "red-supergiant-power": { "one": "riferimento di potenza: red supergiant luminosity", "other": "riferimenti di potenza: red supergiant luminosity" },
-        "galactic-stellar-glow-power": { "one": "riferimento di potenza: galactic stellar glow", "other": "riferimenti di potenza: galactic stellar glow" },
-        "quasar-luminosity-power": { "one": "riferimento di potenza: quasar luminosity", "other": "riferimenti di potenza: quasar luminosity" },
-        "active-galactic-nucleus-power": { "one": "riferimento di potenza: active galactic nucleus luminosity", "other": "riferimenti di potenza: active galactic nucleus luminosity" }
+        "earth-moon-tidal-dissipation-power": { "one": "dissipazione mareale Terra-Luna", "other": "dissipazioni mareali Terra-Luna" },
+        "earth-geothermal-output-power": { "one": "flusso geotermico terrestre", "other": "flussi geotermici terrestri" },
+        "jupiter-internal-heat-power": { "one": "calore interno di Giove", "other": "flussi di calore interno di Giove" },
+        "young-neutron-star-power": { "one": "luminosità termica di una giovane stella di neutroni", "other": "luminosità termiche di giovani stelle di neutroni" },
+        "solar-subgiant-power": { "one": "luminosità di una stella subgigante simile al Sole", "other": "luminosità di stelle subgiganti simili al Sole" }
       }
     },
     "big-stuff": {
