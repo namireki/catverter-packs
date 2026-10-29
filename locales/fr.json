@@ -1630,26 +1630,11 @@
           "one": "niveau de puissance : solar luminosity",
           "other": "niveaux de puissance : solar luminosity"
         },
-        "bright-blue-star-power": {
-          "one": "niveau de puissance : bright blue star luminosity",
-          "other": "niveaux de puissance : bright blue star luminosity"
-        },
-        "red-supergiant-power": {
-          "one": "niveau de puissance : red supergiant luminosity",
-          "other": "niveaux de puissance : red supergiant luminosity"
-        },
-        "galactic-stellar-glow-power": {
-          "one": "niveau de puissance : galactic stellar glow",
-          "other": "niveaux de puissance : galactic stellar glow"
-        },
-        "quasar-luminosity-power": {
-          "one": "niveau de puissance : quasar luminosity",
-          "other": "niveaux de puissance : quasar luminosity"
-        },
-        "active-galactic-nucleus-power": {
-          "one": "niveau de puissance : active galactic nucleus luminosity",
-          "other": "niveaux de puissance : active galactic nucleus luminosity"
-        }
+        "earth-moon-tidal-dissipation-power": { "one": "dissipation des marées Terre-Lune", "other": "dissipations des marées Terre-Lune" },
+        "earth-geothermal-output-power": { "one": "flux géothermique terrestre", "other": "flux géothermiques terrestres" },
+        "jupiter-internal-heat-power": { "one": "chaleur interne de Jupiter", "other": "flux de chaleur interne de Jupiter" },
+        "young-neutron-star-power": { "one": "luminosité thermique d'une jeune étoile à neutrons", "other": "luminosités thermiques de jeunes étoiles à neutrons" },
+        "solar-subgiant-power": { "one": "luminosité d'une sous-géante de type solaire", "other": "luminosités de sous-géantes de type solaire" }
       }
     },
     "big-stuff": {
