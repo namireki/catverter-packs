@@ -5,7 +5,7 @@
   "packageId": "io.github.namireki.catverter.pack.office-life",
   "id": "office-life",
   "name": "Office life",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "minimumAppVersion": "1.0.0",
   "description": "Desks, stationery, caffeine infrastructure, and suspiciously mobile office equipment.",
   "metadata": {
@@ -13,7 +13,7 @@
     "license": "Apache-2.0",
     "homepage": "https://github.com/namireki/catverter-packs",
     "repository": "https://github.com/namireki/catverter-packs",
-    "tags": ["office", "stationery", "workplace", "frequency", "time"],
+    "tags": ["office", "stationery", "workplace", "frequency", "time", "power"],
     "accentColor": "#4F78A8"
   },
   "modifiers": [
@@ -479,6 +479,26 @@
     {"id":"printer-warmup-time","singularName":"printer warm-up","pluralName":"printer warm-ups","quantity":"Duration","unit":"Second","value":45.0},
     {"id":"coffee-desk-commute","singularName":"coffee-to-desk commute","pluralName":"coffee-to-desk commutes","quantity":"Duration","unit":"Second","value":120.0},
     {"id":"friday-afternoon-minute","singularName":"Friday-afternoon minute","pluralName":"Friday-afternoon minutes","quantity":"Duration","unit":"Second","value":600.0},
-    {"id":"quick-meeting-duration","singularName":"“quick” meeting","pluralName":"“quick” meetings","quantity":"Duration","unit":"Second","value":3600.0}
+    {"id":"quick-meeting-duration","singularName":"“quick” meeting","pluralName":"“quick” meetings","quantity":"Duration","unit":"Second","value":3600.0},
+    {"id":"mouse-sensor-power","singularName":"office mouse sensor power benchmark","pluralName":"office mouse sensor power benchmarks","quantity":"Power","unit":"Watt","value":0.1,"notes":"Illustrative order-of-magnitude reference; real power depends on conditions."},
+    {"id":"keyboard-light-power","singularName":"keyboard backlight power benchmark","pluralName":"keyboard backlight power benchmarks","quantity":"Power","unit":"Watt","value":1.5,"notes":"Illustrative order-of-magnitude reference; real power depends on conditions."},
+    {"id":"desk-phone-standby-power","singularName":"desk phone standby power benchmark","pluralName":"desk phone standby power benchmarks","quantity":"Power","unit":"Watt","value":3,"notes":"Illustrative order-of-magnitude reference; real power depends on conditions."},
+    {"id":"conference-microphone-power","singularName":"conference microphone power benchmark","pluralName":"conference microphone power benchmarks","quantity":"Power","unit":"Watt","value":5,"notes":"Illustrative order-of-magnitude reference; real power depends on conditions."},
+    {"id":"usb-hub-power","singularName":"powered USB hub power benchmark","pluralName":"powered USB hub power benchmarks","quantity":"Power","unit":"Watt","value":12,"notes":"Illustrative order-of-magnitude reference; real power depends on conditions."},
+    {"id":"desk-lamp-power","singularName":"office desk lamp power benchmark","pluralName":"office desk lamp power benchmarks","quantity":"Power","unit":"Watt","value":9,"notes":"Illustrative order-of-magnitude reference; real power depends on conditions."},
+    {"id":"laptop-power","singularName":"office laptop power benchmark","pluralName":"office laptop power benchmarks","quantity":"Power","unit":"Watt","value":65,"notes":"Illustrative order-of-magnitude reference; real power depends on conditions."},
+    {"id":"wide-monitor-power","singularName":"wide office monitor power benchmark","pluralName":"wide office monitor power benchmarks","quantity":"Power","unit":"Watt","value":35,"notes":"Illustrative order-of-magnitude reference; real power depends on conditions."},
+    {"id":"meeting-projector-power","singularName":"meeting room projector power benchmark","pluralName":"meeting room projector power benchmarks","quantity":"Power","unit":"Watt","value":280,"notes":"Illustrative order-of-magnitude reference; real power depends on conditions."},
+    {"id":"laser-printer-power","singularName":"office laser printer power benchmark","pluralName":"office laser printer power benchmarks","quantity":"Power","unit":"Watt","value":450,"notes":"Illustrative order-of-magnitude reference; real power depends on conditions."},
+    {"id":"paper-shredder-power","singularName":"paper shredder power benchmark","pluralName":"paper shredder power benchmarks","quantity":"Power","unit":"Watt","value":300,"notes":"Illustrative order-of-magnitude reference; real power depends on conditions."},
+    {"id":"coffee-machine-power","singularName":"office coffee machine power benchmark","pluralName":"office coffee machine power benchmarks","quantity":"Power","unit":"Watt","value":1400,"notes":"Illustrative order-of-magnitude reference; real power depends on conditions."},
+    {"id":"photocopier-power","singularName":"office photocopier power benchmark","pluralName":"office photocopier power benchmarks","quantity":"Power","unit":"Watt","value":850,"notes":"Illustrative order-of-magnitude reference; real power depends on conditions."},
+    {"id":"meeting-room-ac-power","singularName":"meeting room air conditioner power benchmark","pluralName":"meeting room air conditioner power benchmarks","quantity":"Power","unit":"Watt","value":1800,"notes":"Illustrative order-of-magnitude reference; real power depends on conditions."},
+    {"id":"server-rack-power","singularName":"office server rack power benchmark","pluralName":"office server rack power benchmarks","quantity":"Power","unit":"Watt","value":6000,"notes":"Illustrative order-of-magnitude reference; real power depends on conditions."},
+    {"id":"open-space-lighting-power","singularName":"open-plan office lighting power benchmark","pluralName":"open-plan office lighting power benchmarks","quantity":"Power","unit":"Watt","value":12000,"notes":"Illustrative order-of-magnitude reference; real power depends on conditions."},
+    {"id":"elevator-motor-power","singularName":"office elevator motor power benchmark","pluralName":"office elevator motor power benchmarks","quantity":"Power","unit":"Watt","value":15000,"notes":"Illustrative order-of-magnitude reference; real power depends on conditions."},
+    {"id":"building-ventilation-power","singularName":"office building ventilation power benchmark","pluralName":"office building ventilation power benchmarks","quantity":"Power","unit":"Watt","value":50000,"notes":"Illustrative order-of-magnitude reference; real power depends on conditions."},
+    {"id":"office-building-power","singularName":"office building electrical load power benchmark","pluralName":"office building electrical load power benchmarks","quantity":"Power","unit":"Watt","value":750000,"notes":"Illustrative order-of-magnitude reference; real power depends on conditions."},
+    {"id":"company-data-center-power","singularName":"company data center electrical load power benchmark","pluralName":"company data center electrical load power benchmarks","quantity":"Power","unit":"Watt","value":12000000,"notes":"Illustrative order-of-magnitude reference; real power depends on conditions."}
   ]
 }

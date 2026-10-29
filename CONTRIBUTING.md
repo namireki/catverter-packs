@@ -26,6 +26,22 @@ conversion. Each official modifier must be provided either in the locale's
 global modifier map or in that pack's modifier map, and every modifier form
 must contain `{unit}`.
 
+For **official** packs, coordinate this public repository with the private
+CatverterV2 bundled pack changes. After updating and committing
+`CatverterV2/packs/`, run from this repository:
+
+```pwsh
+python scripts/sync_official_from_app.py --app ../CatverterV2
+python scripts/sync_official_from_app.py --app ../CatverterV2 --verify
+```
+
+The sync tool copies official pack JSON, Italian and French editorial locale
+sources, source commit provenance, and hashes; it leaves contributed packs
+alone. Both locale files must cover every official conversion, including all
+20 Power entries per pack. Keep the application and public source PRs paired
+so the app cannot regress to older online pack versions. Newly authored
+English fallback translations require later linguistic review.
+
 When a pack changes:
 
 1. Increment the pack content version.
