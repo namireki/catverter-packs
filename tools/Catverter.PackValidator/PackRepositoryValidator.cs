@@ -32,7 +32,6 @@ public sealed partial class PackRepositoryValidator
     private const string OfficialPackageIdPrefix = "com.namirekistudio.catverter.pack.";
     private const string SourceCatalogFile = "packs/catalog.json";
     private const string SourceCatalogRepositoryId = "com.namirekistudio.catverter.packs";
-    private const string SourceCatalogVersion = "1.7.0";
     private const string SourceRepositoryUrl = "https://github.com/namireki/CatverterV2";
 
     private static readonly UTF8Encoding StrictUtf8 = new(false, true);
@@ -943,12 +942,16 @@ public sealed partial class PackRepositoryValidator
             SourceCatalogRepositoryId,
             context,
             errors);
-        ValidateExactString(
-            sourceCatalog,
-            "version",
-            SourceCatalogVersion,
-            context,
-            errors);
+        // The application catalog version evolves independently of the public
+        // canonical catalog version; validate its format, not a frozen value.
+        var sourceVersion = string.Empty;
+        if (TryGetString(
+                sourceCatalog, "version", context, errors, out var version))
+        {
+            ValidatePattern(
+                version, VersionRegex(), $"{context}.version", errors);
+            sourceVersion = version;
+        }
         TryGetString(sourceCatalog, "revision", context, errors, out var revision);
         ValidatePattern(revision, RevisionRegex(), $"{context}.revision", errors);
 
@@ -957,7 +960,7 @@ public sealed partial class PackRepositoryValidator
             revision,
             SourceCatalogFile,
             SourceCatalogRepositoryId,
-            SourceCatalogVersion);
+            sourceVersion);
     }
 
     private static SourceMetadata ValidateSource(
