@@ -6,6 +6,16 @@ first explicitly tagged *pack-v1 contract* release. Until that release the
 schema remains a draft. The separate online-catalog transport/profile is not
 frozen by this document.
 
+The exact historical source revision, verified Cats fixture, minimum
+version policy, remaining compatibility tests, and annotated-tag instructions
+are tracked in the [freeze readiness checklist](pack-v1-freeze-readiness.md).
+
+**Minimum app floor:** the original schema-v1 source (2026-10-26, app
+`1.0`) exposed Mass, Length, Volume and Speed. Expanded current
+quantities require at least app `1.1.0` in both the public catalog and
+individual pack documents. The public publication checker enforces this
+known floor; unfamiliar future vocabulary still needs manual review.
+
 This document defines **behavior beyond JSON Schema**. Always validate with
 the shared Catverter reader and the public repository validator before
 publishing. A JSON Schema check alone cannot validate UnitsNet semantics,
