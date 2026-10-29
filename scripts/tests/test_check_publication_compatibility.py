@@ -161,6 +161,32 @@ class PublicationContractTests(unittest.TestCase):
         errors, _ = self.check()
         self.assertTrue(any("published pack removal" in e for e in errors))
 
+    def test_new_pack_must_have_three_part_matching_versions(self):
+        self.new["version"] = "2.4.2"
+        contribution = copy.deepcopy(self.new_docs["cats"])
+        contribution["id"] = "dogs"
+        contribution["packageId"] = "io.github.bob.catverter.pack.dogs"
+        contribution["version"] = "1.0"
+        contribution["minimumAppVersion"] = "1.0.0"
+        self.new_docs["dogs"] = contribution
+        reference = copy.deepcopy(self.new["packs"][0])
+        reference.update({
+            "id": "dogs",
+            "packageId": contribution["packageId"],
+            "classification": "contributed",
+            "file": "packs/bob/dogs.json",
+            "version": contribution["version"],
+        })
+        self.new["packs"].append(reference)
+
+        errors, _ = self.check()
+        self.assertTrue(any("three numeric components" in e for e in errors))
+
+        contribution["version"] = "1.0.0"
+        reference["version"] = "1.0.0"
+        errors, _ = self.check()
+        self.assertEqual([], errors)
+
     def test_unchanged_catalog_with_only_new_version_is_allowed(self):
         self.new["version"] = "2.4.2"
         errors, _ = self.check()
