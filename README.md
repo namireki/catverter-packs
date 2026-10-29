@@ -16,12 +16,19 @@ provenance, locale, and immutable-download fields are optional schema-v1
 extensions for compatibility with existing readers, but this repository's
 semantic validator requires them on the canonical catalog.
 
-The current catalog contains 11 official packs derived from CatverterV2
-commit `6dd430bfda08211d27aa7212526567f186d70004`, one contributed pack, at least
-ten Frequency conversions and five themed Duration conversions in every
-cataloged pack, and complete French and Italian locales for the official set. Official source
-hashes are kept in each entry's `source` object; the entry's top-level
-`sha256` covers the relocated file in this repository.
+The catalog contains **11 official packs** synchronized from the current
+bundled CatverterV2 packs and **one opt-in contributed pack** (`office-life`).
+All **12 packs contain 20 Power conversions**, at least ten Frequency
+conversions, and five themed Duration conversions. Official packs also
+include the newer Area, Temperature, Acceleration, BitRate, and Illuminance
+families. The official source commit and bundled catalog version are recorded
+in `catalog.json.sourceCatalog` rather than hard-coded in this README.
+
+French and Italian locale entries cover every official conversion, although
+newly imported comparison names still use English fallback wording when a
+reviewed translation is unavailable. Improving these translations remains a
+separate localization task. Official source hashes are stored in each
+`source` object; the top-level `sha256` hashes the relocated public file.
 
 ## Catalog and download contract
 
@@ -67,6 +74,49 @@ content version, stage the remote file, and replace the bundled copy only after
 validation. Contributed entries must never replace official package IDs, must
 not become enabled merely because they appear in the catalog, and should be
 downloaded only after explicit user opt-in.
+
+## Synchronize bundled official packs
+
+**Update both repositories before releasing an app with changed bundled packs.**
+The source of truth for built-in official packs is the CatverterV2
+`packs/` tree. An uncoordinated remote catalog may be older than the new
+app. Current Catverter builds reject older official pack versions and reject
+remote replacements that drop bundled conversion identities, preserving the
+offline pack set rather than silently removing quantities.
+
+To publish an official pack change:
+
+1. In CatverterV2, modify the bundled pack JSON and its `version`; update
+   `packs/catalog.json` including the pack SHA-256 hashes and catalog
+   `version`. Maintain `packs/locales/it.json` and editorial
+   `packs/locales/fr.json` so all official conversion IDs are covered.
+2. Commit the CatverterV2 changes and check out that commit locally.
+3. In this repository, with the CatverterV2 checkout next to it, run:
+
+   ```pwsh
+   python scripts/sync_official_from_app.py --app ../CatverterV2
+   ```
+
+   The script relocates all official pack files, synchronizes both locale
+   files, updates the source commit SHA and source hashes, and increments the
+   canonical catalog version. It refuses dirty source packs and incomplete
+   locale coverage. **It does not overwrite contributed packs.**
+4. Update any contributed pack separately (such as `office-life`) and
+   recompute its `catalog.json` hash. Run the validator:
+
+   ```pwsh
+   dotnet run --project tools/Catverter.PackValidator -- validate-pack-repository .
+   python scripts/sync_official_from_app.py --app ../CatverterV2 --verify
+   ```
+
+5. Submit coordinated PRs in CatverterV2 and here. Merge the app source PR
+   first, then the matching canonical publication PR, to keep provenance
+   resolvable. Do not ship the new app until both have merged.
+
+The `--verify` mode compares all generated official pack and locale
+files and source metadata without writing. App-only changes that introduce
+new quantity families must **not** be considered finished until the canonical
+copy and its locales validate.
 
 ## Add a pack
 
