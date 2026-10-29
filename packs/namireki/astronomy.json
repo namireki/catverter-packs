@@ -5,8 +5,8 @@
   "packageId": "com.namirekistudio.catverter.pack.astronomy",
   "id": "astronomy",
   "name": "Astronomy",
-  "version": "1.9.1",
-  "minimumAppVersion": "1.0.0",
+  "version": "1.9.2",
+  "minimumAppVersion": "1.1.0",
   "description": "Approximate cosmic masses, sizes, areas, distances, volumes, speeds, and frequencies from the Moon to the Sun.",
   "metadata": { "authors": ["Namireki Studio"], "license": "Apache-2.0", "tags": ["astronomy", "mass", "length", "area", "volume", "temperature", "speed", "acceleration", "data-rate", "illuminance", "frequency", "time", "power"] },
   "modifiers": [
