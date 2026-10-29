@@ -161,6 +161,34 @@ class PublicationContractTests(unittest.TestCase):
         errors, _ = self.check()
         self.assertTrue(any("published pack removal" in e for e in errors))
 
+    def test_extended_v1_quantities_require_app_1_1_baseline(self):
+        self.publish(content_version="1.10.0")
+        self.new_docs["cats"]["conversions"].append({
+            "id": "watts", "quantity": "Power",
+            "unit": "Watt", "value": 100,
+        })
+        errors, _ = self.check()
+        self.assertTrue(any(
+            "extended quantities require minimumAppVersion >= 1.1.0" in error
+            for error in errors
+        ))
+
+        self.new_docs["cats"]["minimumAppVersion"] = "1.1.0"
+        errors, _ = self.check()
+        self.assertTrue(any(
+            "proposed catalog: extended quantities require" in error
+            for error in errors
+        ))
+
+        self.new["minimumAppVersion"] = "1.1.0"
+        errors, _ = self.check()
+        self.assertEqual([], errors)
+
+    def test_legacy_v1_quantity_with_app_1_0_minimum_stays_valid(self):
+        errors, _ = self.check()
+        self.assertEqual([], errors)
+        self.assertEqual("1.0.0", self.old_docs["cats"]["minimumAppVersion"])
+
     def test_new_pack_must_have_three_part_matching_versions(self):
         self.new["version"] = "2.4.2"
         contribution = copy.deepcopy(self.new_docs["cats"])
