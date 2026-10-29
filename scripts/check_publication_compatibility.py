@@ -182,12 +182,23 @@ def check_transition(previous, previous_docs, proposed, proposed_docs):
             if current.get("packageId") == previous_pack.get("packageId"):
                 errors.append(
                     f"pack {pack_id}: reuses an existing packageId")
-        version(current.get("version"), f"new pack {pack_id} version", errors)
+        catalog_version = version(
+            current.get("version"), f"new pack {pack_id} version", errors)
         doc = proposed_docs.get(pack_id)
         if doc is None:
             errors.append(f"new pack {pack_id}: missing file")
-        elif doc.get("packageId") != current.get("packageId"):
+            continue
+        document_version = version(
+            doc.get("version"), f"new pack {pack_id} document version", errors)
+        version(
+            doc.get("minimumAppVersion"),
+            f"new pack {pack_id} minimumAppVersion", errors)
+        if (doc.get("packageId") != current.get("packageId")
+            or doc.get("id") != pack_id):
             errors.append(f"new pack {pack_id}: catalog/file identity mismatch")
+        if (catalog_version and document_version
+            and catalog_version != document_version):
+            errors.append(f"new pack {pack_id}: catalog/file versions differ")
 
     return errors, warnings
 
