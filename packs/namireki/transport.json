@@ -5,8 +5,8 @@
   "packageId": "com.namirekistudio.catverter.pack.transport",
   "id": "transport",
   "name": "Transport",
-  "version": "1.9.0",
-  "minimumAppVersion": "1.0.0",
+  "version": "1.9.1",
+  "minimumAppVersion": "1.1.0",
   "description": "Approximate vehicle masses, lengths, footprints, capacities, speeds, and mechanical rhythms from a skateboard to an orbital rocket.",
   "metadata": { "authors": ["Namireki Studio"], "license": "Apache-2.0", "tags": ["transport", "mass", "length", "area", "volume", "temperature", "speed", "acceleration", "data-rate", "illuminance", "frequency", "time", "power"] },
   "modifiers": [
