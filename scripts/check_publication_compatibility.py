@@ -19,6 +19,14 @@ from pathlib import Path
 
 SEMVER = re.compile(r"^(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)$")
 PACK_PATH = re.compile(r"^packs/[a-z0-9-]+/[a-z0-9-]+\.json$")
+# The first schema-v1 source revision (CatverterV2 3a2aa7a6, app 1.0)
+# exposed only Mass, Length, Volume and Speed. These newer families are
+# first guaranteed by the app 1.1.0 compatibility baseline.
+APP_1_1_QUANTITIES = frozenset({
+    "Area", "Temperature", "Acceleration", "Duration", "Frequency",
+    "BitRate", "Illuminance", "Power",
+})
+APP_1_1_VERSION = (1, 1, 0)
 
 
 def version(value, context, errors):
@@ -76,6 +84,31 @@ def check_transition(previous, previous_docs, proposed, proposed_docs):
         proposed.get("minimumAppVersion"), "proposed catalog minimumAppVersion", errors)
     if old_min and new_min and new_min < old_min:
         errors.append("catalog minimumAppVersion cannot decrease")
+
+    # Minimum-app requirements are semantic, not merely JSON syntax.
+    # This is a conservative floor, not a claim that arbitrary new UnitsNet
+    # vocabulary is supported in 1.1.0 (those need a manual version review).
+    requires_1_1 = False
+    for pack_id, document in proposed_docs.items():
+        used = {
+            entry.get("quantity") for entry in document.get("conversions", [])
+        }
+        if used & APP_1_1_QUANTITIES:
+            requires_1_1 = True
+            minimum = version(
+                document.get("minimumAppVersion"),
+                f"pack {pack_id} minimumAppVersion", errors,
+            )
+            if minimum is not None and minimum < APP_1_1_VERSION:
+                errors.append(
+                    f"pack {pack_id}: extended quantities require "
+                    "minimumAppVersion >= 1.1.0"
+                )
+    if requires_1_1 and new_min is not None and new_min < APP_1_1_VERSION:
+        errors.append(
+            "proposed catalog: extended quantities require "
+            "minimumAppVersion >= 1.1.0"
+        )
 
     previous_pairs = {
         (conversion.get("quantity"), conversion.get("unit"))
