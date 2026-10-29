@@ -5,8 +5,8 @@
   "packageId": "com.namirekistudio.catverter.pack.animals",
   "id": "animals",
   "name": "Animals",
-  "version": "1.9.0",
-  "minimumAppVersion": "1.0.0",
+  "version": "1.9.1",
+  "minimumAppVersion": "1.1.0",
   "description": "Approximate animal masses, lengths, areas, speeds, and rhythms for wildly relatable comparisons.",
   "metadata": { "authors": ["Namireki Studio"], "license": "Apache-2.0", "tags": ["animals", "mass", "length", "area", "temperature", "speed", "acceleration", "data-rate", "illuminance", "frequency", "time", "power"] },
   "modifiers": [
