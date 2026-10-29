@@ -12,6 +12,59 @@ public sealed class PackRepositoryValidatorTests : IDisposable
         $"catverter-pack-validator-{Guid.NewGuid():N}");
 
     [Fact]
+    public void Published_repository_has_twenty_power_conversions_in_every_pack()
+    {
+        var directory = new DirectoryInfo(AppContext.BaseDirectory);
+        while (directory is not null
+               && !File.Exists(Path.Combine(directory.FullName, "catalog.json")))
+        {
+            directory = directory.Parent;
+        }
+
+        Assert.NotNull(directory);
+        var catalog = JsonDocument.Parse(
+            File.ReadAllText(Path.Combine(directory.FullName, "catalog.json")));
+
+        var officialCount = 0;
+        var contributedCount = 0;
+        foreach (var entry in catalog.RootElement.GetProperty("packs").EnumerateArray())
+        {
+            var classification = entry.GetProperty("classification").GetString();
+            if (classification == "official")
+            {
+                officialCount++;
+            }
+            else
+            {
+                contributedCount++;
+            }
+
+            var path = entry.GetProperty("file").GetString()!;
+            using var content = JsonDocument.Parse(
+                File.ReadAllText(Path.Combine(directory.FullName,
+                    path.Replace('/', Path.DirectorySeparatorChar))));
+
+            var name = entry.GetProperty("id").GetString()!;
+            var conversions = content.RootElement.GetProperty("conversions")
+                .EnumerateArray().ToArray();
+            Assert.Equal(20, conversions.Count(c =>
+                c.GetProperty("quantity").GetString() == "Power"));
+
+            Assert.All(conversions.Where(c =>
+                    c.GetProperty("quantity").GetString() == "Power"),
+                conversion =>
+                {
+                    Assert.True(
+                        conversion.GetProperty("value").GetDouble() > 0,
+                        name + " has an invalid Power value");
+                });
+        }
+
+        Assert.Equal(11, officialCount);
+        Assert.Equal(1, contributedCount);
+    }
+
+    [Fact]
     public void Validate_AcceptsNestedAuthorPack()
     {
         CreateValidRepository();
