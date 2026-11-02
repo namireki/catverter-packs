@@ -47,6 +47,29 @@ sharing a similar display name or author. Only matching `packageId`,
 classification, validated catalog provenance and compatible versions can
 authorize an update.
 
+## Authored content language
+
+A Pack v1 document may declare optional `metadata.locale`, a BCP 47
+language tag such as `en`, `it`, `it-IT` or `pt-BR`. This identifies the
+**original language of the pack name, description, conversion labels and
+modifier names**. It does not change quantity/unit identifiers or imply
+automatic translation, nor does it replace the separately distributed
+`catverter-locale` JSON overlays for translated UI and pack content.
+
+Missing `metadata.locale` is legal for historical v1 documents. The Pack
+Studio defaults new drafts to `en`; explicitly selecting Italian writes
+`"locale": "it"` in the pack metadata. The canonical reader checks the tag
+with .NET globalization, and pack publishers should use canonical BCP 47
+spellings. A changed locale is a content metadata change and requires an
+appropriate content-version increment.
+
+**Reader compatibility:** Earlier strict v1 readers reject new metadata
+properties. Although v1 has not yet been frozen, do not claim that a pack
+using `metadata.locale` is compatible with a released Catverter build until
+that exact build supports this extension. Review and raise
+`minimumAppVersion` where necessary. Historical packs without this field
+must continue to load unchanged.
+
 ## Numbers and physical quantities
 
 1. A reference `value` is a positive, finite JSON number, parsed as a .NET
