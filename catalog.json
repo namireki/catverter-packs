@@ -3,7 +3,7 @@
   "documentType": "catverter-catalog",
   "schemaVersion": 1,
   "repositoryId": "io.github.namireki.catverter.packs",
-  "version": "2.5.0",
+  "version": "2.6.0",
   "minimumAppVersion": "1.1.0",
   "contentBaseUrl": "https://raw.githubusercontent.com/namireki/catverter-packs/{revision}/",
   "sourceCatalog": {
@@ -191,11 +191,11 @@
     {
       "packageId": "io.github.catverter.nsfw",
       "id": "nsfw",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "classification": "contributed",
       "maintainer": "namireki",
       "file": "packs/namireki/nsfw.json",
-      "sha256": "f191a5a61d4a4e36a9ecaeb2546d5eb5cff34ccd2c60095d0529af6b85ec03c0"
+      "sha256": "00cb45f44aa12bb119fce045dab70211c3ce1c52f32ad3d4c661aadf091d38b9"
     }
   ],
   "locales": [
