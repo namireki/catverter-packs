@@ -4,10 +4,10 @@
   "schemaVersion": 1,
   "packageId": "io.github.catverter.nsfw",
   "id": "nsfw",
-  "name": "NSFW",
-  "version": "1.0.0",
+  "name": "Misure del cazzo",
+  "version": "1.1.0",
   "minimumAppVersion": "1.1.0",
-  "description": "NSFW",
+  "description": "Paragoni osceni, doppi sensi, vaffanculi e figuracce in dodici famiglie di misure: dalla carta igienica al night club, dalla sbronza al bidet gelato. Dati indicativi o inventati per scherzo, non misurazioni scientifiche. Contenuti per adulti, volutamente volgari.",
   "metadata": {
     "authors": [
       "Namireki"
@@ -18,8 +18,11 @@
       "everyday-life",
       "culture",
       "humor",
+      "satire",
+      "vulgar",
       "nsfw"
-    ]
+    ],
+    "accentColor": "#B73356"
   },
   "modifiers": [],
   "conversions": [
@@ -38,6 +41,1356 @@
       "quantity": "Mass",
       "unit": "Hectogram",
       "value": 3
+    },
+    {
+      "id": "dito-medio-da-traffico",
+      "singularName": "dito medio da traffico",
+      "pluralName": "dita medie da traffico",
+      "quantity": "Length",
+      "unit": "Centimeter",
+      "value": 9,
+      "notes": "Dimensione scenica e approssimativa: non è una misura standard."
+    },
+    {
+      "id": "tacco-da-notte-brava",
+      "singularName": "tacco da notte brava",
+      "pluralName": "tacchi da notte brava",
+      "quantity": "Length",
+      "unit": "Centimeter",
+      "value": 12,
+      "notes": "Dimensione scenica e approssimativa: non è una misura standard."
+    },
+    {
+      "id": "banana-in-mutande",
+      "singularName": "banana nascosta nelle mutande",
+      "pluralName": "banane nascoste nelle mutande",
+      "quantity": "Length",
+      "unit": "Centimeter",
+      "value": 18,
+      "notes": "Dimensione scenica e approssimativa: non è una misura standard."
+    },
+    {
+      "id": "scontrino-del-localaccio",
+      "singularName": "scontrino del localaccio",
+      "pluralName": "scontrini del localaccio",
+      "quantity": "Length",
+      "unit": "Centimeter",
+      "value": 32,
+      "notes": "Dimensione scenica e approssimativa: non è una misura standard."
+    },
+    {
+      "id": "striscia-di-censura",
+      "singularName": "striscia di censura adesiva",
+      "pluralName": "strisce di censura adesiva",
+      "quantity": "Length",
+      "unit": "Centimeter",
+      "value": 15,
+      "notes": "Dimensione scenica e approssimativa: non è una misura standard."
+    },
+    {
+      "id": "spazzolino-post-sbronza",
+      "singularName": "spazzolino del dopo-sbronza",
+      "pluralName": "spazzolini del dopo-sbronza",
+      "quantity": "Length",
+      "unit": "Centimeter",
+      "value": 17,
+      "notes": "Dimensione scenica e approssimativa: non è una misura standard."
+    },
+    {
+      "id": "calzino-puzzolente",
+      "singularName": "calzino puzzolente",
+      "pluralName": "calzini puzzolenti",
+      "quantity": "Length",
+      "unit": "Centimeter",
+      "value": 25,
+      "notes": "Dimensione scenica e approssimativa: non è una misura standard."
+    },
+    {
+      "id": "lenzuolo-del-peccato",
+      "singularName": "lenzuolo del peccato",
+      "pluralName": "lenzuola del peccato",
+      "quantity": "Length",
+      "unit": "Meter",
+      "value": 2,
+      "notes": "Dimensione scenica e approssimativa: non è una misura standard."
+    },
+    {
+      "id": "palo-dello-spogliarello",
+      "singularName": "palo dello spogliarello",
+      "pluralName": "pali dello spogliarello",
+      "quantity": "Length",
+      "unit": "Meter",
+      "value": 2.5,
+      "notes": "Dimensione scenica e approssimativa: non è una misura standard."
+    },
+    {
+      "id": "striscione-andate-a-cagare",
+      "singularName": "striscione con scritto andate a cagare",
+      "pluralName": "striscioni con scritto andate a cagare",
+      "quantity": "Length",
+      "unit": "Meter",
+      "value": 6,
+      "notes": "Dimensione scenica e approssimativa: non è una misura standard."
+    },
+    {
+      "id": "fila-al-bagno-del-night",
+      "singularName": "fila al bagno del night",
+      "pluralName": "file al bagno del night",
+      "quantity": "Length",
+      "unit": "Meter",
+      "value": 20,
+      "notes": "Dimensione scenica e approssimativa: non è una misura standard."
+    },
+    {
+      "id": "distanza-dal-buon-gusto",
+      "singularName": "distanza dal buon gusto",
+      "pluralName": "distanze dal buon gusto",
+      "quantity": "Length",
+      "unit": "Kilometer",
+      "value": 1,
+      "notes": "Dimensione scenica e approssimativa: non è una misura standard."
+    },
+    {
+      "id": "collana-di-allusioni",
+      "singularName": "collana di allusioni indecenti",
+      "pluralName": "collane di allusioni indecenti",
+      "quantity": "Length",
+      "unit": "Centimeter",
+      "value": 70,
+      "notes": "Dimensione scenica e approssimativa: non è una misura standard."
+    },
+    {
+      "id": "cintura-del-pentimento",
+      "singularName": "cintura del pentimento",
+      "pluralName": "cinture del pentimento",
+      "quantity": "Length",
+      "unit": "Meter",
+      "value": 1,
+      "notes": "Dimensione scenica e approssimativa: non è una misura standard."
+    },
+    {
+      "id": "porta-del-motel",
+      "singularName": "porta del motel infame",
+      "pluralName": "porte del motel infame",
+      "quantity": "Length",
+      "unit": "Foot",
+      "value": 7,
+      "notes": "Dimensione scenica e approssimativa: non è una misura standard."
+    },
+    {
+      "id": "mutanda-leopardata",
+      "singularName": "mutanda leopardata",
+      "pluralName": "mutande leopardate",
+      "quantity": "Mass",
+      "unit": "Gram",
+      "value": 60,
+      "notes": "Peso indicativo e volutamente goliardico."
+    },
+    {
+      "id": "reggiseno-imbottito",
+      "singularName": "reggiseno imbottito",
+      "pluralName": "reggiseni imbottiti",
+      "quantity": "Mass",
+      "unit": "Gram",
+      "value": 200,
+      "notes": "Peso indicativo e volutamente goliardico."
+    },
+    {
+      "id": "ciabatta-del-bagno",
+      "singularName": "ciabatta del bagno incriminato",
+      "pluralName": "ciabatte del bagno incriminato",
+      "quantity": "Mass",
+      "unit": "Gram",
+      "value": 180,
+      "notes": "Peso indicativo e volutamente goliardico."
+    },
+    {
+      "id": "pacco-di-preservativi",
+      "singularName": "pacco di preservativi",
+      "pluralName": "pacchi di preservativi",
+      "quantity": "Mass",
+      "unit": "Gram",
+      "value": 35,
+      "notes": "Peso indicativo e volutamente goliardico."
+    },
+    {
+      "id": "candelone-del-night",
+      "singularName": "candelone del night club",
+      "pluralName": "candeloni del night club",
+      "quantity": "Mass",
+      "unit": "Gram",
+      "value": 500,
+      "notes": "Peso indicativo e volutamente goliardico."
+    },
+    {
+      "id": "torta-a-forma-di-culo",
+      "singularName": "torta a forma di culo",
+      "pluralName": "torte a forma di culo",
+      "quantity": "Mass",
+      "unit": "Kilogram",
+      "value": 2,
+      "notes": "Peso indicativo e volutamente goliardico."
+    },
+    {
+      "id": "borsa-di-scuse-del-cazzo",
+      "singularName": "borsa di scuse del cazzo",
+      "pluralName": "borse di scuse del cazzo",
+      "quantity": "Mass",
+      "unit": "Kilogram",
+      "value": 3,
+      "notes": "Peso indicativo e volutamente goliardico."
+    },
+    {
+      "id": "cassa-di-birre-del-festino",
+      "singularName": "cassa di birre del festino",
+      "pluralName": "casse di birre del festino",
+      "quantity": "Mass",
+      "unit": "Kilogram",
+      "value": 12,
+      "notes": "Peso indicativo e volutamente goliardico."
+    },
+    {
+      "id": "bottiglione-del-pentimento",
+      "singularName": "bottiglione del pentimento",
+      "pluralName": "bottiglioni del pentimento",
+      "quantity": "Mass",
+      "unit": "Kilogram",
+      "value": 2,
+      "notes": "Peso indicativo e volutamente goliardico."
+    },
+    {
+      "id": "zaino-della-vergogna",
+      "singularName": "zaino della camminata della vergogna",
+      "pluralName": "zaini della camminata della vergogna",
+      "quantity": "Mass",
+      "unit": "Kilogram",
+      "value": 8,
+      "notes": "Peso indicativo e volutamente goliardico."
+    },
+    {
+      "id": "parrucca-del-travestimento",
+      "singularName": "parrucca del travestimento osceno",
+      "pluralName": "parrucche del travestimento osceno",
+      "quantity": "Mass",
+      "unit": "Gram",
+      "value": 300,
+      "notes": "Peso indicativo e volutamente goliardico."
+    },
+    {
+      "id": "barile-delle-cazzate",
+      "singularName": "barile delle cazzate",
+      "pluralName": "barili delle cazzate",
+      "quantity": "Mass",
+      "unit": "Kilogram",
+      "value": 45,
+      "notes": "Peso indicativo e volutamente goliardico."
+    },
+    {
+      "id": "divano-dopo-il-bordello",
+      "singularName": "divano dopo il bordello",
+      "pluralName": "divani dopo il bordello",
+      "quantity": "Mass",
+      "unit": "Kilogram",
+      "value": 60,
+      "notes": "Peso indicativo e volutamente goliardico."
+    },
+    {
+      "id": "statua-del-dito-medio",
+      "singularName": "statua del dito medio",
+      "pluralName": "statue del dito medio",
+      "quantity": "Mass",
+      "unit": "Kilogram",
+      "value": 120,
+      "notes": "Peso indicativo e volutamente goliardico."
+    },
+    {
+      "id": "palla-da-discoteca-storta",
+      "singularName": "palla da discoteca storta",
+      "pluralName": "palle da discoteca storte",
+      "quantity": "Mass",
+      "unit": "Kilogram",
+      "value": 5,
+      "notes": "Peso indicativo e volutamente goliardico."
+    },
+    {
+      "id": "quadratino-di-carta-igienica",
+      "singularName": "quadratino di carta igienica",
+      "pluralName": "quadratini di carta igienica",
+      "quantity": "Area",
+      "unit": "SquareMeter",
+      "value": 0.01,
+      "notes": "Superficie esemplificativa di un oggetto o ambiente immaginario."
+    },
+    {
+      "id": "bavaglino-anti-sbrocco",
+      "singularName": "bavaglino anti-sbrocco",
+      "pluralName": "bavaglini anti-sbrocco",
+      "quantity": "Area",
+      "unit": "SquareMeter",
+      "value": 0.04,
+      "notes": "Superficie esemplificativa di un oggetto o ambiente immaginario."
+    },
+    {
+      "id": "cartello-vaffanculo",
+      "singularName": "cartello con scritto vaffanculo",
+      "pluralName": "cartelli con scritto vaffanculo",
+      "quantity": "Area",
+      "unit": "SquareMeter",
+      "value": 0.3,
+      "notes": "Superficie esemplificativa di un oggetto o ambiente immaginario."
+    },
+    {
+      "id": "tappetino-post-kebab",
+      "singularName": "tappetino del bagno dopo il kebab",
+      "pluralName": "tappetini del bagno dopo il kebab",
+      "quantity": "Area",
+      "unit": "SquareMeter",
+      "value": 0.45,
+      "notes": "Superficie esemplificativa di un oggetto o ambiente immaginario."
+    },
+    {
+      "id": "lenzuolo-delle-porcate",
+      "singularName": "lenzuolo delle porcate",
+      "pluralName": "lenzuola delle porcate",
+      "quantity": "Area",
+      "unit": "SquareMeter",
+      "value": 3.5,
+      "notes": "Superficie esemplificativa di un oggetto o ambiente immaginario."
+    },
+    {
+      "id": "muro-delle-parolacce",
+      "singularName": "muro delle parolacce",
+      "pluralName": "muri delle parolacce",
+      "quantity": "Area",
+      "unit": "SquareMeter",
+      "value": 10,
+      "notes": "Superficie esemplificativa di un oggetto o ambiente immaginario."
+    },
+    {
+      "id": "palco-del-burlesque",
+      "singularName": "palco del burlesque",
+      "pluralName": "palchi del burlesque",
+      "quantity": "Area",
+      "unit": "SquareMeter",
+      "value": 24,
+      "notes": "Superficie esemplificativa di un oggetto o ambiente immaginario."
+    },
+    {
+      "id": "prive-dello-spogliarello",
+      "singularName": "privé dello spogliarello",
+      "pluralName": "privé dello spogliarello",
+      "quantity": "Area",
+      "unit": "SquareMeter",
+      "value": 6,
+      "notes": "Superficie esemplificativa di un oggetto o ambiente immaginario."
+    },
+    {
+      "id": "pista-della-festa-trasgressiva",
+      "singularName": "pista della festa trasgressiva",
+      "pluralName": "piste della festa trasgressiva",
+      "quantity": "Area",
+      "unit": "SquareMeter",
+      "value": 75,
+      "notes": "Superficie esemplificativa di un oggetto o ambiente immaginario."
+    },
+    {
+      "id": "prato-delle-chiappe-al-sole",
+      "singularName": "prato delle chiappe al sole",
+      "pluralName": "prati delle chiappe al sole",
+      "quantity": "Area",
+      "unit": "SquareMeter",
+      "value": 300,
+      "notes": "Superficie esemplificativa di un oggetto o ambiente immaginario."
+    },
+    {
+      "id": "telo-copriprove",
+      "singularName": "telo copriprove della notte brava",
+      "pluralName": "teli copriprove della notte brava",
+      "quantity": "Area",
+      "unit": "SquareMeter",
+      "value": 2,
+      "notes": "Superficie esemplificativa di un oggetto o ambiente immaginario."
+    },
+    {
+      "id": "spazio-tra-due-stronzi",
+      "singularName": "spazio tra due stronzi in fila",
+      "pluralName": "spazi tra due stronzi in fila",
+      "quantity": "Area",
+      "unit": "SquareFoot",
+      "value": 20,
+      "notes": "Superficie esemplificativa di un oggetto o ambiente immaginario."
+    },
+    {
+      "id": "goccia-di-sudore-da-figuraccia",
+      "singularName": "goccia di sudore da figuraccia",
+      "pluralName": "gocce di sudore da figuraccia",
+      "quantity": "Volume",
+      "unit": "Milliliter",
+      "value": 0.05,
+      "notes": "Capacità o volume indicativo: nessuno ha davvero riempito questi recipienti."
+    },
+    {
+      "id": "profumo-da-rimorchio",
+      "singularName": "boccetta di profumo da rimorchio",
+      "pluralName": "boccette di profumo da rimorchio",
+      "quantity": "Volume",
+      "unit": "Milliliter",
+      "value": 50,
+      "notes": "Capacità o volume indicativo: nessuno ha davvero riempito questi recipienti."
+    },
+    {
+      "id": "shottino-del-pentimento",
+      "singularName": "shottino del pentimento",
+      "pluralName": "shottini del pentimento",
+      "quantity": "Volume",
+      "unit": "Milliliter",
+      "value": 40,
+      "notes": "Capacità o volume indicativo: nessuno ha davvero riempito questi recipienti."
+    },
+    {
+      "id": "bicchiere-del-disastro",
+      "singularName": "bicchiere del disastro sentimentale",
+      "pluralName": "bicchieri del disastro sentimentale",
+      "quantity": "Volume",
+      "unit": "Milliliter",
+      "value": 200,
+      "notes": "Capacità o volume indicativo: nessuno ha davvero riempito questi recipienti."
+    },
+    {
+      "id": "spumante-del-matrimonio-sbagliato",
+      "singularName": "bottiglia di spumante del matrimonio sbagliato",
+      "pluralName": "bottiglie di spumante del matrimonio sbagliato",
+      "quantity": "Volume",
+      "unit": "Milliliter",
+      "value": 750,
+      "notes": "Capacità o volume indicativo: nessuno ha davvero riempito questi recipienti."
+    },
+    {
+      "id": "borraccia-della-festa-nudista",
+      "singularName": "borraccia della festa nudista",
+      "pluralName": "borracce della festa nudista",
+      "quantity": "Volume",
+      "unit": "Liter",
+      "value": 1,
+      "notes": "Capacità o volume indicativo: nessuno ha davvero riempito questi recipienti."
+    },
+    {
+      "id": "brocca-dello-squallore",
+      "singularName": "brocca dello squallore",
+      "pluralName": "brocche dello squallore",
+      "quantity": "Volume",
+      "unit": "Liter",
+      "value": 2,
+      "notes": "Capacità o volume indicativo: nessuno ha davvero riempito questi recipienti."
+    },
+    {
+      "id": "secchio-post-cagata",
+      "singularName": "secchio del dopo-cagata epico",
+      "pluralName": "secchi del dopo-cagata epico",
+      "quantity": "Volume",
+      "unit": "Liter",
+      "value": 10,
+      "notes": "Capacità o volume indicativo: nessuno ha davvero riempito questi recipienti."
+    },
+    {
+      "id": "bidone-delle-stronzate",
+      "singularName": "bidone delle stronzate",
+      "pluralName": "bidoni delle stronzate",
+      "quantity": "Volume",
+      "unit": "Liter",
+      "value": 100,
+      "notes": "Capacità o volume indicativo: nessuno ha davvero riempito questi recipienti."
+    },
+    {
+      "id": "vasca-del-peccato",
+      "singularName": "vasca da bagno del peccato",
+      "pluralName": "vasche da bagno del peccato",
+      "quantity": "Volume",
+      "unit": "Liter",
+      "value": 200,
+      "notes": "Capacità o volume indicativo: nessuno ha davvero riempito questi recipienti."
+    },
+    {
+      "id": "idromassaggio-del-motel",
+      "singularName": "idromassaggio del motel infame",
+      "pluralName": "idromassaggi del motel infame",
+      "quantity": "Volume",
+      "unit": "Liter",
+      "value": 1500,
+      "notes": "Capacità o volume indicativo: nessuno ha davvero riempito questi recipienti."
+    },
+    {
+      "id": "piscina-di-spumante",
+      "singularName": "piscina di spumante per ricchi stronzi",
+      "pluralName": "piscine di spumante per ricchi stronzi",
+      "quantity": "Volume",
+      "unit": "CubicMeter",
+      "value": 40,
+      "notes": "Capacità o volume indicativo: nessuno ha davvero riempito questi recipienti."
+    },
+    {
+      "id": "vaffanculo-in-diretta",
+      "singularName": "vaffanculo in diretta",
+      "pluralName": "vaffanculi in diretta",
+      "quantity": "Duration",
+      "unit": "Second",
+      "value": 1,
+      "notes": "Durata inventata a scopo comico; non è una statistica su persone reali."
+    },
+    {
+      "id": "rutto-da-incoronazione",
+      "singularName": "rutto da incoronazione",
+      "pluralName": "rutti da incoronazione",
+      "quantity": "Duration",
+      "unit": "Second",
+      "value": 2,
+      "notes": "Durata inventata a scopo comico; non è una statistica su persone reali."
+    },
+    {
+      "id": "pausa-dopo-battuta-oscena",
+      "singularName": "pausa dopo una battuta oscena",
+      "pluralName": "pause dopo una battuta oscena",
+      "quantity": "Duration",
+      "unit": "Second",
+      "value": 4,
+      "notes": "Durata inventata a scopo comico; non è una statistica su persone reali."
+    },
+    {
+      "id": "chiusura-delle-schede",
+      "singularName": "chiusura delle schede compromettenti",
+      "pluralName": "chiusure delle schede compromettenti",
+      "quantity": "Duration",
+      "unit": "Second",
+      "value": 0.8,
+      "notes": "Durata inventata a scopo comico; non è una statistica su persone reali."
+    },
+    {
+      "id": "figuraccia-in-ascensore",
+      "singularName": "figuraccia in ascensore",
+      "pluralName": "figuracce in ascensore",
+      "quantity": "Duration",
+      "unit": "Second",
+      "value": 30,
+      "notes": "Durata inventata a scopo comico; non è una statistica su persone reali."
+    },
+    {
+      "id": "silenzio-dopo-scoreggia",
+      "singularName": "silenzio dopo la scoreggia",
+      "pluralName": "silenzi dopo la scoreggia",
+      "quantity": "Duration",
+      "unit": "Second",
+      "value": 6,
+      "notes": "Durata inventata a scopo comico; non è una statistica su persone reali."
+    },
+    {
+      "id": "spogliarello-improvvisato",
+      "singularName": "spogliarello improvvisato",
+      "pluralName": "spogliarelli improvvisati",
+      "quantity": "Duration",
+      "unit": "Minute",
+      "value": 3,
+      "notes": "Durata inventata a scopo comico; non è una statistica su persone reali."
+    },
+    {
+      "id": "scusa-per-messaggio-sbagliato",
+      "singularName": "scusa per il messaggio zozzo al destinatario sbagliato",
+      "pluralName": "scuse per il messaggio zozzo al destinatario sbagliato",
+      "quantity": "Duration",
+      "unit": "Minute",
+      "value": 2,
+      "notes": "Durata inventata a scopo comico; non è una statistica su persone reali."
+    },
+    {
+      "id": "fila-al-bagno-post-kebab",
+      "singularName": "fila al bagno post-kebab",
+      "pluralName": "file al bagno post-kebab",
+      "quantity": "Duration",
+      "unit": "Minute",
+      "value": 15,
+      "notes": "Durata inventata a scopo comico; non è una statistica su persone reali."
+    },
+    {
+      "id": "notte-brava",
+      "singularName": "notte brava",
+      "pluralName": "notti brave",
+      "quantity": "Duration",
+      "unit": "Minute",
+      "value": 360,
+      "notes": "Durata inventata a scopo comico; non è una statistica su persone reali."
+    },
+    {
+      "id": "giorno-post-sbronza",
+      "singularName": "giorno di pentimento post-sbronza",
+      "pluralName": "giorni di pentimento post-sbronza",
+      "quantity": "Duration",
+      "unit": "Day",
+      "value": 1,
+      "notes": "Durata inventata a scopo comico; non è una statistica su persone reali."
+    },
+    {
+      "id": "esilio-dopo-la-gaffe",
+      "singularName": "esilio volontario dopo la gaffe oscena",
+      "pluralName": "esili volontari dopo la gaffe oscena",
+      "quantity": "Duration",
+      "unit": "Day",
+      "value": 3,
+      "notes": "Durata inventata a scopo comico; non è una statistica su persone reali."
+    },
+    {
+      "id": "struscio-del-viscido",
+      "singularName": "struscio del viscido",
+      "pluralName": "strusci del viscido",
+      "quantity": "Speed",
+      "unit": "KilometerPerHour",
+      "value": 1,
+      "notes": "Velocità di scena approssimativa, non un primato atletico o un consiglio di guida."
+    },
+    {
+      "id": "passeggiata-della-vergogna",
+      "singularName": "passeggiata della vergogna",
+      "pluralName": "passeggiate della vergogna",
+      "quantity": "Speed",
+      "unit": "KilometerPerHour",
+      "value": 3,
+      "notes": "Velocità di scena approssimativa, non un primato atletico o un consiglio di guida."
+    },
+    {
+      "id": "fuga-dal-bagno-senza-carta",
+      "singularName": "fuga dal bagno senza carta",
+      "pluralName": "fughe dal bagno senza carta",
+      "quantity": "Speed",
+      "unit": "KilometerPerHour",
+      "value": 6,
+      "notes": "Velocità di scena approssimativa, non un primato atletico o un consiglio di guida."
+    },
+    {
+      "id": "scatto-post-vaffanculo",
+      "singularName": "scatto dopo un vaffanculo di troppo",
+      "pluralName": "scatti dopo un vaffanculo di troppo",
+      "quantity": "Speed",
+      "unit": "KilometerPerHour",
+      "value": 18,
+      "notes": "Velocità di scena approssimativa, non un primato atletico o un consiglio di guida."
+    },
+    {
+      "id": "corsa-al-bagno-post-kebab",
+      "singularName": "corsa al bagno post-kebab",
+      "pluralName": "corse al bagno post-kebab",
+      "quantity": "Speed",
+      "unit": "KilometerPerHour",
+      "value": 20,
+      "notes": "Velocità di scena approssimativa, non un primato atletico o un consiglio di guida."
+    },
+    {
+      "id": "fuga-dal-matrimonio-sbagliato",
+      "singularName": "fuga dal matrimonio sbagliato",
+      "pluralName": "fughe dal matrimonio sbagliato",
+      "quantity": "Speed",
+      "unit": "KilometerPerHour",
+      "value": 24,
+      "notes": "Velocità di scena approssimativa, non un primato atletico o un consiglio di guida."
+    },
+    {
+      "id": "tacco-lanciato-dall-ex",
+      "singularName": "tacco lanciato dall'ex",
+      "pluralName": "tacchi lanciati dall'ex",
+      "quantity": "Speed",
+      "unit": "MeterPerSecond",
+      "value": 15,
+      "notes": "Velocità di scena approssimativa, non un primato atletico o un consiglio di guida."
+    },
+    {
+      "id": "mutande-spinte-dal-vento",
+      "singularName": "mutanda spinta dal vento",
+      "pluralName": "mutande spinte dal vento",
+      "quantity": "Speed",
+      "unit": "MeterPerSecond",
+      "value": 2,
+      "notes": "Velocità di scena approssimativa, non un primato atletico o un consiglio di guida."
+    },
+    {
+      "id": "motorino-del-night",
+      "singularName": "motorino del night club",
+      "pluralName": "motorini del night club",
+      "quantity": "Speed",
+      "unit": "KilometerPerHour",
+      "value": 40,
+      "notes": "Velocità di scena approssimativa, non un primato atletico o un consiglio di guida."
+    },
+    {
+      "id": "taxi-dell-ultimo-pentimento",
+      "singularName": "taxi dell'ultimo pentimento",
+      "pluralName": "taxi dell'ultimo pentimento",
+      "quantity": "Speed",
+      "unit": "KilometerPerHour",
+      "value": 60,
+      "notes": "Velocità di scena approssimativa, non un primato atletico o un consiglio di guida."
+    },
+    {
+      "id": "carrozzone-del-festino",
+      "singularName": "carrozzone del festino",
+      "pluralName": "carrozzoni del festino",
+      "quantity": "Speed",
+      "unit": "KilometerPerHour",
+      "value": 8,
+      "notes": "Velocità di scena approssimativa, non un primato atletico o un consiglio di guida."
+    },
+    {
+      "id": "auto-dell-alibi-di-merda",
+      "singularName": "auto dell'alibi di merda",
+      "pluralName": "auto degli alibi di merda",
+      "quantity": "Speed",
+      "unit": "KilometerPerHour",
+      "value": 100,
+      "notes": "Velocità di scena approssimativa, non un primato atletico o un consiglio di guida."
+    },
+    {
+      "id": "scatto-anti-figuraccia",
+      "singularName": "scatto anti-figuraccia",
+      "pluralName": "scatti anti-figuraccia",
+      "quantity": "Acceleration",
+      "unit": "MeterPerSecondSquared",
+      "value": 2,
+      "notes": "Accelerazione scenica e non misurata; soltanto una metafora quantitativa."
+    },
+    {
+      "id": "fuga-post-sgridata",
+      "singularName": "fuga dopo la sgridata",
+      "pluralName": "fughe dopo la sgridata",
+      "quantity": "Acceleration",
+      "unit": "MeterPerSecondSquared",
+      "value": 3,
+      "notes": "Accelerazione scenica e non misurata; soltanto una metafora quantitativa."
+    },
+    {
+      "id": "sgommata-dell-alibi",
+      "singularName": "sgommata dell'alibi fasullo",
+      "pluralName": "sgommate dell'alibi fasullo",
+      "quantity": "Acceleration",
+      "unit": "MeterPerSecondSquared",
+      "value": 4,
+      "notes": "Accelerazione scenica e non misurata; soltanto una metafora quantitativa."
+    },
+    {
+      "id": "stacco-del-tacco-rotto",
+      "singularName": "stacco del tacco rotto",
+      "pluralName": "stacchi del tacco rotto",
+      "quantity": "Acceleration",
+      "unit": "MeterPerSecondSquared",
+      "value": 1,
+      "notes": "Accelerazione scenica e non misurata; soltanto una metafora quantitativa."
+    },
+    {
+      "id": "mutande-in-caduta-libera",
+      "singularName": "mutanda in caduta libera",
+      "pluralName": "mutande in caduta libera",
+      "quantity": "Acceleration",
+      "unit": "MeterPerSecondSquared",
+      "value": 9.81,
+      "notes": "Accelerazione scenica e non misurata; soltanto una metafora quantitativa."
+    },
+    {
+      "id": "partenza-del-taxi-sbagliato",
+      "singularName": "partenza del taxi sbagliato",
+      "pluralName": "partenze del taxi sbagliato",
+      "quantity": "Acceleration",
+      "unit": "MeterPerSecondSquared",
+      "value": 1.5,
+      "notes": "Accelerazione scenica e non misurata; soltanto una metafora quantitativa."
+    },
+    {
+      "id": "tuffo-nel-festino",
+      "singularName": "tuffo nella piscina del festino",
+      "pluralName": "tuffi nella piscina del festino",
+      "quantity": "Acceleration",
+      "unit": "MeterPerSecondSquared",
+      "value": 6,
+      "notes": "Accelerazione scenica e non misurata; soltanto una metafora quantitativa."
+    },
+    {
+      "id": "carrello-della-sbronza",
+      "singularName": "carrello della spesa sbronza",
+      "pluralName": "carrelli della spesa sbronza",
+      "quantity": "Acceleration",
+      "unit": "MeterPerSecondSquared",
+      "value": 0.7,
+      "notes": "Accelerazione scenica e non misurata; soltanto una metafora quantitativa."
+    },
+    {
+      "id": "fuga-post-vaffanculo",
+      "singularName": "fuga dopo il vaffanculo",
+      "pluralName": "fughe dopo il vaffanculo",
+      "quantity": "Acceleration",
+      "unit": "MeterPerSecondSquared",
+      "value": 3.5,
+      "notes": "Accelerazione scenica e non misurata; soltanto una metafora quantitativa."
+    },
+    {
+      "id": "palloncino-fallico-al-decollo",
+      "singularName": "palloncino fallico al decollo",
+      "pluralName": "palloncini fallici al decollo",
+      "quantity": "Acceleration",
+      "unit": "MeterPerSecondSquared",
+      "value": 2.2,
+      "notes": "Accelerazione scenica e non misurata; soltanto una metafora quantitativa."
+    },
+    {
+      "id": "porta-del-bagno-in-fuga",
+      "singularName": "porta del bagno in fuga",
+      "pluralName": "porte del bagno in fuga",
+      "quantity": "Acceleration",
+      "unit": "MeterPerSecondSquared",
+      "value": 1.2,
+      "notes": "Accelerazione scenica e non misurata; soltanto una metafora quantitativa."
+    },
+    {
+      "id": "rincorsa-del-dj-osceno",
+      "singularName": "rincorsa del DJ osceno",
+      "pluralName": "rincorse del DJ osceno",
+      "quantity": "Acceleration",
+      "unit": "MeterPerSecondSquared",
+      "value": 2.8,
+      "notes": "Accelerazione scenica e non misurata; soltanto una metafora quantitativa."
+    },
+    {
+      "id": "bestemmia-in-coda",
+      "singularName": "bestemmia in coda",
+      "pluralName": "bestemmie in coda",
+      "quantity": "Frequency",
+      "unit": "PerSecond",
+      "value": 0.01,
+      "notes": "Frequenza narrativa per il gioco, non una media sul comportamento umano."
+    },
+    {
+      "id": "vaffanculo-del-pendolare",
+      "singularName": "vaffanculo del pendolare",
+      "pluralName": "vaffanculi del pendolare",
+      "quantity": "Frequency",
+      "unit": "PerSecond",
+      "value": 0.0166666667,
+      "notes": "Frequenza narrativa per il gioco, non una media sul comportamento umano."
+    },
+    {
+      "id": "rutto-del-campione",
+      "singularName": "rutto del campione",
+      "pluralName": "rutti del campione",
+      "quantity": "Frequency",
+      "unit": "PerSecond",
+      "value": 0.1,
+      "notes": "Frequenza narrativa per il gioco, non una media sul comportamento umano."
+    },
+    {
+      "id": "pettegolezzo-osceno",
+      "singularName": "pettegolezzo osceno",
+      "pluralName": "pettegolezzi osceni",
+      "quantity": "Frequency",
+      "unit": "PerSecond",
+      "value": 0.05,
+      "notes": "Frequenza narrativa per il gioco, non una media sul comportamento umano."
+    },
+    {
+      "id": "beep-di-censura",
+      "singularName": "beep di censura",
+      "pluralName": "beep di censura",
+      "quantity": "Frequency",
+      "unit": "Hertz",
+      "value": 1,
+      "notes": "Frequenza narrativa per il gioco, non una media sul comportamento umano."
+    },
+    {
+      "id": "schiocco-di-frusta-teatrale",
+      "singularName": "schiocco di frusta teatrale",
+      "pluralName": "schiocchi di frusta teatrale",
+      "quantity": "Frequency",
+      "unit": "Hertz",
+      "value": 2,
+      "notes": "Frequenza narrativa per il gioco, non una media sul comportamento umano."
+    },
+    {
+      "id": "tic-dopo-la-gaffe",
+      "singularName": "tic della palpebra dopo la gaffe",
+      "pluralName": "tic delle palpebre dopo la gaffe",
+      "quantity": "Frequency",
+      "unit": "Hertz",
+      "value": 3,
+      "notes": "Frequenza narrativa per il gioco, non una media sul comportamento umano."
+    },
+    {
+      "id": "battito-nel-prive",
+      "singularName": "battito cardiaco nel privé",
+      "pluralName": "battiti cardiaci nel privé",
+      "quantity": "Frequency",
+      "unit": "Hertz",
+      "value": 2,
+      "notes": "Frequenza narrativa per il gioco, non una media sul comportamento umano."
+    },
+    {
+      "id": "notifica-dell-ex-ubriaco",
+      "singularName": "notifica dell'ex ubriaco",
+      "pluralName": "notifiche dell'ex ubriaco",
+      "quantity": "Frequency",
+      "unit": "PerSecond",
+      "value": 0.005,
+      "notes": "Frequenza narrativa per il gioco, non una media sul comportamento umano."
+    },
+    {
+      "id": "risatina-da-maniaco",
+      "singularName": "risatina da maniaco",
+      "pluralName": "risatine da maniaco",
+      "quantity": "Frequency",
+      "unit": "PerSecond",
+      "value": 0.5,
+      "notes": "Frequenza narrativa per il gioco, non una media sul comportamento umano."
+    },
+    {
+      "id": "tosse-copriscoreggia",
+      "singularName": "colpo di tosse copri-scoreggia",
+      "pluralName": "colpi di tosse copri-scoreggia",
+      "quantity": "Frequency",
+      "unit": "PerSecond",
+      "value": 0.25,
+      "notes": "Frequenza narrativa per il gioco, non una media sul comportamento umano."
+    },
+    {
+      "id": "urlo-chi-se-ne-frega",
+      "singularName": "urlo chi se ne frega",
+      "pluralName": "urla chi se ne frega",
+      "quantity": "Frequency",
+      "unit": "PerSecond",
+      "value": 0.02,
+      "notes": "Frequenza narrativa per il gioco, non una media sul comportamento umano."
+    },
+    {
+      "id": "lampadina-rossa-del-night",
+      "singularName": "lampadina rossa del night",
+      "pluralName": "lampadine rosse del night",
+      "quantity": "Power",
+      "unit": "Watt",
+      "value": 25,
+      "notes": "Potenza elettrica nominale esemplificativa, non specifica di un prodotto commerciale."
+    },
+    {
+      "id": "massaggiatore-da-festino",
+      "singularName": "massaggiatore da festino",
+      "pluralName": "massaggiatori da festino",
+      "quantity": "Power",
+      "unit": "Watt",
+      "value": 10,
+      "notes": "Potenza elettrica nominale esemplificativa, non specifica di un prodotto commerciale."
+    },
+    {
+      "id": "insegna-oscena-a-neon",
+      "singularName": "insegna oscena a neon",
+      "pluralName": "insegne oscene a neon",
+      "quantity": "Power",
+      "unit": "Watt",
+      "value": 40,
+      "notes": "Potenza elettrica nominale esemplificativa, non specifica di un prodotto commerciale."
+    },
+    {
+      "id": "cassa-del-karaoke-sguaiato",
+      "singularName": "cassa del karaoke sguaiato",
+      "pluralName": "casse del karaoke sguaiato",
+      "quantity": "Power",
+      "unit": "Watt",
+      "value": 120,
+      "notes": "Potenza elettrica nominale esemplificativa, non specifica di un prodotto commerciale."
+    },
+    {
+      "id": "lampada-del-prive",
+      "singularName": "lampada del privé",
+      "pluralName": "lampade del privé",
+      "quantity": "Power",
+      "unit": "Watt",
+      "value": 60,
+      "notes": "Potenza elettrica nominale esemplificativa, non specifica di un prodotto commerciale."
+    },
+    {
+      "id": "aspirapolvere-post-bordello",
+      "singularName": "aspirapolvere del dopo-bordello",
+      "pluralName": "aspirapolvere del dopo-bordello",
+      "quantity": "Power",
+      "unit": "Watt",
+      "value": 900,
+      "notes": "Potenza elettrica nominale esemplificativa, non specifica di un prodotto commerciale."
+    },
+    {
+      "id": "stufetta-del-motel",
+      "singularName": "stufetta del motel infame",
+      "pluralName": "stufette del motel infame",
+      "quantity": "Power",
+      "unit": "Watt",
+      "value": 1500,
+      "notes": "Potenza elettrica nominale esemplificativa, non specifica di un prodotto commerciale."
+    },
+    {
+      "id": "phon-del-pentimento",
+      "singularName": "phon del pentimento",
+      "pluralName": "phon del pentimento",
+      "quantity": "Power",
+      "unit": "Watt",
+      "value": 1800,
+      "notes": "Potenza elettrica nominale esemplificativa, non specifica di un prodotto commerciale."
+    },
+    {
+      "id": "bollitore-della-sbronza",
+      "singularName": "bollitore della sbronza",
+      "pluralName": "bollitori della sbronza",
+      "quantity": "Power",
+      "unit": "Watt",
+      "value": 2000,
+      "notes": "Potenza elettrica nominale esemplificativa, non specifica di un prodotto commerciale."
+    },
+    {
+      "id": "lavatrice-delle-prove",
+      "singularName": "lavatrice che ripulisce le prove",
+      "pluralName": "lavatrici che ripuliscono le prove",
+      "quantity": "Power",
+      "unit": "Watt",
+      "value": 2100,
+      "notes": "Potenza elettrica nominale esemplificativa, non specifica di un prodotto commerciale."
+    },
+    {
+      "id": "faretto-dello-spogliarello",
+      "singularName": "faretto dello spogliarello",
+      "pluralName": "faretti dello spogliarello",
+      "quantity": "Power",
+      "unit": "Watt",
+      "value": 800,
+      "notes": "Potenza elettrica nominale esemplificativa, non specifica di un prodotto commerciale."
+    },
+    {
+      "id": "generatore-del-festival-sboccato",
+      "singularName": "generatore del festival sboccato",
+      "pluralName": "generatori del festival sboccato",
+      "quantity": "Power",
+      "unit": "Watt",
+      "value": 5000,
+      "notes": "Potenza elettrica nominale esemplificativa, non specifica di un prodotto commerciale."
+    },
+    {
+      "id": "fax-di-lettere-oscene",
+      "singularName": "fax di lettere oscene",
+      "pluralName": "fax di lettere oscene",
+      "quantity": "BitRate",
+      "unit": "BitPerSecond",
+      "value": 9600,
+      "notes": "Bitrate di un ipotetico flusso dati: valore illustrativo, non un test di rete."
+    },
+    {
+      "id": "sms-di-vaffanculi",
+      "singularName": "SMS di vaffanculi",
+      "pluralName": "SMS di vaffanculi",
+      "quantity": "BitRate",
+      "unit": "BitPerSecond",
+      "value": 80,
+      "notes": "Bitrate di un ipotetico flusso dati: valore illustrativo, non un test di rete."
+    },
+    {
+      "id": "chat-del-pettegolezzo-zozzo",
+      "singularName": "chat del pettegolezzo zozzo",
+      "pluralName": "chat del pettegolezzo zozzo",
+      "quantity": "BitRate",
+      "unit": "BitPerSecond",
+      "value": 1200,
+      "notes": "Bitrate di un ipotetico flusso dati: valore illustrativo, non un test di rete."
+    },
+    {
+      "id": "vocale-della-figuraccia",
+      "singularName": "vocale della figuraccia",
+      "pluralName": "vocali della figuraccia",
+      "quantity": "BitRate",
+      "unit": "BitPerSecond",
+      "value": 64000,
+      "notes": "Bitrate di un ipotetico flusso dati: valore illustrativo, non un test di rete."
+    },
+    {
+      "id": "podcast-del-rimorchio-sbagliato",
+      "singularName": "podcast del rimorchio sbagliato",
+      "pluralName": "podcast del rimorchio sbagliato",
+      "quantity": "BitRate",
+      "unit": "BitPerSecond",
+      "value": 128000,
+      "notes": "Bitrate di un ipotetico flusso dati: valore illustrativo, non un test di rete."
+    },
+    {
+      "id": "video-sgranato-del-festino",
+      "singularName": "video sgranato del festino",
+      "pluralName": "video sgranati del festino",
+      "quantity": "BitRate",
+      "unit": "BitPerSecond",
+      "value": 400000,
+      "notes": "Bitrate di un ipotetico flusso dati: valore illustrativo, non un test di rete."
+    },
+    {
+      "id": "videocitofono-del-motel",
+      "singularName": "videocitofono del motel",
+      "pluralName": "videocitofoni del motel",
+      "quantity": "BitRate",
+      "unit": "BitPerSecond",
+      "value": 1000000,
+      "notes": "Bitrate di un ipotetico flusso dati: valore illustrativo, non un test di rete."
+    },
+    {
+      "id": "diretta-karaoke-tragico",
+      "singularName": "diretta del karaoke tragico",
+      "pluralName": "dirette del karaoke tragico",
+      "quantity": "BitRate",
+      "unit": "BitPerSecond",
+      "value": 3000000,
+      "notes": "Bitrate di un ipotetico flusso dati: valore illustrativo, non un test di rete."
+    },
+    {
+      "id": "streaming-hd-del-festino",
+      "singularName": "streaming HD del festino",
+      "pluralName": "streaming HD del festino",
+      "quantity": "BitRate",
+      "unit": "BitPerSecond",
+      "value": 6000000,
+      "notes": "Bitrate di un ipotetico flusso dati: valore illustrativo, non un test di rete."
+    },
+    {
+      "id": "wifi-del-locale-a-luci-rosse",
+      "singularName": "Wi-Fi del locale a luci rosse",
+      "pluralName": "reti Wi-Fi del locale a luci rosse",
+      "quantity": "BitRate",
+      "unit": "BitPerSecond",
+      "value": 20000000,
+      "notes": "Bitrate di un ipotetico flusso dati: valore illustrativo, non un test di rete."
+    },
+    {
+      "id": "backup-delle-chat-compromettenti",
+      "singularName": "backup delle chat compromettenti",
+      "pluralName": "backup delle chat compromettenti",
+      "quantity": "BitRate",
+      "unit": "BitPerSecond",
+      "value": 100000000,
+      "notes": "Bitrate di un ipotetico flusso dati: valore illustrativo, non un test di rete."
+    },
+    {
+      "id": "fibra-del-condominio-porcellone",
+      "singularName": "fibra del condominio porcellone",
+      "pluralName": "fibre dei condomini porcelloni",
+      "quantity": "BitRate",
+      "unit": "BitPerSecond",
+      "value": 1000000000,
+      "notes": "Bitrate di un ipotetico flusso dati: valore illustrativo, non un test di rete."
+    },
+    {
+      "id": "candela-dell-appuntamento-zozzo",
+      "singularName": "candela dell'appuntamento zozzo",
+      "pluralName": "candele dell'appuntamento zozzo",
+      "quantity": "Illuminance",
+      "unit": "Lux",
+      "value": 5,
+      "notes": "Illuminamento ambientale indicativo, non una lettura strumentale."
+    },
+    {
+      "id": "lampada-del-prive-lux",
+      "singularName": "lampada del privé fioco",
+      "pluralName": "lampade dei privé fiochi",
+      "quantity": "Illuminance",
+      "unit": "Lux",
+      "value": 15,
+      "notes": "Illuminamento ambientale indicativo, non una lettura strumentale."
+    },
+    {
+      "id": "corridoio-del-motel-lux",
+      "singularName": "corridoio del motel",
+      "pluralName": "corridoi del motel",
+      "quantity": "Illuminance",
+      "unit": "Lux",
+      "value": 40,
+      "notes": "Illuminamento ambientale indicativo, non una lettura strumentale."
+    },
+    {
+      "id": "night-club-in-penombra",
+      "singularName": "night club in penombra",
+      "pluralName": "night club in penombra",
+      "quantity": "Illuminance",
+      "unit": "Lux",
+      "value": 25,
+      "notes": "Illuminamento ambientale indicativo, non una lettura strumentale."
+    },
+    {
+      "id": "bagno-della-discoteca-lux",
+      "singularName": "bagno della discoteca",
+      "pluralName": "bagni della discoteca",
+      "quantity": "Illuminance",
+      "unit": "Lux",
+      "value": 80,
+      "notes": "Illuminamento ambientale indicativo, non una lettura strumentale."
+    },
+    {
+      "id": "specchio-del-selfie-vergognoso",
+      "singularName": "specchio del selfie vergognoso",
+      "pluralName": "specchi dei selfie vergognosi",
+      "quantity": "Illuminance",
+      "unit": "Lux",
+      "value": 150,
+      "notes": "Illuminamento ambientale indicativo, non una lettura strumentale."
+    },
+    {
+      "id": "scena-del-burlesque-lux",
+      "singularName": "scena del burlesque",
+      "pluralName": "scene del burlesque",
+      "quantity": "Illuminance",
+      "unit": "Lux",
+      "value": 400,
+      "notes": "Illuminamento ambientale indicativo, non una lettura strumentale."
+    },
+    {
+      "id": "interrogatorio-post-festino",
+      "singularName": "interrogatorio dopo il festino",
+      "pluralName": "interrogatori dopo il festino",
+      "quantity": "Illuminance",
+      "unit": "Lux",
+      "value": 500,
+      "notes": "Illuminamento ambientale indicativo, non una lettura strumentale."
+    },
+    {
+      "id": "faro-del-parcheggio-dei-guai",
+      "singularName": "faro del parcheggio dei guai",
+      "pluralName": "fari del parcheggio dei guai",
+      "quantity": "Illuminance",
+      "unit": "Lux",
+      "value": 300,
+      "notes": "Illuminamento ambientale indicativo, non una lettura strumentale."
+    },
+    {
+      "id": "spot-della-battuta-volgare",
+      "singularName": "spot della battuta volgare",
+      "pluralName": "spot delle battute volgari",
+      "quantity": "Illuminance",
+      "unit": "Lux",
+      "value": 1000,
+      "notes": "Illuminamento ambientale indicativo, non una lettura strumentale."
+    },
+    {
+      "id": "riflettore-dello-spogliarello",
+      "singularName": "riflettore dello spogliarello",
+      "pluralName": "riflettori dello spogliarello",
+      "quantity": "Illuminance",
+      "unit": "Lux",
+      "value": 2000,
+      "notes": "Illuminamento ambientale indicativo, non una lettura strumentale."
+    },
+    {
+      "id": "spiaggia-nudista-a-mezzogiorno",
+      "singularName": "spiaggia nudista a mezzogiorno",
+      "pluralName": "spiagge nudiste a mezzogiorno",
+      "quantity": "Illuminance",
+      "unit": "Lux",
+      "value": 100000,
+      "notes": "Illuminamento ambientale indicativo, non una lettura strumentale."
+    },
+    {
+      "id": "bidet-gelato",
+      "singularName": "bidet gelato",
+      "pluralName": "bidet gelati",
+      "quantity": "Temperature",
+      "unit": "Kelvin",
+      "value": 278.15,
+      "notes": "Temperatura assoluta in kelvin; scena approssimativa, non lettura clinica."
+    },
+    {
+      "id": "ghiaccio-nel-drink-della-vergogna",
+      "singularName": "ghiaccio nel drink della vergogna",
+      "pluralName": "cubetti di ghiaccio nel drink della vergogna",
+      "quantity": "Temperature",
+      "unit": "Kelvin",
+      "value": 273.15,
+      "notes": "Temperatura assoluta in kelvin; scena approssimativa, non lettura clinica."
+    },
+    {
+      "id": "birra-del-festino",
+      "singularName": "birra del festino",
+      "pluralName": "birre del festino",
+      "quantity": "Temperature",
+      "unit": "Kelvin",
+      "value": 279.15,
+      "notes": "Temperatura assoluta in kelvin; scena approssimativa, non lettura clinica."
+    },
+    {
+      "id": "doccia-fredda-anti-ormonale",
+      "singularName": "doccia fredda anti-ormoni",
+      "pluralName": "docce fredde anti-ormoni",
+      "quantity": "Temperature",
+      "unit": "Kelvin",
+      "value": 288.15,
+      "notes": "Temperatura assoluta in kelvin; scena approssimativa, non lettura clinica."
+    },
+    {
+      "id": "camera-del-motel",
+      "singularName": "camera del motel infame",
+      "pluralName": "camere del motel infame",
+      "quantity": "Temperature",
+      "unit": "Kelvin",
+      "value": 295.15,
+      "notes": "Temperatura assoluta in kelvin; scena approssimativa, non lettura clinica."
+    },
+    {
+      "id": "piscina-per-nudisti",
+      "singularName": "piscina per nudisti",
+      "pluralName": "piscine per nudisti",
+      "quantity": "Temperature",
+      "unit": "Kelvin",
+      "value": 299.15,
+      "notes": "Temperatura assoluta in kelvin; scena approssimativa, non lettura clinica."
+    },
+    {
+      "id": "sudore-da-figuraccia-temperatura",
+      "singularName": "sudore da figuraccia",
+      "pluralName": "sudori da figuraccia",
+      "quantity": "Temperature",
+      "unit": "Kelvin",
+      "value": 309.15,
+      "notes": "Temperatura assoluta in kelvin; scena approssimativa, non lettura clinica."
+    },
+    {
+      "id": "vasca-del-pentimento-calda",
+      "singularName": "vasca del pentimento caldo",
+      "pluralName": "vasche del pentimento caldo",
+      "quantity": "Temperature",
+      "unit": "Kelvin",
+      "value": 312.15,
+      "notes": "Temperatura assoluta in kelvin; scena approssimativa, non lettura clinica."
+    },
+    {
+      "id": "sauna-dei-peccatori",
+      "singularName": "sauna dei peccatori",
+      "pluralName": "saune dei peccatori",
+      "quantity": "Temperature",
+      "unit": "Kelvin",
+      "value": 353.15,
+      "notes": "Temperatura assoluta in kelvin; scena approssimativa, non lettura clinica."
+    },
+    {
+      "id": "cappuccino-bollente-del-dopofesta",
+      "singularName": "cappuccino bollente del dopofesta",
+      "pluralName": "cappuccini bollenti del dopofesta",
+      "quantity": "Temperature",
+      "unit": "Kelvin",
+      "value": 338.15,
+      "notes": "Temperatura assoluta in kelvin; scena approssimativa, non lettura clinica."
+    },
+    {
+      "id": "padella-del-doposbronza",
+      "singularName": "padella del doposbronza",
+      "pluralName": "padelle del doposbronza",
+      "quantity": "Temperature",
+      "unit": "Kelvin",
+      "value": 423.15,
+      "notes": "Temperatura assoluta in kelvin; scena approssimativa, non lettura clinica."
+    },
+    {
+      "id": "forno-della-pizza-della-notte",
+      "singularName": "forno della pizza della notte",
+      "pluralName": "forni della pizza della notte",
+      "quantity": "Temperature",
+      "unit": "Kelvin",
+      "value": 523.15,
+      "notes": "Temperatura assoluta in kelvin; scena approssimativa, non lettura clinica."
     }
   ]
 }

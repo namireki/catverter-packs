@@ -40,11 +40,17 @@ bundled CatverterV2 packs and **two opt-in contributed packs**
 contain 20 Power conversions, at least ten Frequency conversions, and five
 themed Duration conversions. Official packs also include the newer Area,
 Temperature, Acceleration, BitRate, and Illuminance families. The Italian
-`nsfw` contribution is intentionally small, with two Length/Mass
-conversions and an explicit `nsfw` tag; contributed packs are not required to
-mirror the quantity coverage of official packs. The official source commit
-and bundled catalog version are recorded in `catalog.json.sourceCatalog`
-rather than hard-coded in this README.
+`nsfw` contribution, now displayed as **Misure del cazzo**, includes **152
+tongue-in-cheek comparisons** across all 12 commonly exposed quantity
+families, with 24 different physical units. Its intentionally vulgar,
+adult-oriented labels, illustrative reference values, and explicit `nsfw`
+tag are separate from its stable `nsfw` package ID. It remains
+`contributed`, which means it must be deliberately enabled by the user.
+The application's future NSFW visibility preference (off by default) is a
+separate UI change; publishing the pack does **not** implement that filter.
+Contributed packs are not required to mirror the quantity coverage of
+official packs. The official source commit and bundled catalog version are
+recorded in `catalog.json.sourceCatalog` rather than hard-coded in this README.
 
 French and Italian locale entries cover every official conversion, although
 newly imported comparison names still use English fallback wording when a
