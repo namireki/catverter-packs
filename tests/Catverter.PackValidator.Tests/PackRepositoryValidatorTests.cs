@@ -98,6 +98,61 @@ public sealed class PackRepositoryValidatorTests : IDisposable
         Assert.Equal("it", metadata.GetProperty("locale").GetString());
         Assert.Contains(metadata.GetProperty("tags").EnumerateArray(),
             tag => tag.GetString() == "nsfw");
+        Assert.Equal("Misure del cazzo", content.RootElement.GetProperty("name").GetString());
+        Assert.Equal("1.1.0", content.RootElement.GetProperty("version").GetString());
+        Assert.Equal("1.1.0", entry.GetProperty("version").GetString());
+
+        var conversions = content.RootElement.GetProperty("conversions")
+            .EnumerateArray().ToArray();
+        Assert.True(conversions.Length >= 150, "Expected a substantial NSFW pack.");
+        var supportedQuantities = new HashSet<string>(StringComparer.Ordinal)
+        {
+            "Length", "Mass", "Area", "Volume", "Duration", "Speed",
+            "Acceleration", "Frequency", "Power", "BitRate",
+            "Illuminance", "Temperature"
+        };
+        var groups = conversions.GroupBy(
+            conversion => conversion.GetProperty("quantity").GetString()!,
+            StringComparer.Ordinal).ToArray();
+        Assert.Equal(supportedQuantities.Count, groups.Length);
+        Assert.All(groups, group =>
+        {
+            Assert.Contains(group.Key, supportedQuantities);
+            Assert.True(group.Count() >= 12, $"{group.Key} has too few comparisons.");
+        });
+        var units = conversions
+            .Select(conversion => conversion.GetProperty("unit").GetString()!)
+            .Distinct(StringComparer.Ordinal).ToArray();
+        Assert.True(units.Length >= 20, "Expected a varied set of units.");
+        Assert.All(conversions.Where(conversion =>
+                conversion.GetProperty("quantity").GetString() == "Temperature"),
+            conversion => Assert.Equal(
+                "Kelvin", conversion.GetProperty("unit").GetString()));
+
+        // Previously published conversion identities and physical meanings
+        // must survive additions and display-name changes.
+        var originalLength = conversions.Single(c =>
+            c.GetProperty("id").GetString() == "cazzo");
+        Assert.Equal("Length", originalLength.GetProperty("quantity").GetString());
+        Assert.Equal("Centimeter", originalLength.GetProperty("unit").GetString());
+        Assert.Equal(20, originalLength.GetProperty("value").GetDouble());
+
+        var originalMass = conversions.Single(c =>
+            c.GetProperty("id").GetString() == "tetta");
+        Assert.Equal("Mass", originalMass.GetProperty("quantity").GetString());
+        Assert.Equal("Hectogram", originalMass.GetProperty("unit").GetString());
+        Assert.Equal(3, originalMass.GetProperty("value").GetDouble());
+
+        var identifiers = conversions
+            .Select(conversion => conversion.GetProperty("id").GetString()!)
+            .ToArray();
+        Assert.Equal(identifiers.Length,
+            identifiers.Distinct(StringComparer.Ordinal).Count());
+        Assert.All(conversions.Where(c => c.GetProperty("id").GetString()
+                is not ("cazzo" or "tetta")),
+            conversion => Assert.False(
+                string.IsNullOrWhiteSpace(
+                    conversion.GetProperty("notes").GetString())));
     }
 
     [Theory]
