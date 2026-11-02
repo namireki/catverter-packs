@@ -56,8 +56,8 @@ modifier names**. It does not change quantity/unit identifiers or imply
 automatic translation, nor does it replace the separately distributed
 `catverter-locale` JSON overlays for translated UI and pack content.
 
-Missing `metadata.locale` is legal for historical v1 documents. The Pack
-Studio defaults new drafts to `en`; explicitly selecting Italian writes
+Missing `metadata.locale` is legal for historical v1 documents. New Pack
+Studio drafts also leave it unspecified; explicitly selecting Italian writes
 `"locale": "it"` in the pack metadata. The canonical reader checks the tag
 with .NET globalization, and pack publishers should use canonical BCP 47
 spellings. A changed locale is a content metadata change and requires an
