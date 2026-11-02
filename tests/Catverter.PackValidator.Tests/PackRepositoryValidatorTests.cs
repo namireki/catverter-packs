@@ -12,7 +12,7 @@ public sealed class PackRepositoryValidatorTests : IDisposable
         $"catverter-pack-validator-{Guid.NewGuid():N}");
 
     [Fact]
-    public void Published_repository_has_twenty_power_conversions_in_every_pack()
+    public void Published_official_packs_and_office_life_retain_twenty_power_conversions()
     {
         var directory = new DirectoryInfo(AppContext.BaseDirectory);
         while (directory is not null
@@ -47,22 +47,108 @@ public sealed class PackRepositoryValidatorTests : IDisposable
             var name = entry.GetProperty("id").GetString()!;
             var conversions = content.RootElement.GetProperty("conversions")
                 .EnumerateArray().ToArray();
-            Assert.Equal(20, conversions.Count(c =>
-                c.GetProperty("quantity").GetString() == "Power"));
-
-            Assert.All(conversions.Where(c =>
-                    c.GetProperty("quantity").GetString() == "Power"),
-                conversion =>
-                {
-                    var watts = conversion.GetProperty("value").GetDouble();
-                    Assert.True(
-                        watts > 0 && watts <= (double)decimal.MaxValue,
-                        name + " has a Power magnitude outside the supported range");
-                });
+            // Original published packs retain their Power coverage. New
+            // contributed packs are independently authored and may use
+            // entirely different quantities.
+            if (classification == "official" || name == "office-life")
+            {
+                Assert.Equal(20, conversions.Count(c =>
+                    c.GetProperty("quantity").GetString() == "Power"));
+    
+                Assert.All(conversions.Where(c =>
+                        c.GetProperty("quantity").GetString() == "Power"),
+                    conversion =>
+                    {
+                        var watts = conversion.GetProperty("value").GetDouble();
+                        Assert.True(
+                            watts > 0 && watts <= (double)decimal.MaxValue,
+                            name + " has a Power magnitude outside the supported range");
+                    });
+            }
         }
 
         Assert.Equal(11, officialCount);
-        Assert.Equal(1, contributedCount);
+        Assert.True(contributedCount >= 1);
+    }
+
+    [Fact]
+    public void Published_nsfw_pack_is_tagged_and_contributed()
+    {
+        var directory = new DirectoryInfo(AppContext.BaseDirectory);
+        while (directory is not null &&
+               !File.Exists(Path.Combine(directory.FullName, "catalog.json")))
+        {
+            directory = directory.Parent;
+        }
+
+        Assert.NotNull(directory);
+        using var catalog = JsonDocument.Parse(
+            File.ReadAllText(Path.Combine(directory.FullName, "catalog.json")));
+        var entry = catalog.RootElement.GetProperty("packs")
+            .EnumerateArray()
+            .Single(pack => pack.GetProperty("id").GetString() == "nsfw");
+        Assert.Equal("contributed", entry.GetProperty("classification").GetString());
+        Assert.Equal("namireki", entry.GetProperty("maintainer").GetString());
+
+        var path = entry.GetProperty("file").GetString()!;
+        using var content = JsonDocument.Parse(File.ReadAllText(
+            Path.Combine(directory.FullName,
+                path.Replace('/', Path.DirectorySeparatorChar))));
+        var metadata = content.RootElement.GetProperty("metadata");
+        Assert.Equal("it", metadata.GetProperty("locale").GetString());
+        Assert.Contains(metadata.GetProperty("tags").EnumerateArray(),
+            tag => tag.GetString() == "nsfw");
+    }
+
+    [Theory]
+    [InlineData("it", true)]
+    [InlineData("it-IT", true)]
+    [InlineData("fr", true)]
+    [InlineData("en_US", false)]
+    [InlineData("it-", false)]
+    [InlineData("", false)]
+    public void Validate_checks_optional_pack_source_locale(string locale, bool valid)
+    {
+        CreateValidRepository();
+        var packPath = Path.Combine(_root, "packs", "author", "sample.json");
+        var pack = JsonNode.Parse(File.ReadAllText(packPath))!.AsObject();
+        pack["metadata"]!["locale"] = locale;
+        File.WriteAllText(packPath, pack.ToJsonString(), new UTF8Encoding(false));
+
+        var catalogPath = Path.Combine(_root, "catalog.json");
+        var catalog = JsonNode.Parse(File.ReadAllText(catalogPath))!.AsObject();
+        catalog["packs"]![0]!["sha256"] =
+            PackRepositoryValidator.ComputeCanonicalSha256(packPath);
+        File.WriteAllText(catalogPath, catalog.ToJsonString(), new UTF8Encoding(false));
+
+        var result = new PackRepositoryValidator().Validate(_root);
+        Assert.Equal(valid, result.IsValid);
+        if (!valid)
+        {
+            Assert.Contains(result.Errors, error =>
+                error.Contains("sample.json.metadata.locale", StringComparison.Ordinal));
+        }
+    }
+
+    [Fact]
+    public void Validate_rejects_non_string_pack_source_locale()
+    {
+        CreateValidRepository();
+        var packPath = Path.Combine(_root, "packs", "author", "sample.json");
+        var pack = JsonNode.Parse(File.ReadAllText(packPath))!.AsObject();
+        pack["metadata"]!["locale"] = 42;
+        File.WriteAllText(packPath, pack.ToJsonString(), new UTF8Encoding(false));
+
+        var catalogPath = Path.Combine(_root, "catalog.json");
+        var catalog = JsonNode.Parse(File.ReadAllText(catalogPath))!.AsObject();
+        catalog["packs"]![0]!["sha256"] =
+            PackRepositoryValidator.ComputeCanonicalSha256(packPath);
+        File.WriteAllText(catalogPath, catalog.ToJsonString(), new UTF8Encoding(false));
+
+        var result = new PackRepositoryValidator().Validate(_root);
+        Assert.False(result.IsValid);
+        Assert.Contains(result.Errors, error =>
+            error.Contains("sample.json.metadata.locale", StringComparison.Ordinal));
     }
 
     [Theory]
