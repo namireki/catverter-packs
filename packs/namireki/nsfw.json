@@ -1,0 +1,43 @@
+{
+  "$schema": "schemas/catverter-pack-v1.schema.json",
+  "documentType": "catverter-pack",
+  "schemaVersion": 1,
+  "packageId": "io.github.catverter.nsfw",
+  "id": "nsfw",
+  "name": "NSFW",
+  "version": "1.0.0",
+  "minimumAppVersion": "1.1.0",
+  "description": "NSFW",
+  "metadata": {
+    "authors": [
+      "Namireki"
+    ],
+    "locale": "it",
+    "license": "CC-BY-4.0",
+    "tags": [
+      "everyday-life",
+      "culture",
+      "humor",
+      "nsfw"
+    ]
+  },
+  "modifiers": [],
+  "conversions": [
+    {
+      "id": "cazzo",
+      "singularName": "cazzo",
+      "pluralName": "cazzi",
+      "quantity": "Length",
+      "unit": "Centimeter",
+      "value": 20
+    },
+    {
+      "id": "tetta",
+      "singularName": "tetta",
+      "pluralName": "tette",
+      "quantity": "Mass",
+      "unit": "Hectogram",
+      "value": 3
+    }
+  ]
+}
