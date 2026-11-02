@@ -23,6 +23,12 @@ yet a tagged guarantee. Public CI also compares proposed pack changes to
 the currently published `main` catalog and rejects identity reuse or
 silent version changes.
 
+Newly authored packs can declare `metadata.locale` (for example `it`)
+to identify the language of the original text independently from the
+separate UI/pack translation files. The field is optional for existing
+packs. Because older strict readers may not understand it, check
+`minimumAppVersion` against the first compatible release before publishing.
+
 The pack document contract remains schema v1. The catalog's trust,
 provenance, locale, and immutable-download fields are optional schema-v1
 extensions for compatibility with existing readers, but this repository's

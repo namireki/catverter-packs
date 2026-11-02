@@ -57,6 +57,11 @@
           "uniqueItems": true,
           "items": { "type": "string", "minLength": 1 }
         },
+        "locale": {
+          "type": "string",
+          "description": "BCP 47 language tag for the source text of this pack; independent of Catverter UI localization.",
+          "pattern": "^[A-Za-z]{2,8}(?:-[A-Za-z0-9]{1,8})*$"
+        },
         "license": { "type": "string", "minLength": 1 },
         "homepage": { "$ref": "#/$defs/httpsUrl" },
         "repository": { "$ref": "#/$defs/httpsUrl" },
