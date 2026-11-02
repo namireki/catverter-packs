@@ -10,7 +10,6 @@
   "description": "Replace this description with the theme and intended measurement ranges.",
   "metadata": {
     "authors": ["Your name"],
-    "locale": "en",
     "license": "Apache-2.0",
     "tags": ["example"],
     "accentColor": "#C47B39"
