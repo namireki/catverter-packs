@@ -35,12 +35,16 @@ extensions for compatibility with existing readers, but this repository's
 semantic validator requires them on the canonical catalog.
 
 The catalog contains **11 official packs** synchronized from the current
-bundled CatverterV2 packs and **one opt-in contributed pack** (`office-life`).
-All **12 packs contain 20 Power conversions**, at least ten Frequency
-conversions, and five themed Duration conversions. Official packs also
-include the newer Area, Temperature, Acceleration, BitRate, and Illuminance
-families. The official source commit and bundled catalog version are recorded
-in `catalog.json.sourceCatalog` rather than hard-coded in this README.
+bundled CatverterV2 packs and **two opt-in contributed packs**
+(`office-life` and `nsfw`). The 11 official packs and `office-life` each
+contain 20 Power conversions, at least ten Frequency conversions, and five
+themed Duration conversions. Official packs also include the newer Area,
+Temperature, Acceleration, BitRate, and Illuminance families. The Italian
+`nsfw` contribution is intentionally small, with two Length/Mass
+conversions and an explicit `nsfw` tag; contributed packs are not required to
+mirror the quantity coverage of official packs. The official source commit
+and bundled catalog version are recorded in `catalog.json.sourceCatalog`
+rather than hard-coded in this README.
 
 French and Italian locale entries cover every official conversion, although
 newly imported comparison names still use English fallback wording when a
