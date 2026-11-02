@@ -459,7 +459,7 @@ public sealed partial class PackRepositoryValidator
         ValidateObject(
             metadata,
             context,
-            ["authors", "license", "homepage", "repository", "tags", "accentColor", "iconUrl"],
+            ["authors", "locale", "license", "homepage", "repository", "tags", "accentColor", "iconUrl"],
             [],
             errors);
 
@@ -483,6 +483,22 @@ public sealed partial class PackRepositoryValidator
                 value => IdRegex().IsMatch(value),
                 "a lowercase ID",
                 errors);
+        }
+
+        // The pack schema permits an optional BCP-47 source language tag.
+        // Check both its lexical form and culture recognition, as the
+        // independently distributed pack reader does.
+        if (metadata.TryGetPropertyValue("locale", out var sourceLocaleNode))
+        {
+            if (!TryGetStringValue(sourceLocaleNode, out var sourceLocale) ||
+                !SourceLocaleRegex().IsMatch(sourceLocale))
+            {
+                errors.Add($"{context}.locale must be a valid BCP-47 language tag.");
+            }
+            else
+            {
+                ValidateLocaleTag(sourceLocale, $"{context}.locale", errors);
+            }
         }
 
         ValidateOptionalNonEmptyString(metadata, "license", context, errors);
@@ -2189,6 +2205,9 @@ public sealed partial class PackRepositoryValidator
 
     [GeneratedRegex("^[0-9]+(?:\\.[0-9]+){1,3}$", RegexOptions.CultureInvariant)]
     private static partial Regex VersionRegex();
+
+    [GeneratedRegex("^[A-Za-z]{2,8}(?:-[A-Za-z0-9]{1,8})*$", RegexOptions.CultureInvariant)]
+    private static partial Regex SourceLocaleRegex();
 
     [GeneratedRegex("^[0-9a-f]{64}$", RegexOptions.CultureInvariant)]
     private static partial Regex Sha256Regex();
