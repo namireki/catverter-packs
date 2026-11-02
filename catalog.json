@@ -3,7 +3,7 @@
   "documentType": "catverter-catalog",
   "schemaVersion": 1,
   "repositoryId": "io.github.namireki.catverter.packs",
-  "version": "2.4.2",
+  "version": "2.5.0",
   "minimumAppVersion": "1.1.0",
   "contentBaseUrl": "https://raw.githubusercontent.com/namireki/catverter-packs/{revision}/",
   "sourceCatalog": {
@@ -187,6 +187,15 @@
       "maintainer": "namireki",
       "file": "packs/namireki/office-life.json",
       "sha256": "db85a158b2ad519e2ec3b2143062fb0c4d53c88a522fc5236432485b2ca51077"
+    },
+    {
+      "packageId": "io.github.catverter.nsfw",
+      "id": "nsfw",
+      "version": "1.0.0",
+      "classification": "contributed",
+      "maintainer": "namireki",
+      "file": "packs/namireki/nsfw.json",
+      "sha256": "f191a5a61d4a4e36a9ecaeb2546d5eb5cff34ccd2c60095d0529af6b85ec03c0"
     }
   ],
   "locales": [
