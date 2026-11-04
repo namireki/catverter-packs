@@ -10,6 +10,9 @@ VERSION = re.compile(r"^[0-9]+(?:\.[0-9]+){1,3}$")
 LOCALE = re.compile(r"^[a-z]{2}(?:-[A-Za-z0-9]+)*$")
 FACT_PATH = re.compile(
     r"^facts/[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.json$")
+IMAGE_PATH = re.compile(
+    r"^facts/[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.(?:jpg|jpeg|png|webp)$")
+GIT_SHA = re.compile(r"^[0-9a-f]{40}$")
 PACK_PATH = re.compile(
     r"^packs/[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/"
     r"[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.json$")
@@ -40,6 +43,12 @@ def normalized_sha256(path):
     text = path.read_text(encoding="utf-8")
     normalized = text.replace("\r\n", "\n").replace("\r", "\n")
     return hashlib.sha256(normalized.encode("utf-8")).hexdigest()
+
+
+def git_blob_sha1(path):
+    payload = path.read_bytes()
+    header = f"blob {len(payload)}\0".encode("ascii")
+    return hashlib.sha1(header + payload).hexdigest()
 
 
 def validate_fact(
@@ -142,6 +151,49 @@ def validate(root):
             "fact catalog contentBaseUrl is not the "
             "canonical immutable base"
         )
+
+    presentation = catalog.get("presentation")
+    if presentation is not None:
+        if not isinstance(presentation, dict):
+            fail("presentation must be an object")
+        host = presentation.get("host")
+        if not isinstance(host, dict):
+            fail("presentation.host must be an object")
+        if not isinstance(host.get("name"), str) or not host["name"].strip():
+            fail("presentation.host.name must be non-empty")
+
+        image = host.get("image")
+        if not isinstance(image, dict):
+            fail("presentation.host.image must be an object")
+        image_file = image.get("file")
+        image_sha = image.get("gitSha")
+        if (
+            not isinstance(image_file, str)
+            or not IMAGE_PATH.fullmatch(image_file)
+        ):
+            fail("presentation.host.image.file is invalid")
+        if (
+            not isinstance(image_sha, str)
+            or not GIT_SHA.fullmatch(image_sha)
+        ):
+            fail("presentation.host.image.gitSha is invalid")
+        actual_image_sha = git_blob_sha1(root / image_file)
+        if image_sha != actual_image_sha:
+            fail(
+                "presentation host image Git blob SHA mismatch: "
+                f"expected {image_sha}, got {actual_image_sha}"
+            )
+
+        alt_text = host.get("altText")
+        if not isinstance(alt_text, dict) or not alt_text:
+            fail("presentation.host.altText must be non-empty")
+        if not isinstance(alt_text.get("en"), str) or not alt_text["en"].strip():
+            fail("presentation.host.altText requires English")
+        for locale, value in alt_text.items():
+            if not LOCALE.fullmatch(locale):
+                fail(f"presentation.host.altText has invalid locale {locale!r}")
+            if not isinstance(value, str) or not value.strip():
+                fail(f"presentation.host.altText is empty for {locale}")
 
     entries = catalog.get("documents")
     if not isinstance(entries, list) or not entries:
