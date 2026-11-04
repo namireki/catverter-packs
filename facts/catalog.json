@@ -2,7 +2,7 @@
   "$schema": "../schemas/catverter-fact-catalog-v1.schema.json",
   "documentType": "catverter-fact-catalog",
   "schemaVersion": 1,
-  "version": "1.0.0",
+  "version": "1.1.0",
   "minimumAppVersion": "1.1.0",
   "contentBaseUrl": "https://raw.githubusercontent.com/namireki/catverter-packs/{revision}/",
   "documents": [
@@ -14,7 +14,7 @@
     {
       "id": "cats",
       "file": "facts/cat-facts.json",
-      "sha256": "3293692d2ff459b273c8b8efa79de49713f14e2d2f977f13bda4ad46bceef900"
+      "sha256": "dcaa972f4206c90648660a75793f4defda7d64c9820ad0afe2c02bf03e606d92"
     }
   ]
 }
