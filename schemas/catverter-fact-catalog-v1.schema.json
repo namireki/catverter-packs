@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:com.namirekistudio.catverter:schema:fact-catalog:v1",
+  "title": "Catverter fact catalog v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "$schema", "documentType", "schemaVersion", "version",
+    "minimumAppVersion", "contentBaseUrl", "file", "sha256"
+  ],
+  "properties": {
+    "$schema": { "type": "string", "minLength": 1 },
+    "documentType": { "const": "catverter-fact-catalog" },
+    "schemaVersion": { "const": 1 },
+    "version": { "$ref": "#/$defs/version" },
+    "minimumAppVersion": { "$ref": "#/$defs/version" },
+    "contentBaseUrl": {
+      "type": "string",
+      "pattern": "^https://[^{}]+/\\{revision\\}/$"
+    },
+    "file": { "const": "facts/cat-facts.json" },
+    "sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    }
+  },
+  "$defs": {
+    "version": {
+      "type": "string",
+      "pattern": "^[0-9]+(?:\\.[0-9]+){1,3}$"
+    }
+  }
+}
