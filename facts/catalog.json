@@ -2,9 +2,22 @@
   "$schema": "../schemas/catverter-fact-catalog-v1.schema.json",
   "documentType": "catverter-fact-catalog",
   "schemaVersion": 1,
-  "version": "1.1.0",
+  "version": "1.2.0",
   "minimumAppVersion": "1.1.0",
   "contentBaseUrl": "https://raw.githubusercontent.com/namireki/catverter-packs/{revision}/",
+  "presentation": {
+    "host": {
+      "name": "Pirgo",
+      "image": {
+        "file": "facts/pirgo.jpg",
+        "gitSha": "d3f2008a0644d9c6c633a135837ce86c38cd0f9a"
+      },
+      "altText": {
+        "en": "Pirgo, one of Catverter's cats.",
+        "it": "Pirgo, uno dei gatti di Catverter."
+      }
+    }
+  },
   "documents": [
     {
       "id": "comparisons",
