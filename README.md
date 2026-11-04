@@ -63,9 +63,14 @@ fact catalog content versions as appropriate, update every affected SHA-256 in
 python scripts/validate_facts.py --root .
 ```
 
+The optional `presentation.host` metadata can give the fact UI a curated cat
+host independently of the fact text. The current host is Pirgo, whose image is
+published under `facts/` and identified by its Git blob SHA so consumers can
+cache and verify the exact asset from the same immutable revision.
+
 The validator checks document IDs and paths for uniqueness, rejects duplicate
-fact IDs across different documents, verifies every listed hash, and checks
-that every referenced conversion exists.
+fact IDs across different documents, verifies every listed hash and host image
+identity, and checks that every referenced conversion exists.
 
 The catalog contains **11 official packs** synchronized from the current
 bundled CatverterV2 packs and **two opt-in contributed packs**
