@@ -31,6 +31,9 @@ jobs:
           --root "$GITHUB_WORKSPACE"
           --base-ref "$BASE_COMMIT"
 
+      - name: Validate cat facts
+        run: python scripts/validate_facts.py --root "$GITHUB_WORKSPACE"
+
       - name: Set up .NET
         uses: actions/setup-dotnet@v4
         with:

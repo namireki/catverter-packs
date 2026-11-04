@@ -1,0 +1,174 @@
+{
+  "$schema": "../schemas/catverter-facts-v1.schema.json",
+  "documentType": "catverter-facts",
+  "schemaVersion": 1,
+  "version": "1.0.0",
+  "minimumAppVersion": "1.1.0",
+  "facts": [
+    {
+      "id": "blue-whale-cat-length",
+      "kind": "comparison",
+      "category": "length",
+      "text": {
+        "en": "A blue whale is about 54 cats long.",
+        "it": "Una balenottera azzurra è lunga circa 54 gatti."
+      },
+      "references": [
+        {
+          "file": "packs/namireki/animals.json",
+          "conversionId": "blue-whale-length"
+        },
+        {
+          "file": "packs/namireki/cats.json",
+          "conversionId": "domestic-cat-body-length"
+        }
+      ],
+      "note": "25 m / 0.46 m ≈ 54.3."
+    },
+    {
+      "id": "eiffel-tower-cat-height",
+      "kind": "comparison",
+      "category": "length",
+      "text": {
+        "en": "The Eiffel Tower is about 717 cats tall.",
+        "it": "La Torre Eiffel è alta circa 717 gatti."
+      },
+      "references": [
+        {
+          "file": "packs/namireki/big-stuff.json",
+          "conversionId": "eiffel-tower-height"
+        },
+        {
+          "file": "packs/namireki/cats.json",
+          "conversionId": "domestic-cat-body-length"
+        }
+      ],
+      "note": "330 m / 0.46 m ≈ 717.4."
+    },
+    {
+      "id": "giraffe-cat-height",
+      "kind": "comparison",
+      "category": "length",
+      "text": {
+        "en": "A giraffe is about 12 cats tall.",
+        "it": "Una giraffa è alta circa 12 gatti."
+      },
+      "references": [
+        {
+          "file": "packs/namireki/animals.json",
+          "conversionId": "giraffe-height"
+        },
+        {
+          "file": "packs/namireki/cats.json",
+          "conversionId": "domestic-cat-body-length"
+        }
+      ],
+      "note": "5.5 m / 0.46 m ≈ 12."
+    },
+    {
+      "id": "football-field-cat-length",
+      "kind": "comparison",
+      "category": "length",
+      "text": {
+        "en": "An American football field is about 239 cats long.",
+        "it": "Un campo da football americano è lungo circa 239 gatti."
+      },
+      "references": [
+        {
+          "file": "packs/namireki/big-stuff.json",
+          "conversionId": "american-football-field-length"
+        },
+        {
+          "file": "packs/namireki/cats.json",
+          "conversionId": "domestic-cat-body-length"
+        }
+      ],
+      "note": "109.728 m / 0.46 m ≈ 238.5."
+    },
+    {
+      "id": "grand-piano-cat-mass",
+      "kind": "comparison",
+      "category": "mass",
+      "text": {
+        "en": "A concert grand piano weighs about as much as 111 cats.",
+        "it": "Un pianoforte a coda da concerto pesa circa quanto 111 gatti."
+      },
+      "references": [
+        {
+          "file": "packs/namireki/big-stuff.json",
+          "conversionId": "grand-piano-mass"
+        },
+        {
+          "file": "packs/namireki/cats.json",
+          "conversionId": "domestic-cat-mass"
+        }
+      ],
+      "note": "500 kg / 4.5 kg ≈ 111.1."
+    },
+    {
+      "id": "blue-whale-cat-mass",
+      "kind": "comparison",
+      "category": "mass",
+      "text": {
+        "en": "A blue whale weighs about as much as 26,700 cats.",
+        "it": "Una balenottera azzurra pesa circa quanto 26.700 gatti."
+      },
+      "references": [
+        {
+          "file": "packs/namireki/big-stuff.json",
+          "conversionId": "blue-whale-mass"
+        },
+        {
+          "file": "packs/namireki/cats.json",
+          "conversionId": "domestic-cat-mass"
+        }
+      ],
+      "note": "120,000 kg / 4.5 kg ≈ 26,667."
+    },
+    {
+      "id": "cat-sprint-speed",
+      "kind": "fact",
+      "category": "speed",
+      "text": {
+        "en": "A sprinting adult cat can reach about 48 km/h.",
+        "it": "Un gatto adulto in sprint può raggiungere circa 48 km/h."
+      },
+      "references": [
+        {
+          "file": "packs/namireki/cats.json",
+          "conversionId": "adult-cat-sprint-speed"
+        }
+      ]
+    },
+    {
+      "id": "cat-vertical-jump",
+      "kind": "fact",
+      "category": "length",
+      "text": {
+        "en": "A cat can jump about 1.8 meters vertically.",
+        "it": "Un gatto può saltare verticalmente per circa 1,8 metri."
+      },
+      "references": [
+        {
+          "file": "packs/namireki/cats.json",
+          "conversionId": "cat-vertical-jump-height"
+        }
+      ]
+    },
+    {
+      "id": "cat-purr-frequency",
+      "kind": "fact",
+      "category": "frequency",
+      "text": {
+        "en": "A contented purr can vibrate around 25 times per second.",
+        "it": "Le fusa di un gatto contento possono vibrare circa 25 volte al secondo."
+      },
+      "references": [
+        {
+          "file": "packs/namireki/cats.json",
+          "conversionId": "purr-frequency"
+        }
+      ]
+    }
+  ]
+}
