@@ -7,9 +7,14 @@
   "contentBaseUrl": "https://raw.githubusercontent.com/namireki/catverter-packs/{revision}/",
   "documents": [
     {
-      "id": "core",
+      "id": "comparisons",
+      "file": "facts/cat-comparisons.json",
+      "sha256": "8cf6a6193e0c166f229a97e374ade9bd0db6d2f17fa3b32ed05652b3dabdf993"
+    },
+    {
+      "id": "cats",
       "file": "facts/cat-facts.json",
-      "sha256": "f5935a558daf9cea7d9e3db5f05a0d744360c17202beb14ec83e95b27d97d490"
+      "sha256": "3293692d2ff459b273c8b8efa79de49713f14e2d2f977f13bda4ad46bceef900"
     }
   ]
 }
