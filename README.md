@@ -34,6 +34,34 @@ provenance, locale, and immutable-download fields are optional schema-v1
 extensions for compatibility with existing readers, but this repository's
 semantic validator requires them on the canonical catalog.
 
+## Cat facts
+
+Curated cat facts live independently under `facts/`. The fact text is the
+bare assertion only; presentation prefixes such as "Did you know?", "Cat fact:",
+or no prefix at all belong to the app and are deliberately not stored in the
+content document.
+
+`facts/catalog.json` is a small versioned manifest for
+`facts/cat-facts.json`. Consumers should resolve `main` to an immutable
+revision, fetch both files from that same revision, verify the fact document's
+SHA-256, and retain their last valid or bundled snapshot if validation fails.
+
+Facts have stable IDs, a `kind` (`fact`, `comparison`, or
+`absurd-comparison`), a category, and localized text with English as the
+required fallback. Optional `references` point at conversion IDs in this
+repository so editorial comparisons can document the values they were derived
+from without coupling the fact text to the pack runtime format.
+
+When adding or editing facts, bump the fact document and fact catalog content
+versions as appropriate, recompute the SHA-256 in `facts/catalog.json`, and
+run:
+
+```pwsh
+python scripts/validate_facts.py --root .
+```
+
+The validator also checks that every referenced conversion exists.
+
 The catalog contains **11 official packs** synchronized from the current
 bundled CatverterV2 packs and **two opt-in contributed packs**
 (`office-life` and `nsfw`). The 11 official packs and `office-life` each
