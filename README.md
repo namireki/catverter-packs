@@ -41,10 +41,13 @@ bare assertion only; presentation prefixes such as "Did you know?", "Cat fact:",
 or no prefix at all belong to the app and are deliberately not stored in the
 content document.
 
-`facts/catalog.json` is a small versioned manifest for
-`facts/cat-facts.json`. Consumers should resolve `main` to an immutable
-revision, fetch both files from that same revision, verify the fact document's
-SHA-256, and retain their last valid or bundled snapshot if validation fails.
+`facts/catalog.json` is a small versioned manifest whose `documents` array
+can publish one or many fact files. Each entry has a stable ID, a
+repository-relative `facts/*.json` path, and its SHA-256. Consumers should
+resolve `main` to an immutable revision, fetch the catalog and every listed
+document from that same revision, verify every SHA-256, and activate the set
+only after all documents validate. If any document fails, consumers retain
+their last valid or bundled snapshot rather than applying a partial update.
 
 Facts have stable IDs, a `kind` (`fact`, `comparison`, or
 `absurd-comparison`), a category, and localized text with English as the
@@ -52,15 +55,17 @@ required fallback. Optional `references` point at conversion IDs in this
 repository so editorial comparisons can document the values they were derived
 from without coupling the fact text to the pack runtime format.
 
-When adding or editing facts, bump the fact document and fact catalog content
-versions as appropriate, recompute the SHA-256 in `facts/catalog.json`, and
-run:
+When adding, splitting, or editing facts, bump the affected fact document and
+fact catalog content versions as appropriate, update every affected SHA-256 in
+`facts/catalog.json`, and run:
 
 ```pwsh
 python scripts/validate_facts.py --root .
 ```
 
-The validator also checks that every referenced conversion exists.
+The validator checks document IDs and paths for uniqueness, rejects duplicate
+fact IDs across different documents, verifies every listed hash, and checks
+that every referenced conversion exists.
 
 The catalog contains **11 official packs** synchronized from the current
 bundled CatverterV2 packs and **two opt-in contributed packs**
